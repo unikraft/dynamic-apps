@@ -1,0 +1,6 @@
+*.o
+*.class
+*.pyc
+*~
+*swp
+*swo
