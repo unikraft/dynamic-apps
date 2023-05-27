@@ -1,0 +1,17 @@
+rock_manifest = {
+   doc = {
+      ["README.md"] = "254abc3c7bd6229fa3b3bbc7c449fd66"
+   },
+   ["kong-plugin-app-dynamics-3.3.0-0.rockspec"] = "f6b4b81aab7cf94ba35334adee1768ee",
+   lua = {
+      kong = {
+         plugins = {
+            ["app-dynamics"] = {
+               ["appdynamics.lua"] = "629da7bccd73c771ea770e42e1152646",
+               ["handler.lua"] = "a2a955f87426324a0299b41ae5fc1d53",
+               ["schema.lua"] = "5c7da19cf2e4b79fa8871d1695d19ff6"
+            }
+         }
+      }
+   }
+}

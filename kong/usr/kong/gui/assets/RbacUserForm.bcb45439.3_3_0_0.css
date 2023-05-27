@@ -1,0 +1,9 @@
+/*
+  This software is copyright Kong Inc. and its licensors.
+  Use of the software is subject to the agreement between your organization
+  and Kong Inc. If there is no such agreement, use is governed by and
+  subject to the terms of the Kong Master Software License Agreement found
+  at https://konghq.com/enterprisesoftwarelicense/.
+*/
+
+.rbac-user-form{--KBadgeWidth: auto;--KBadgeBorderRadius: 1rem;--KBadgePaddingY: .5rem;--KBadgePaddingX: 1rem}.rbac-user-form .badge-link:not(:first-of-type){margin-left:var(--spacing-xs)}.rbac-user-form .k-badge{font-weight:400}.rbac-user-form .roles-section label{color:var(--blue-700);font-size:var(--type-lg);font-weight:500}.roles-table{--KEmptyContentColor: var(--black-70);--KEmptyBackground: rgba(0,0,0,.03)}.roles-table .empty-state-wrapper{border-radius:3px;border:1px solid hsla(0deg,0%,59.2%,.1)}

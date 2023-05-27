@@ -1,0 +1,40 @@
+rock_manifest = {
+   doc = {
+      ["CHANGELOG.md"] = "ddf7089d6e3e0667740b7dc542d21ac2"
+   },
+   ["kong-plugin-key-auth-enc-3.3.0-0.rockspec"] = "34f354296e49faf422c3f5ca4fb5a8f8",
+   lua = {
+      kong = {
+         plugins = {
+            ["key-auth-enc"] = {
+               ["daos.lua"] = "735c83231fff0e42ef5f857ef003ad03",
+               ["handler.lua"] = "e7ac7b5ab2597bd770f6f42e03b2eccd",
+               ["keyauth_enc_credentials.lua"] = "b257e80c2a91691e1154b64fc284639e",
+               migrations = {
+                  ["000_base_key_auth_enc.lua"] = "374ab4c0f4db21150dbadc1143d8d64c",
+                  ["001_200_to_210.lua"] = "49e69f3729b53774ba3daca9aafd6e29",
+                  enterprise = {
+                     ["001_1500_to_2100.lua"] = "177daf9cae974448ea538ec1c842b97c",
+                     ["002_2800_to_3200.lua"] = "fbf95cd6ce73686caad5fe6ba65ad820",
+                     ["002_3100_to_3200.lua"] = "43f9685674f4c28d12e2586410079cc6",
+                     ["init.lua"] = "2a2d3b4921ce87a3018d0883c0705968"
+                  },
+                  ["init.lua"] = "55b015ab7d880774c089ebd94299c7ee"
+               },
+               ["schema.lua"] = "9ecbedbc2e23f674350ba8d17390863b",
+               strategies = {
+                  cassandra = {
+                     ["keyauth_enc_credentials.lua"] = "32e68964157cd7ca0a8f09d0f00119c7"
+                  },
+                  off = {
+                     ["keyauth_enc_credentials.lua"] = "e720d40752f5edeccea3cffcf7fcc056"
+                  },
+                  postgres = {
+                     ["keyauth_enc_credentials.lua"] = "0c0bdccb3f7420864d96f6abf2da26aa"
+                  }
+               }
+            }
+         }
+      }
+   }
+}

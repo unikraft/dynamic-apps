@@ -1,0 +1,191 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+msgid ""
+"---\n"
+"title: Reference manual\n"
+"---"
+msgstr ""
+
+msgid "# Reference manual"
+msgstr "# リファレンスマニュアル"
+
+msgid ""
+"This document describes about all features. [Tutorial][tutorial] focuses on ea"
+"sy to understand only about important features. This document focuses on compl"
+"eteness. If you don't read [tutorial][tutorial] yet, read tutorial before read"
+" this document."
+msgstr ""
+"このドキュメントは全ての機能について記載しています。[チュートリアル][tutorial]は、重要な機能について簡単に理解できる事に重点をおいています。この"
+"ドキュメントは網羅性を重視しています。まだ、[チュートリアル][tutorial]を読んでいないのであれば、このドキュメントを読む前にチュートリアルを読んで"
+"ください。"
+
+msgid "## Modules {#modules}"
+msgstr "## モジュール {#modules}"
+
+msgid "XMLua has only one public modules. It's `xmlua` main module."
+msgstr "XMLuaには1つだけ公開モジュールがあります。それは`xmlua`メインモジュールです。"
+
+msgid "  * [`xmlua`][xmlua]: The main module."
+msgstr "  * [`xmlua`][xmlua]: メインモジュール。"
+
+msgid "## Internal modules {#internal-modules}"
+msgstr "## 内部モジュール {#internal-modules}"
+
+msgid ""
+"XMLua has internal modules to provide common methods. They aren't exported int"
+"o public API but you can use them via public classes such as [`xmlua.HTML`][ht"
+"ml] and [`xmlua.Element`][element]."
+msgstr ""
+"XMLuaは共通の機能を提供する内部メソッドがあります。これらは、APIとして公開されていませんが、[`xmlua.HTML`][html]や[`xmlua"
+".Element`][element]のような公開クラス経由で使うことができます。"
+
+msgid ""
+"  * [`xmlua.Serializable`][serializable]: Provides HTML and XML serialization "
+"related methods."
+msgstr "  * [`xmlua.Serializable`][serializable]: HTML・XMLへのシリアライズ関連のメソッドを提供します。"
+
+msgid "  * [`xmlua.Searchable`][searchable]: Provides node search related methods."
+msgstr "  * [`xmlua.Searchable`][searchable]: ノード検索関連のメソッドを提供します。"
+
+msgid "## Classes {#classes}"
+msgstr "## クラス {#classes}"
+
+msgid "XMLua provides the following classes:"
+msgstr "XMLuaは以下のクラスを提供します。"
+
+msgid "  * [`xmlua.HTML`][html]: The class for parsing HTML."
+msgstr "  * [`xmlua.HTML`][html]: HTMLをパースするクラスです。"
+
+msgid "  * [`xmlua.HTMLSAXParser`][html-sax-parser]: The class for HTML SAX parsing."
+msgstr "  * [`xmlua.HTMLSAXParser`][html-sax-parser]: HTML のSAXパーサークラスです。"
+
+msgid "  * [`xmlua.XML`][xml]: The class for parsing XML."
+msgstr "  * [`xmlua.XML`][xml]: XMLをパースするクラスです。"
+
+msgid "  * [`xmlua.XMLSAXParser`][xml-sax-parser]: The class for XML SAX parsing."
+msgstr "  * [`xmlua.XMLSAXParser`][xml-sax-parser]: XMLのSAXパーサークラスです。"
+
+msgid ""
+"  * [`xmlua.XMLStreamSAXParser`][xml-stream-sax-parser]: The class for XML SAX"
+" parsing with multiple root elements in same file."
+msgstr ""
+"  * [`xmlua.XMLStreamSAXParser`][xml-stream-sax-parser]: 同じファイル内に複数のルート要素を持つXM"
+"L用のSAXパーサークラスです。"
+
+msgid "  * [`xmlua.CDATASection`][cdata-section]: The class for cdata section node."
+msgstr "  * [`xmlua.CDATASection`][cdata-section]: CDATASectionノード用のクラスです。"
+
+msgid "  * [`xmlua.Comment`][comment]: The class for comment node."
+msgstr "  * [`xmlua.Element`][element]: コメントノード用のクラスです。"
+
+msgid ""
+"  * [`xmlua.Document`][document]: The class for HTML document and XML document"
+"."
+msgstr "  * [`xmlua.Document`][document]: HTMLドキュメントとXMLドキュメント用のクラスです。"
+
+msgid ""
+"  * [`xmlua.DocumentFragment`][document-fragment]: The class for document frag"
+"ment node."
+msgstr "  * [`xmlua.DocumentFragment`][document-fragment]: ドキュメントフラグメントノード用のクラスです。"
+
+msgid "  * [`xmlua.DocumentType`][document-type]: The class for document type node."
+msgstr "  * [`xmlua.DocumentType`][document-type]: ドキュメントタイプノード用のクラスです。"
+
+msgid "  * [`xmlua.Element`][element]: The class for element node."
+msgstr "  * [`xmlua.Element`][element]: 要素ノード用のクラスです。"
+
+msgid "  * [`xmlua.Namespace`][namespace]: The class for namespace node."
+msgstr "  * [`xmlua.Namespace`][namespace]: 名前空間ノード用のクラスです。"
+
+msgid ""
+"  * [`xmlua.Node`][node]: It's a class that provides a common method for each "
+"node."
+msgstr "  * [`xmlua.Node`][node]: 各ノードに共通のメソッドを提供するクラスです。"
+
+msgid "  * [`xmlua.NodeSet`][node-set]: The class for multiple nodes."
+msgstr "  * [`xmlua.NodeSet`][node-set]: 複数ノードを扱うためのクラスです。"
+
+msgid ""
+"  * [`xmlua.ProcessingInstruction`][processing-instruction]: The class for pro"
+"cessing instruction node."
+msgstr "  * [`xmlua.ProcessingInstruction`][processing-instruction]: 処理命令ノード用のクラスです。"
+
+msgid "  * [`xmlua.Text`][text]: The class for text nodes."
+msgstr "  * [`xmlua.Text`][text]: テキストノード用のクラスです。"
+
+msgid ""
+"You can access only [`xmlua.HTML`][html] and [`xmlua.XML`][xml], [`xmlua.HTMLS"
+"AXParser`][html-sax-parser] directly. Other classes are accessible via methods"
+" of [`xmlua.HTML`][html] and [`xmlua.XML`][xml], [`xmlua.HTMLSAXParser`][html-"
+"sax-parser]."
+msgstr ""
+"[`xmlua.HTML`][html]と[`xmlua.XML`][xml]、[`xmlua.HTMLSAXParser`][html-sax-parse"
+"r]のみ直接アクセスできます。その他のクラスへは、[`xmlua.HTML`][html]と[`xmlua.XML`][xml]、[`xmlua.HTMLS"
+"AXParser`][html-sax-parser]のメソッド経由でアクセスできます。"
+
+msgid "[tutorial]:../tutorial/"
+msgstr ""
+
+msgid "[xmlua]:xmlua.html"
+msgstr ""
+
+msgid "[document]:document.html"
+msgstr ""
+
+msgid "[serializable]:serializable.html"
+msgstr ""
+
+msgid "[searchable]:searchable.html"
+msgstr ""
+
+msgid "[html]:html.html"
+msgstr ""
+
+msgid "[html-sax-parser]:html-sax-parser.html"
+msgstr ""
+
+msgid "[xml]:xml.html"
+msgstr ""
+
+msgid "[xml-sax-parser]:xml-sax-parser.html"
+msgstr ""
+
+msgid "[xml-stream-sax-parser]:xml-stream-sax-parser.html"
+msgstr ""
+
+msgid "[element]:element.html"
+msgstr ""
+
+msgid "[node]:node.html"
+msgstr ""
+
+msgid "[node-set]:node-set.html"
+msgstr ""
+
+msgid "[text]:text.html"
+msgstr ""
+
+msgid "[cdata-section]:cdata-section.html"
+msgstr ""
+
+msgid "[comment]:comment.html"
+msgstr ""
+
+msgid "[document-fragment]:document-fragment"
+msgstr ""
+
+msgid "[document-type]:document-type"
+msgstr ""
+
+msgid "[namespace]:namespace"
+msgstr ""
+
+msgid "[processing-instruction]:processing-instruction"
+msgstr ""

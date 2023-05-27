@@ -1,0 +1,46 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+msgid ""
+"---\n"
+"title: luacs.XPathConverter\n"
+"---"
+msgstr ""
+
+msgid "# `luacs.XPathConverter` class"
+msgstr "# `luacs.XPathConverter`クラス"
+
+msgid "## Summary"
+msgstr "## 概要"
+
+msgid "It's a class for converting CSS Selectors to XPaths."
+msgstr "CSSセレクターをXPathに変換するクラスです。"
+
+msgid ""
+"Normally, you should use [`luacs.to_xpaths`][luacs-to-xpaths]. It's convenient"
+"."
+msgstr "通常は[`luacs.to_xpaths`][luacs-to-xpaths]を使ってください。この関数の方が便利です。"
+
+msgid "TODO"
+msgstr ""
+
+msgid "## Class methods"
+msgstr "## クラスメソッド"
+
+msgid "## Instance methods"
+msgstr "## インスタンスメソッド"
+
+msgid "## See also"
+msgstr "## 参照"
+
+msgid "  * [`luacs.to_xpaths`][luacs-to-xpaths]"
+msgstr ""
+
+msgid "[luacs-to-xpaths]:luacs.html#to-xpaths"
+msgstr ""

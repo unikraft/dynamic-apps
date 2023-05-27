@@ -1,0 +1,43 @@
+rock_manifest = {
+   doc = {
+      ["CHANGELOG.md"] = "329ddbb89b9cf8373bae0f6deed7f22d"
+   },
+   ["kong-plugin-enterprise-openid-connect-3.3.0-0.rockspec"] = "e85c80481f81870025477d00e9f0dd49",
+   lua = {
+      kong = {
+         plugins = {
+            ["openid-connect"] = {
+               ["api.lua"] = "ff85401f00280bdb14869219c8c22b28",
+               ["arguments.lua"] = "2a6ea9fdbd15abec6597e6e898bcf483",
+               ["cache.lua"] = "eb7c545a942e5b332f4e7cb9dbe78384",
+               ["claims.lua"] = "3ade074394bdddd3d21464b37fea3281",
+               ["clients.lua"] = "0d30afa2d7148b75f7400e3ecd69b890",
+               ["consumers.lua"] = "674f72b3d5c794392463fb524220e7fc",
+               daos = {
+                  ["init.lua"] = "338161eabea2792aadf795708de98a6d",
+                  ["jwks.lua"] = "1f3ae63c8fcac36e2cd83878ffa79a5f"
+               },
+               ["env.lua"] = "641e789834123ff6b44a72579f266d0f",
+               ["handler.lua"] = "ad535a17078606e2a7057778fe281475",
+               ["headers.lua"] = "86125bb011a37499ba9d158adf61e0b6",
+               ["introspect.lua"] = "273624e13f182579ddcdc9ddb33fb039",
+               ["log.lua"] = "299f923ef3e1cd1161764bdca726042f",
+               migrations = {
+                  ["000_base_openid_connect.lua"] = "b15cef802d11b053b9a9752874aac74c",
+                  ["001_14_to_15.lua"] = "c8c95594df6ee751aeb340f3717df117",
+                  ["002_200_to_210.lua"] = "d771194becf58ecce012a65e5f5bef4d",
+                  ["003_280_to_300.lua"] = "08835b0cb81c38dd4b95b1b86b28f694",
+                  ["init.lua"] = "281e884a0f2231918b2b6191c05f2387"
+               },
+               ["redirect.lua"] = "3c66f835cac11f1796a451670b47143a",
+               ["responses.lua"] = "a72d0763d6002afb52d872da096a6278",
+               ["schema.lua"] = "530dfaf52d84bc128bdd236e651ba2f3",
+               ["sessions.lua"] = "f950281fb9f8f803dec8f9ac8ee1af4b",
+               ["typedefs.lua"] = "7945d79dce4e81e9831be0b820179666",
+               ["unexpected.lua"] = "de03040b77a3bde2ff9cbaddc1a646fc",
+               ["userinfo.lua"] = "c8cd3f6c8d3628aa92a50a68d6e68a55"
+            }
+         }
+      }
+   }
+}

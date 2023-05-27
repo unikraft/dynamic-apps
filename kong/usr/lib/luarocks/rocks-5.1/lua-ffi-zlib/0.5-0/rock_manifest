@@ -1,0 +1,10 @@
+rock_manifest = {
+   doc = {
+      ["LICENSE.txt"] = "d848917bbaed6dd797fb5eb94006e2a5",
+      ["README.md"] = "750ca213e314dffa6086eba2457c5592"
+   },
+   lua = {
+      ["ffi-zlib.lua"] = "3f119e2f8c0130d65f37b8826dd6c806"
+   },
+   ["lua-ffi-zlib-0.5-0.rockspec"] = "b273dbf1f60616f4681b23ee280d1a4f"
+}

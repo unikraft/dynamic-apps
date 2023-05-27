@@ -1,0 +1,27 @@
+rock_manifest = {
+   docs = {
+      ["index.md"] = "d711248dfcbd1418dd30225a9336c64e",
+      ["messagepack.md"] = "27fd7b803332da8ab9d519d2a1b58db0"
+   },
+   lua = {
+      ["MessagePack.lua"] = "54f888d9f201c666a7269d33f45c3418"
+   },
+   ["lua-messagepack-0.5.2-1.rockspec"] = "cb80d79a90c9b42d41457b7a4c0231f6",
+   test = {
+      ["00-require.lua"] = "ca1471d581d41a4366e509a901eb16ae",
+      ["01-spectest.lua"] = "a511334ff11951b9afb37f129c8291f2",
+      ["02-except.lua"] = "6ba33ffea258020fd02e06fa563d7f66",
+      ["03-edge.lua"] = "88cd032dd0a2201539003d63d0974dcf",
+      ["04-cover.lua"] = "8240910c62904a39aa88c0a833150d91",
+      ["05-fuzzing.lua"] = "71217c1bc9ad51e8b540628d0adc59c8",
+      ["11-userdata-bc.lua"] = "007a9ade85a7b70c97e039efe9f31909",
+      ["12-metatable.lua"] = "5cf1482aa8836d18ee424a09888cccd0",
+      ["13-coat.lua"] = "ea5cd26c4a02df73241a6031cda884e7",
+      ["14-function.lua"] = "72e4c98b261c0e6380ee749cfbf97070",
+      ["15-ffi-cdata.lua"] = "812ef2ac35ce35dc7779312fdf5044c8",
+      ["21-multiples.lua"] = "38d3eeecd64f675ee8754d51da21ddd7",
+      ["22-closure.lua"] = "81f1ce4a835b490130565ed0701eb125",
+      ["31-custom-unpack.lua"] = "e9f19b74843a10f3267da44f124520fa",
+      ["issue6.lua"] = "dc1e6c02a3361f310865459b510cdcd3"
+   }
+}

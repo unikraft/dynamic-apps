@@ -1,0 +1,39 @@
+rock_manifest = {
+   doc = {
+      ["CHANGELOG.md"] = "646ab654a5cdfd334cd41dd8ebdffee4",
+      LICENSE = "86fe8702234a5a78d8f9b346c8f9d632",
+      ["README.md"] = "b0114dcd34533403a0a88bae029103a8"
+   },
+   lua = {
+      cassandra = {
+         ["auth.lua"] = "a55350916971d02af7c2f60f7fe817f1",
+         ["cql.lua"] = "d9da8cf035fc189891fe08df55b81613",
+         ["init.lua"] = "f78ded21e75e781866c57565bccb5292",
+         ["socket.lua"] = "610e198445bed9e680f9108e4431ed5c"
+      },
+      resty = {
+         cassandra = {
+            ["cluster.lua"] = "b607931c66062387810646c69f886f45",
+            policies = {
+               lb = {
+                  ["dc_rr.lua"] = "5d97f70384963452c105493da5a85d56",
+                  ["init.lua"] = "654cf9bbd35841626b7af1b6c7dd8ae8",
+                  ["req_dc_rr.lua"] = "ec7f9a1863c84d87d1242754d7ea3af0",
+                  ["req_rr.lua"] = "e176ac0bfaa3fb30e89108ea39126384",
+                  ["rr.lua"] = "c0475315716fe4ad3872e46464912ce0"
+               },
+               reconnection = {
+                  ["const.lua"] = "c687f38e278e08dbf9958cb4f0dd6934",
+                  ["exp.lua"] = "fdbd5f631b0d9666cf6e0bb9c1de64d8",
+                  ["init.lua"] = "5d0423b0be643b1c441141771a01c3e5"
+               },
+               retry = {
+                  ["init.lua"] = "b47078318eda164607d9f4a1526e6679",
+                  ["simple.lua"] = "d784dd5c34f65089edeaa65c18183dc2"
+               }
+            }
+         }
+      }
+   },
+   ["lua-cassandra-1.5.2-0.rockspec"] = "31eb6d057c24eb5e6f1cc806cba45669"
+}

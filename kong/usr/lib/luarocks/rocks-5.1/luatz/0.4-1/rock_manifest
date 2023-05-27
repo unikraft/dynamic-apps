@@ -1,0 +1,28 @@
+rock_manifest = {
+   doc = {
+      Makefile = "1e0e219844501dac690e3d9f743bf85b",
+      ["README.md"] = "77093e4304fb140900da22168ef75883",
+      ["gettime.md"] = "e3c6818b36c51cdb41b6c4dd5df2c46b",
+      ["index.md"] = "49aae1e0983456b6cc6a018e6490f49f",
+      ["links.md"] = "9ab4874bb1540090dbdfef388c99b058",
+      ["metadata.yaml"] = "fbac1fc8b4b31d5eff7aa97c894d708a",
+      ["parse.md"] = "d5ea11723aa6f8b4c1be3a83ef13fc89",
+      ["site.css"] = "e24a70fb22cbe34e535c2eb8f371e87e",
+      ["template.html"] = "47db0590eb8ba3e07a32437d7b2aaff1",
+      ["timetable.md"] = "c744e69abbaf4e9adefa7ad8d5b52c39",
+      ["tzinfo.md"] = "d49c591d427f6573671d97ecb69cd764"
+   },
+   lua = {
+      luatz = {
+         ["gettime.lua"] = "520e2463487b972ab7b5fdccc31f5673",
+         ["init.lua"] = "2e4e1b468bf46be3d8965da92f615d18",
+         ["parse.lua"] = "38ad9656e7a36042044fdd7bf9ec332f",
+         ["strftime.lua"] = "fd4adc3335ee037f10b5e980e989367c",
+         ["timetable.lua"] = "9a68c634c132901c9134f0af640ef57a",
+         ["tzcache.lua"] = "5970a46631d8af92a5ff32e1c7193b29",
+         ["tzfile.lua"] = "93204c9af4391b4e42174ddc37aeffbf",
+         ["tzinfo.lua"] = "4f109d2dcbe86849e025d37675bfe15a"
+      }
+   },
+   ["luatz-0.4-1.rockspec"] = "80772a925cea2ab53bc33184a6e3b24e"
+}

@@ -1,0 +1,9 @@
+/*
+  This software is copyright Kong Inc. and its licensors.
+  Use of the software is subject to the agreement between your organization
+  and Kong Inc. If there is no such agreement, use is governed by and
+  subject to the terms of the Kong Master Software License Agreement found
+  at https://konghq.com/enterprisesoftwarelicense/.
+*/
+
+.entity-list-emptystate .cta-icon{width:16px;height:16px}.entity-list-emptystate .empty-state-wrapper p{margin-bottom:0}.entity-list-emptystate .empty-state-wrapper p div{display:block}.entity-list-emptystate.transparent-emptystate .empty-state-wrapper{background:transparent;border:none}

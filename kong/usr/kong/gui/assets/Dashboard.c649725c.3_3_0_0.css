@@ -1,0 +1,9 @@
+/*
+  This software is copyright Kong Inc. and its licensors.
+  Use of the software is subject to the agreement between your organization
+  and Kong Inc. If there is no such agreement, use is governed by and
+  subject to the terms of the Kong Master Software License Agreement found
+  at https://konghq.com/enterprisesoftwarelicense/.
+*/
+
+.chart-header .material-icons[data-v-6465e91e]{position:relative;top:3px;font-size:20px}.workspace-vitals-disabled[data-v-6465e91e]{text-align:center}.dashboard-control{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end}.card-grid{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;margin-top:1rem}.card-grid .kong-card,.card-grid .widget{height:100%}.card-grid>div{display:initial;-webkit-box-flex:0;-ms-flex:0 0 50%;flex:0 0 50%;max-width:50%;margin-bottom:1rem;padding:0 .5rem}.card-grid>div:nth-of-type(odd){padding-left:0}.card-grid>div:nth-of-type(even){padding-right:0}@media only screen and (max-width: 1000px){.card-grid>div{-webkit-box-flex:0;-ms-flex:0 0 100%;flex:0 0 100%;max-width:100%;padding:0}}.chart-card[data-v-c6679b92]{padding:0!important}

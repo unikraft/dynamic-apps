@@ -1,0 +1,17 @@
+rock_manifest = {
+   doc = {
+      ["CHANGELOG.md"] = "c77e90bfb115557c7280093ef5eb8a60",
+      ["README.md"] = "ae88cf5c7ac08ed271d18b32bd2c3a0c"
+   },
+   ["kong-plugin-xml-threat-protection-3.3.0-0.rockspec"] = "856adf89000474def3ddc5fef7b15f3f",
+   lua = {
+      kong = {
+         plugins = {
+            ["xml-threat-protection"] = {
+               ["handler.lua"] = "3b508864df5cbe61b1cf0bfe79fc513d",
+               ["schema.lua"] = "b0f47307c22b82125f511d54535107d7"
+            }
+         }
+      }
+   }
+}

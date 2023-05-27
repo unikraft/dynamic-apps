@@ -1,0 +1,12 @@
+rock_manifest = {
+   doc = {
+      LICENSE = "86d3f3a95c324c9479bd8986968f4327",
+      ["README.md"] = "59d57b0e320cba8c6dfbf37a3ecf6da3"
+   },
+   lua = {
+      resty = {
+         ["ipmatcher.lua"] = "d5561aae8b4f417aba85c5b9f5adbfaa"
+      }
+   },
+   ["lua-resty-ipmatcher-0.6.1-0.rockspec"] = "056f92f9ea31b3ee27f0369b923a2d95"
+}

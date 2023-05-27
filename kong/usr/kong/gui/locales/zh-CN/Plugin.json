@@ -1,0 +1,7 @@
+{
+  "ordering": {
+    "title": "顺序",
+    "dynamicDoc": "动态插件顺序 - {docLink}",
+    "defaultDoc": "默认插件执行顺序 - {docLink}"
+  }
+}

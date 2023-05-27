@@ -1,0 +1,21 @@
+rock_manifest = {
+   doc = {
+      ["CHANGELOG.md"] = "2fc663e83316844fcda154655ab03983"
+   },
+   ["kong-plugin-oas-validation-3.3.0-0.rockspec"] = "bba2c520eedcfb394c2e8b03ebc6ab3d",
+   lua = {
+      kong = {
+         plugins = {
+            ["oas-validation"] = {
+               ["handler.lua"] = "acbd225f26be5d96f19997470ed8be7c",
+               ["schema.lua"] = "708f486ce584dd749295c204b508e1bb",
+               utils = {
+                  ["common.lua"] = "7acb57afabf10f9375f9af06ceea5fb6",
+                  ["spec_parser.lua"] = "2ba5ab3680f78b5967c2ee5b3ea8ca97",
+                  ["validation.lua"] = "8ba41a5653eb05f345df410fc8019e26"
+               }
+            }
+         }
+      }
+   }
+}

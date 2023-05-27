@@ -1,0 +1,21 @@
+rock_manifest = {
+   doc = {
+      ["CHANGELOG.md"] = "96461ab90792dbaa6422b4842d60b86e"
+   },
+   ["kong-plugin-enterprise-canary-3.3.0-0.rockspec"] = "c995570473ba21a1559191953adedccd",
+   lua = {
+      kong = {
+         plugins = {
+            canary = {
+               ["groups.lua"] = "fdfd0410642c7b31140421e848487e7d",
+               ["handler.lua"] = "7beefc1926c760da37140c1daf1fe001",
+               migrations = {
+                  ["001_200_to_210.lua"] = "65c37d78363691d64183b7509be24380",
+                  ["init.lua"] = "ef98d3fd7047bed26f847e2e17f72d93"
+               },
+               ["schema.lua"] = "3c19382e1dc13463c939ee4d7c2138dd"
+            }
+         }
+      }
+   }
+}

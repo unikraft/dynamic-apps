@@ -1,0 +1,57 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+msgid ""
+"---\n"
+"title: luacs\n"
+"---"
+msgstr ""
+
+msgid "# `luacs` module"
+msgstr "# `luacs`モジュール"
+
+msgid "## Summary"
+msgstr "## 概要"
+
+msgid "It's the main module."
+msgstr "メインモジュールです。"
+
+msgid "## Module functions"
+msgstr "## モジュール関数"
+
+msgid "### `to_xpaths(css_selectors_group) -> {xpath1, xpath2, ...}` {#to-xpaths}"
+msgstr ""
+
+msgid "It converts CSS Selectors to one or more XPaths."
+msgstr "CSSセレクターを1つ以上のXPathに変換します。"
+
+msgid "Example:"
+msgstr "例："
+
+msgid ""
+"```lua\n"
+"local luacs = require(\"luacs\")"
+msgstr ""
+
+msgid ""
+"-- Convert CSS Selectors to XPaths\n"
+"local xpaths = luacs.to_xpaths(\"ul li, a.external\")"
+msgstr ""
+"-- CSSセレクターをXPathに変換\n"
+"local xpaths = luacs.to_xpaths(\"ul li, a.external\")"
+
+msgid ""
+"for _, xpath in ipairs(xpaths) do\n"
+"  print(xpath)\n"
+"  -- /descendant::*[local-name()='ul']/descendant::*[local-name()='li']\n"
+"  -- /descendant::*[local-name()='a'][@class][contains(concat(' ', normalize-s"
+"pace(@class), ' '), ' external ')]\n"
+"end\n"
+"```"
+msgstr ""

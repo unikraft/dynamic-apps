@@ -1,0 +1,16 @@
+rock_manifest = {
+   doc = {
+      ["CHANGELOG.md"] = "e0174ad456d7a070d886c370da7ad9bc"
+   },
+   ["kong-plugin-enterprise-rate-limiting-3.3.0-0.rockspec"] = "3ada15c4d51cd4b0a68ea7610c4eefe7",
+   lua = {
+      kong = {
+         plugins = {
+            ["rate-limiting-advanced"] = {
+               ["handler.lua"] = "f8b4712bbd7499bc9603c006e4215710",
+               ["schema.lua"] = "fe668f5bb5ebdc3cd15ef8c80c74908e"
+            }
+         }
+      }
+   }
+}

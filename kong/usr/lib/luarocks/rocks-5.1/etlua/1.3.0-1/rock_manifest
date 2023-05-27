@@ -1,0 +1,9 @@
+rock_manifest = {
+   doc = {
+      ["README.md"] = "91d249bf7fbefd57348cd7fab61adf2e"
+   },
+   ["etlua-1.3.0-1.rockspec"] = "aa029245f4310f84993491e537cc9055",
+   lua = {
+      ["etlua.lua"] = "d46f75505f460d017c13cd5867d2d439"
+   }
+}

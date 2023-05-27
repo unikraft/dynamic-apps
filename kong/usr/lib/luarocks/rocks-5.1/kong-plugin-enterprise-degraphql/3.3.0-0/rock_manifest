@@ -1,0 +1,22 @@
+rock_manifest = {
+   doc = {
+      ["CHANGELOG.md"] = "283a4013a021231c303801c01f9f4d1d"
+   },
+   ["kong-plugin-enterprise-degraphql-3.3.0-0.rockspec"] = "72da02abf139180b848712940a83414b",
+   lua = {
+      kong = {
+         plugins = {
+            degraphql = {
+               ["api.lua"] = "d6c8606ab35b8b45ff51fe2aab6a903e",
+               ["daos.lua"] = "f356acac90ce019b514983ed063dea00",
+               ["handler.lua"] = "a55f4d5bead50efa26c064b52039698c",
+               migrations = {
+                  ["000_base.lua"] = "52fd512db632bd73b729b60e9b5916de",
+                  ["init.lua"] = "ac2ea2404040fc477b3c38395bae4027"
+               },
+               ["schema.lua"] = "0566f66bc45a76f67df6685146814130"
+            }
+         }
+      }
+   }
+}

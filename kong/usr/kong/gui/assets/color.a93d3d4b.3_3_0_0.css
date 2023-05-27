@@ -1,0 +1,9 @@
+/*
+  This software is copyright Kong Inc. and its licensors.
+  Use of the software is subject to the agreement between your organization
+  and Kong Inc. If there is no such agreement, use is governed by and
+  subject to the terms of the Kong Master Software License Agreement found
+  at https://konghq.com/enterprisesoftwarelicense/.
+*/
+
+.file-upload input[type=file][data-v-a9b9c9a5]{position:absolute;top:-1000px}.file-upload[data-v-a9b9c9a5]{margin-top:.5rem;padding:0 3px!important;cursor:pointer;display:-webkit-box!important;display:-ms-flexbox!important;display:flex!important;-webkit-box-align:center;-ms-flex-align:center;align-items:center;height:2.5rem}.file-upload i[data-v-a9b9c9a5]{background-color:var(--grey-100);color:var(--grey-400);border-radius:3px;font-size:1.2rem;padding:6px}.file-upload span[data-v-a9b9c9a5],.file-upload .btn-link[data-v-a9b9c9a5]{padding:3px 15px 5px;color:var(--blue-500)}.file-upload .btn-link[data-v-a9b9c9a5]{-ms-flex-negative:0;flex-shrink:0}.file-upload[data-v-a9b9c9a5]:hover{background:rgba(1,1,1,.02)}.file-upload[data-v-a9b9c9a5]:active{background:rgba(1,1,1,.1)}.file-upload :invalid+span[data-v-a9b9c9a5]{color:var(--red-500)}.file-upload :valid+span[data-v-a9b9c9a5]{color:#000}

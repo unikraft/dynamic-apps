@@ -1,0 +1,13 @@
+rock_manifest = {
+   ["kong-plugin-jwe-decrypt-3.3.0-0.rockspec"] = "9dc6ab8e2e634c3631e2d6e8774df37f",
+   lua = {
+      kong = {
+         plugins = {
+            ["jwe-decrypt"] = {
+               ["handler.lua"] = "ebd603d9ee85d7eee2c4550c4ec583fd",
+               ["schema.lua"] = "f942b23815cb7a2db02195cbdb448f54"
+            }
+         }
+      }
+   }
+}

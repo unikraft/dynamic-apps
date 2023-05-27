@@ -1,0 +1,1 @@
+../nginx/sbin/nginx

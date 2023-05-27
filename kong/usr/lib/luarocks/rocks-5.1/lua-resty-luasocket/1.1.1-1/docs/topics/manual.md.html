@@ -1,0 +1,188 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<head>
+    <title>lua-resty-luasocket docs</title>
+    <link rel="stylesheet" href="../ldoc.css" type="text/css" />
+</head>
+<body>
+
+<div id="container">
+
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div> <!-- id="product" -->
+
+
+<div id="main">
+
+
+<!-- Menu -->
+
+<div id="navigation">
+<br/>
+<h1>lua-resty-luasocket</h1>
+
+<ul>
+  <li><a href="../index.html">Index</a></li>
+</ul>
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#Features">Features </a></li>
+<li><a href="#Motivation">Motivation </a></li>
+<li><a href="#Libraries_using_it">Libraries using it </a></li>
+<li><a href="#Important_notes">Important notes </a></li>
+<li><a href="#Requirements">Requirements </a></li>
+<li><a href="#Installation">Installation </a></li>
+</ul>
+
+
+<h2>Topics</h2>
+<ul class="">
+  <li><a href="../topics/CHANGELOG.md.html">CHANGELOG</a></li>
+  <li><a href="../topics/LICENSE.md.html">The MIT License (MIT)</a></li>
+  <li><strong>Manual</strong></li>
+</ul>
+<h2>Modules</h2>
+<ul class="nowrap">
+  <li><a href="../modules/resty.luasocket.html">resty.luasocket</a></li>
+  <li><a href="../modules/resty.luasocket.http.html">resty.luasocket.http</a></li>
+</ul>
+<h2>Examples</h2>
+<ul class="nowrap">
+  <li><a href="../examples/example.lua.html">example.lua</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+
+<h1>Manual</h1>
+
+<p>cosocket/LuaSocket automatic compatibility module for lua-resty modules wanting
+to be compatible with plain Lua or OpenResty's <code>init</code> context.</p>
+
+<p>The use case for this library is: you are developing a lua-resty module relying
+on cosockets, but you want it to also be usable in OpenResty's <code>init</code> context
+or even in plain Lua. This module aims at always providing your library with
+sockets that will be compatible in the current context, saving you time and
+effort, and extending LuaSocket's API to match that of cosockets, allowing you
+to always write your code as if you were in a cosocket-compatible OpenResty
+context.</p>
+
+
+<p><a name="Features"></a></p>
+<h2>Features</h2>
+
+<ul>
+    <li>Allows your lua-resty modules to automatically use cosockets/LuaSocket</li>
+    <li>Provides <code>sslhandshake</code> proxy when using LuaSocket, with a dependency on
+    LuaSec</li>
+    <li>Does not get blocked to using LuaSocket in further contexts if loaded in the
+    ngx_lua <code>init</code> (easy mistake to make)</li>
+    <li>Memoizes underlying socket methods for performance</li>
+    <li>Outputs a warning log for your users when spawning a socket using LuaSocket
+    while in OpenResty</li>
+</ul>
+
+
+<p><a name="Motivation"></a></p>
+<h2>Motivation</h2>
+
+<p>The aim of this module is to provide an automatic fallback to LuaSocket when
+<code>ngx_lua</code>'s cosockets are not available. That is:</p>
+
+<ul>
+    <li>When not used in <code>ngx_lua</code></li>
+    <li>In <code>ngx_lua</code> contexts where cosockets are not supported (<code>init</code>, <code>init_worker</code>, etc...)</li>
+</ul>
+
+<p>When falling back to LuaSocket, it provides you with shims for cosocket-only
+functions such as <code>getreusedtimes</code>, <code>setkeepalive</code> etc...</p>
+
+<p>It comes handy when one is developing a module/library that aims at being
+either compatible with both ngx_lua <strong>and</strong> plain Lua, <strong>or</strong> in ngx_lua
+contexts such as <code>init</code>.</p>
+
+
+<p><a name="Libraries_using_it"></a></p>
+<h2>Libraries using it</h2>
+
+<p>Here are some concrete examples uses of this module. You can see how we only
+write code as if we were constantly in an cosocket-compatible OpenResty
+context, which greatly simplifies our work and provides out of the box plain
+Lua compatibility.</p>
+
+<ul>
+    <li><a href="https://github.com/thibaultcha/lua-cassandra">lua-cassandra</a>: see how the
+    <a href="https://github.com/thibaultcha/lua-cassandra/blob/master/lib/cassandra/init.lua">cassandra</a>
+    module is compatible in both OpenResty and plain Lua with no efforts or
+    special code paths distinguishing cosockets and LuaSocket.</li>
+    <li><a href="https://github.com/Kong/lua-resty-aws">lua-resty-aws</a></li>
+    <li><a href="https://github.com/Kong/lua-resty-azure">lua-resty-azure</a></li>
+    <li><a href="https://github.com/Kong/lua-resty-gcp">lua-resty-gcp</a></li>
+</ul>
+
+
+<p><a name="Important_notes"></a></p>
+<h2>Important notes</h2>
+
+<ul>
+    <li>The library will try and find CA-certficates in common locations. If custom certs are
+    to be used that are not in the store, or if you set the OpenResty configuration
+    directive <a href="https://github.com/openresty/lua-nginx-module#lua_ssl_trusted_certificate"><code>lua_sll_trusted_certificate</code></a>
+    then you'll have to manually set the <code>cafile</code> options using <a href="../modules/resty.luasocket.html#set_luasec_defaults">resty.luasocket.set_luasec_defaults</a>.</li>
+    <li>LuaSocket sockets do not allow fo re-use. So always create a new socket.</li>
+    <li>The previous comment also applies to the <code>http</code> module. Do not reuse http clients.</li>
+    <li>Configuring the LuaSec module to be configured the same as <code>ngx_lua</code> is up to the
+    initializer of the module. See <a href="../modules/resty.luasocket.html#get_luasec_defaults">resty.luasocket.get_luasec_defaults</a> documentation for an example.</li>
+    <li>The use of LuaSocket inside <code>ngx_lua</code> is <strong>very strongly</strong> discouraged due to its
+    blocking nature. However, it is fine to use it in the <code>init</code> context where
+    blocking is not considered harmful.</li>
+    <li>It currently only support TCP sockets.</li>
+</ul>
+
+
+<p><a name="Requirements"></a></p>
+<h2>Requirements</h2>
+
+<p><strong>As long as sockets are created in contexts with support for cosockets, this
+module will never require LuaSocket nor LuaSec.</strong></p>
+
+<ul>
+    <li>LuaSocket (only if sockets are created where cosockets don't exist)</li>
+    <li>LuaSec (only if the fallbacked socket attempts to perform an SSL handshake)</li>
+</ul>
+
+
+<p><a name="Installation"></a></p>
+<h2>Installation</h2>
+
+<p>This module can either be copied in a lua-resty library, allowing one to
+modify the list of contexts allowing fallback.</p>
+
+<p>It can also be installed via LuaRocks:</p>
+
+
+<pre>
+$ luarocks install lua-resty-luasocket
+</pre>
+
+
+
+
+
+</div> <!-- id="content" -->
+</div> <!-- id="main" -->
+<div id="about">
+<i>generated by <a href="http://github.com/stevedonovan/LDoc">LDoc 1.4.6</a></i>
+<i style="float:right;">Last updated 2023-04-24 13:09:54 </i>
+</div> <!-- id="about" -->
+</div> <!-- id="container" -->
+</body>
+</html>

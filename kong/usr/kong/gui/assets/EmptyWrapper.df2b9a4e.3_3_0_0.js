@@ -1,0 +1,9 @@
+/*
+  This software is copyright Kong Inc. and its licensors.
+  Use of the software is subject to the agreement between your organization
+  and Kong Inc. If there is no such agreement, use is governed by and
+  subject to the terms of the Kong Master Software License Agreement found
+  at https://konghq.com/enterprisesoftwarelicense/.
+*/
+
+import{_ as b,r as l,o as a,c as g,G as x,l as s,w as e,d as r,t as n,K as C,E as i,h as d,V as S,__tla as R}from"./index.84d84090.3_3_0_0.js";let o,q=Promise.all([(()=>{try{return R}catch{}})()]).then(async()=>{const u={name:"EmptyWrapper",provide(){return{onHasResults:this.onHasResults}},props:{title:{type:String,required:!0},message:{type:String,required:!0},ctaText:{type:String,required:!1,default:""},ctaIsHidden:{type:Boolean,required:!1,default:!1},rbacSettings:{type:Object,required:!1,default:()=>({})},handleClick:{type:Function,default:()=>()=>null,required:!1},transparent:{type:Boolean,default:!1},buttonProps:{type:Object,default:()=>({appearance:"outline"})}},data(){return{hasResults:!1}},computed:{classNames(){return["empty-wrapper",{"empty-wrapper-transparent":this.transparent}]}},methods:{onHasResults(){this.hasResults=!0}}};function p(y,w,t,E,h,m){const c=l("KButton"),k=l("RbacValidate"),_=l("KEmptyState");return a(),g("div",{class:S(m.classNames)},[x(y.$slots,"default"),h.hasResults?d("",!0):(a(),s(_,{key:0,"cta-text":t.ctaText,"cta-is-hidden":t.ctaIsHidden},{title:e(()=>[r(n(t.title),1)]),message:e(()=>[r(n(t.message),1)]),cta:e(()=>[t.rbacSettings.workspace?(a(),s(k,C(i({key:0},t.rbacSettings)),{default:e(({isAllowed:f})=>[f?(a(),s(c,i({key:0},t.buttonProps,{onClick:t.handleClick}),{default:e(()=>[r(n(t.ctaText),1)]),_:1},16,["onClick"])):d("",!0)]),_:1},16)):(a(),s(c,i({key:1},t.buttonProps,{onClick:t.handleClick}),{default:e(()=>[r(n(t.ctaText),1)]),_:1},16,["onClick"]))]),_:1},8,["cta-text","cta-is-hidden"]))],2)}o=b(u,[["render",p]])});export{o as E,q as __tla};

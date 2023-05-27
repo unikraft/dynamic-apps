@@ -1,0 +1,26 @@
+rock_manifest = {
+   doc = {
+      ["CHANGELOG.md"] = "10626c134edf0a7dd420fee5b0ca6bf5"
+   },
+   ["kong-plugin-vault-auth-3.3.0-0.rockspec"] = "adea3dd2c087ac4156edc72060379d8f",
+   lua = {
+      kong = {
+         plugins = {
+            ["vault-auth"] = {
+               ["api.lua"] = "57dd728d0a4053f318d8e0fbc6fd81ed",
+               ["daos.lua"] = "f239768479277d8bf07d0af5c1ceecc2",
+               ["handler.lua"] = "10766d88cae3a0fe35f7d8c3da871cbf",
+               migrations = {
+                  ["000_base_vault_auth.lua"] = "c06cdd070d934d4ae3311dab2032be06",
+                  ["001_280_to_300.lua"] = "8203640ba6445b653d4f500f186ec667",
+                  ["002_300_to_310.lua"] = "c57a06baf38a90e9dc1a5c8fe3526834",
+                  ["init.lua"] = "d6d8481be3cd398387969509ac9d0628"
+               },
+               ["schema.lua"] = "e15598a1ff3d0ef9c43442ce2c6da84c",
+               ["vault-daos.lua"] = "aae04a2e78a39feb6cff648e486f593a",
+               ["vault.lua"] = "6bceea05289bf9f27daec085a3dade9e"
+            }
+         }
+      }
+   }
+}

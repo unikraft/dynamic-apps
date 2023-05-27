@@ -1,0 +1,32 @@
+rock_manifest = {
+   doc = {
+      ["CHANGELOG.md"] = "31b5fde62e2f1b1ec9a0743b5bdfb53d"
+   },
+   ["kong-plugin-mocking-3.3.0-0.rockspec"] = "ea78d1f3c8bbb3ccab1aa71a73ee089d",
+   lua = {
+      kong = {
+         plugins = {
+            mocking = {
+               ["constants.lua"] = "cf5921e3a59012e69c74d1148a5c4724",
+               ["handler.lua"] = "55bd93a7239cc93d0a1df127b71a2a78",
+               ["jsonschema-mocker"] = {
+                  ["constants.lua"] = "07deae3ce1bf691c9fcd5c04c34f4012",
+                  ["mocker.lua"] = "2f282f6fc9c16c0e1e7d130f4d95e43b",
+                  type = {
+                     ["boolean.lua"] = "1de807f36934929577839a03123701f8",
+                     ["integer.lua"] = "f7eab19ba26f698f555e7a116031f6a6",
+                     ["number.lua"] = "2d9c33dba95d802b6d7319c8ce0d1ed9",
+                     ["string.lua"] = "f8713712f964055124d0f76f99550ff5"
+                  }
+               },
+               ["mime_parse.lua"] = "58dc183205e49456582271d364ffc125",
+               ["schema.lua"] = "63aa531b04a12e7848c0fc111cdc7a0c",
+               ["swagger-parser"] = {
+                  ["dereference.lua"] = "39c176bf082a9d588f235cd12092ac33",
+                  ["swagger_parser.lua"] = "bdc64884c38a86775b5e524a89be14c3"
+               }
+            }
+         }
+      }
+   }
+}

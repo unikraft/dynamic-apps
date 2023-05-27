@@ -1,0 +1,632 @@
+{
+  "schema_version": "1",
+  "product": {
+    "name": "Kong Gateway",
+    "luarocks": [
+      {
+        "name": "ansicolors",
+        "version": "1.0.2-3",
+        "license": "MIT <http://opensource.org/licenses/MIT>",
+        "homepage": "https://github.com/kikito/ansicolors.lua"
+      },
+      {
+        "name": "bcrypt",
+        "version": "2.3-1",
+        "license": "ISC",
+        "homepage": "http://github.com/mikejsavage/lua-bcrypt"
+      },
+      {
+        "name": "binaryheap",
+        "version": "0.4-1",
+        "license": "MIT/X11",
+        "homepage": "https://github.com/Tieske/binaryheap.lua"
+      },
+      {
+        "name": "datafile",
+        "version": "0.9-1",
+        "license": "MIT/X11",
+        "homepage": "http://github.com/hishamhm/datafile"
+      },
+      {
+        "name": "date",
+        "version": "2.2-2",
+        "license": "MIT",
+        "homepage": "https://github.com/Tieske/date"
+      },
+      {
+        "name": "etlua",
+        "version": "1.3.0-1",
+        "license": "MIT",
+        "homepage": "https://github.com/leafo/etlua"
+      },
+      {
+        "name": "inspect",
+        "version": "3.1.3-0",
+        "license": "MIT <http://opensource.org/licenses/MIT>",
+        "homepage": "https://github.com/kikito/inspect.lua"
+      },
+      {
+        "name": "kong",
+        "version": "3.3.0-0",
+        "license": "Apache 2.0",
+        "homepage": "https://konghq.com"
+      },
+      {
+        "name": "kong-gql",
+        "version": "0.2.3-0",
+        "license": "MIT",
+        "homepage": "https://github.com/baokong/kong-gql"
+      },
+      {
+        "name": "kong-lapis",
+        "version": "1.8.3.1-1",
+        "license": "MIT",
+        "homepage": ""
+      },
+      {
+        "name": "kong-lua-resty-kafka",
+        "version": "0.15-0",
+        "license": "BSD",
+        "homepage": "https://github.com/kong/lua-resty-kafka"
+      },
+      {
+        "name": "kong-luasec",
+        "version": "1.2.1-1",
+        "license": "MIT",
+        "homepage": "https://github.com/brunoos/luasec/wiki"
+      },
+      {
+        "name": "kong-openid-connect",
+        "version": "2.5.5-1",
+        "license": "",
+        "homepage": "https://github.com/Kong/kong-openid-connect"
+      },
+      {
+        "name": "kong-pgmoon",
+        "version": "2.3.2.0-1",
+        "license": "MIT",
+        "homepage": "https://github.com/Kong/pgmoon"
+      },
+      {
+        "name": "kong-plugin-app-dynamics",
+        "version": "3.3.0-0",
+        "license": "",
+        "homepage": ""
+      },
+      {
+        "name": "kong-plugin-enterprise-application-registration",
+        "version": "3.3.0-0",
+        "license": "",
+        "homepage": ""
+      },
+      {
+        "name": "kong-plugin-enterprise-canary",
+        "version": "3.3.0-0",
+        "license": "",
+        "homepage": ""
+      },
+      {
+        "name": "kong-plugin-enterprise-degraphql",
+        "version": "3.3.0-0",
+        "license": "Kong proprietary license",
+        "homepage": "https://konghq.com"
+      },
+      {
+        "name": "kong-plugin-enterprise-exit-transformer",
+        "version": "3.3.0-0",
+        "license": "",
+        "homepage": ""
+      },
+      {
+        "name": "kong-plugin-enterprise-forward-proxy",
+        "version": "3.3.0-0",
+        "license": "",
+        "homepage": ""
+      },
+      {
+        "name": "kong-plugin-enterprise-graphql-proxy-cache-advanced",
+        "version": "3.3.0-0",
+        "license": "",
+        "homepage": ""
+      },
+      {
+        "name": "kong-plugin-enterprise-graphql-rate-limiting-advanced",
+        "version": "3.3.0-0",
+        "license": "MIT",
+        "homepage": "https://github.com/Kong/kong-plugin-enterprise-gql-rate-limiting"
+      },
+      {
+        "name": "kong-plugin-enterprise-ldap-auth",
+        "version": "3.3.0-0",
+        "license": "",
+        "homepage": ""
+      },
+      {
+        "name": "kong-plugin-enterprise-oauth2-introspection",
+        "version": "3.3.0-0",
+        "license": "",
+        "homepage": ""
+      },
+      {
+        "name": "kong-plugin-enterprise-openid-connect",
+        "version": "3.3.0-0",
+        "license": "",
+        "homepage": "https://github.com/Kong/kong-plugin-enterprise-openid-connect"
+      },
+      {
+        "name": "kong-plugin-enterprise-proxy-cache",
+        "version": "3.3.0-0",
+        "license": "",
+        "homepage": ""
+      },
+      {
+        "name": "kong-plugin-enterprise-rate-limiting",
+        "version": "3.3.0-0",
+        "license": "",
+        "homepage": ""
+      },
+      {
+        "name": "kong-plugin-enterprise-request-transformer",
+        "version": "3.3.0-0",
+        "license": "",
+        "homepage": ""
+      },
+      {
+        "name": "kong-plugin-enterprise-route-by-header",
+        "version": "3.3.0-0",
+        "license": "",
+        "homepage": "http://getkong.org"
+      },
+      {
+        "name": "kong-plugin-jq",
+        "version": "3.3.0-0",
+        "license": "",
+        "homepage": ""
+      },
+      {
+        "name": "kong-plugin-jwe-decrypt",
+        "version": "3.3.0-0",
+        "license": "",
+        "homepage": "https://docs.konghq.com/hub/kong-inc/jwe-decrypt/"
+      },
+      {
+        "name": "kong-plugin-jwt-signer",
+        "version": "3.3.0-0",
+        "license": "",
+        "homepage": "https://github.com/Kong/kong-plugin-jwt-signer"
+      },
+      {
+        "name": "kong-plugin-kafka-log",
+        "version": "3.3.0-0",
+        "license": "",
+        "homepage": "https://github.com/kong/kong-plugin-kafka-log"
+      },
+      {
+        "name": "kong-plugin-kafka-upstream",
+        "version": "3.3.0-0",
+        "license": "",
+        "homepage": "https://github.com/kong/kong-plugin-kafka-upstream"
+      },
+      {
+        "name": "kong-plugin-key-auth-enc",
+        "version": "3.3.0-0",
+        "license": "",
+        "homepage": ""
+      },
+      {
+        "name": "kong-plugin-konnect-application-auth",
+        "version": "3.3.0-0",
+        "license": "",
+        "homepage": ""
+      },
+      {
+        "name": "kong-plugin-mocking",
+        "version": "3.3.0-0",
+        "license": "Apache 2.0",
+        "homepage": "http://getkong.org"
+      },
+      {
+        "name": "kong-plugin-mtls-auth",
+        "version": "3.3.0-0",
+        "license": "",
+        "homepage": ""
+      },
+      {
+        "name": "kong-plugin-oas-validation",
+        "version": "3.3.0-0",
+        "license": "",
+        "homepage": ""
+      },
+      {
+        "name": "kong-plugin-opa",
+        "version": "3.3.0-0",
+        "license": "Apache 2.0",
+        "homepage": ""
+      },
+      {
+        "name": "kong-plugin-request-validator",
+        "version": "3.3.0-0",
+        "license": "",
+        "homepage": ""
+      },
+      {
+        "name": "kong-plugin-response-transformer-advanced",
+        "version": "3.3.0-0",
+        "license": "",
+        "homepage": ""
+      },
+      {
+        "name": "kong-plugin-route-transformer-advanced",
+        "version": "3.3.0-0",
+        "license": "",
+        "homepage": ""
+      },
+      {
+        "name": "kong-plugin-saml",
+        "version": "3.3.0-0",
+        "license": "Apache 2.0",
+        "homepage": ""
+      },
+      {
+        "name": "kong-plugin-statsd-advanced",
+        "version": "3.3.0-0",
+        "license": "",
+        "homepage": ""
+      },
+      {
+        "name": "kong-plugin-tls-handshake-modifier",
+        "version": "3.3.0-0",
+        "license": "Apache 2.0",
+        "homepage": ""
+      },
+      {
+        "name": "kong-plugin-tls-metadata-headers",
+        "version": "3.3.0-0",
+        "license": "Apache 2.0",
+        "homepage": ""
+      },
+      {
+        "name": "kong-plugin-upstream-timeout",
+        "version": "3.3.0-0",
+        "license": "",
+        "homepage": ""
+      },
+      {
+        "name": "kong-plugin-vault-auth",
+        "version": "3.3.0-0",
+        "license": "",
+        "homepage": ""
+      },
+      {
+        "name": "kong-plugin-websocket-size-limit",
+        "version": "3.3.0-0",
+        "license": "",
+        "homepage": ""
+      },
+      {
+        "name": "kong-plugin-websocket-validator",
+        "version": "3.3.0-0",
+        "license": "",
+        "homepage": ""
+      },
+      {
+        "name": "kong-plugin-xml-threat-protection",
+        "version": "3.3.0-0",
+        "license": "Kong proprietary, see your Kong Enterprise license",
+        "homepage": "https://github.com/Kong/kong-plugin-xml-threat-protection"
+      },
+      {
+        "name": "kong-redis-cluster",
+        "version": "1.5.0-0",
+        "license": "Apache License 2.0",
+        "homepage": "https://github.com/Kong/resty-redis-cluster"
+      },
+      {
+        "name": "loadkit",
+        "version": "1.1.0-1",
+        "license": "MIT",
+        "homepage": "https://github.com/leafo/loadkit"
+      },
+      {
+        "name": "lpeg",
+        "version": "1.0.2-1",
+        "license": "MIT/X11",
+        "homepage": "http://www.inf.puc-rio.br/~roberto/lpeg.html"
+      },
+      {
+        "name": "lpeg_patterns",
+        "version": "0.5-0",
+        "license": "MIT",
+        "homepage": ""
+      },
+      {
+        "name": "lua-cassandra",
+        "version": "1.5.2-0",
+        "license": "MIT",
+        "homepage": "https://github.com/thibaultcha/lua-cassandra"
+      },
+      {
+        "name": "lua-ffi-zlib",
+        "version": "0.5-0",
+        "license": "",
+        "homepage": "https://github.com/hamishforbes/lua-ffi-zlib"
+      },
+      {
+        "name": "lua-messagepack",
+        "version": "0.5.2-1",
+        "license": "MIT/X11",
+        "homepage": "https://fperrad.frama.io/lua-MessagePack/"
+      },
+      {
+        "name": "lua-protobuf",
+        "version": "0.5.0-1",
+        "license": "MIT",
+        "homepage": "https://github.com/starwing/lua-protobuf"
+      },
+      {
+        "name": "lua-resty-acme",
+        "version": "0.11.0-1",
+        "license": "BSD",
+        "homepage": "https://github.com/fffonion/lua-resty-acme"
+      },
+      {
+        "name": "lua-resty-aws",
+        "version": "1.2.2-1",
+        "license": "Apache 2.0",
+        "homepage": "https://Kong.github.io/lua-resty-aws/topics/README.md.html"
+      },
+      {
+        "name": "lua-resty-cookie",
+        "version": "0.1.0-2",
+        "license": "BSD",
+        "homepage": "https://github.com/utix/lua-resty-cookie"
+      },
+      {
+        "name": "lua-resty-counter",
+        "version": "0.2.1-1",
+        "license": "Apache",
+        "homepage": "https://github.com/Kong/lua-resty-counter"
+      },
+      {
+        "name": "lua-resty-gcp",
+        "version": "0.0.12-1",
+        "license": "Apache 2.0",
+        "homepage": ""
+      },
+      {
+        "name": "lua-resty-healthcheck",
+        "version": "1.6.2-1",
+        "license": "Apache 2.0",
+        "homepage": "https://github.com/Kong/lua-resty-healthcheck"
+      },
+      {
+        "name": "lua-resty-http",
+        "version": "0.17.1-0",
+        "license": "2-clause BSD",
+        "homepage": "https://github.com/ledgetech/lua-resty-http"
+      },
+      {
+        "name": "lua-resty-ipmatcher",
+        "version": "0.6.1-0",
+        "license": "Apache License 2.0",
+        "homepage": "https://github.com/api7/lua-resty-ipmatcher"
+      },
+      {
+        "name": "lua-resty-jit-uuid",
+        "version": "0.0.7-2",
+        "license": "MIT",
+        "homepage": "http://thibaultcha.github.io/lua-resty-jit-uuid/"
+      },
+      {
+        "name": "lua-resty-jq",
+        "version": "0.1.0-0",
+        "license": "BSD",
+        "homepage": ""
+      },
+      {
+        "name": "lua-resty-jwt",
+        "version": "0.2.3-0",
+        "license": "Apache License Version 2",
+        "homepage": "https://github.com/cdbattags/lua-resty-jwt"
+      },
+      {
+        "name": "lua-resty-ljsonschema",
+        "version": "1.1.3-1",
+        "license": "MIT/X11",
+        "homepage": "https://github.com/Tieske/lua-resty-ljsonschema"
+      },
+      {
+        "name": "lua-resty-ljsonschema",
+        "version": "1.1.2-1",
+        "license": "MIT/X11",
+        "homepage": "https://github.com/Tieske/lua-resty-ljsonschema"
+      },
+      {
+        "name": "lua-resty-luasocket",
+        "version": "1.1.1-1",
+        "license": "MIT",
+        "homepage": "https://github.com/Tieske/lua-resty-luasocket"
+      },
+      {
+        "name": "lua-resty-mail",
+        "version": "1.0.2-1",
+        "license": "MIT",
+        "homepage": "https://github.com/GUI/lua-resty-mail"
+      },
+      {
+        "name": "lua-resty-mlcache",
+        "version": "2.6.0-2",
+        "license": "MIT",
+        "homepage": "https://github.com/thibaultcha/lua-resty-mlcache"
+      },
+      {
+        "name": "lua-resty-openapi3-deserializer",
+        "version": "2.0.0-1",
+        "license": "closed",
+        "homepage": "https://github.com/Kong/openapi3-deserializer"
+      },
+      {
+        "name": "lua-resty-openssl",
+        "version": "0.8.21-1",
+        "license": "BSD",
+        "homepage": "https://github.com/fffonion/lua-resty-openssl"
+      },
+      {
+        "name": "lua-resty-passwdqc",
+        "version": "1.1-1",
+        "license": "BSD",
+        "homepage": "https://github.com/bungle/lua-resty-passwdqc"
+      },
+      {
+        "name": "lua-resty-redis-connector",
+        "version": "0.11.0-0",
+        "license": "2-clause BSD",
+        "homepage": "https://github.com/ledgetech/lua-resty-redis-connector"
+      },
+      {
+        "name": "lua-resty-session",
+        "version": "4.0.3-1",
+        "license": "BSD",
+        "homepage": "https://github.com/bungle/lua-resty-session"
+      },
+      {
+        "name": "lua-resty-template",
+        "version": "1.9-1",
+        "license": "BSD",
+        "homepage": "https://github.com/bungle/lua-resty-template"
+      },
+      {
+        "name": "lua-resty-timer",
+        "version": "1.1.0-1",
+        "license": "Apache 2.0",
+        "homepage": "https://github.com/kong/lua-resty-timer"
+      },
+      {
+        "name": "lua-resty-timer-ng",
+        "version": "0.2.5-1",
+        "license": "Apache 2.0",
+        "homepage": "https://github.com/kong/lua-resty-timer-ng"
+      },
+      {
+        "name": "lua-resty-websocket-proxy",
+        "version": "0.0.1-1",
+        "license": "Apache 2.0",
+        "homepage": "https://github.com/Kong/lua-resty-websocket-proxy"
+      },
+      {
+        "name": "lua_pack",
+        "version": "2.0.0-0",
+        "license": "MIT",
+        "homepage": "https://github.com/mashape/lua-pack"
+      },
+      {
+        "name": "lua_system_constants",
+        "version": "0.1.4-0",
+        "license": "MIT",
+        "homepage": "https://github.com/kong/lua-system-constants"
+      },
+      {
+        "name": "luacs",
+        "version": "1.0.2-0",
+        "license": "MIT",
+        "homepage": "https://clear-code.github.io/luacs/"
+      },
+      {
+        "name": "luaexpat",
+        "version": "1.5.1-1",
+        "license": "MIT/X11",
+        "homepage": "https://lunarmodules.github.io/luaexpat"
+      },
+      {
+        "name": "luafilesystem",
+        "version": "1.8.0-1",
+        "license": "MIT/X11",
+        "homepage": ""
+      },
+      {
+        "name": "lualogging",
+        "version": "1.8.2-1",
+        "license": "MIT/X11",
+        "homepage": "https://github.com/lunarmodules/lualogging"
+      },
+      {
+        "name": "luarocks",
+        "version": "3.9.2-1",
+        "license": "MIT",
+        "homepage": "http://www.luarocks.org"
+      },
+      {
+        "name": "luasocket",
+        "version": "3.0rc1-2",
+        "license": "MIT",
+        "homepage": "http://luaforge.net/projects/luasocket/"
+      },
+      {
+        "name": "luasyslog",
+        "version": "2.0.1-1",
+        "license": "MIT/X11",
+        "homepage": "https://github.com/lunarmodules/luasyslog"
+      },
+      {
+        "name": "luatz",
+        "version": "0.4-1",
+        "license": "MIT",
+        "homepage": ""
+      },
+      {
+        "name": "luautf8",
+        "version": "0.1.5-2",
+        "license": "MIT",
+        "homepage": "http://github.com/starwing/luautf8"
+      },
+      {
+        "name": "luaxxhash",
+        "version": "1.0.0-1",
+        "license": "MIT",
+        "homepage": "https://github.com/szensk/luaxxhash"
+      },
+      {
+        "name": "lyaml",
+        "version": "6.2.8-1",
+        "license": "MIT/X11",
+        "homepage": "http://github.com/gvvaughan/lyaml"
+      },
+      {
+        "name": "multipart",
+        "version": "0.5.9-1",
+        "license": "MIT",
+        "homepage": "https://github.com/Kong/lua-multipart"
+      },
+      {
+        "name": "net-url",
+        "version": "1.1-1",
+        "license": "MIT/X11",
+        "homepage": "https://github.com/golgote/neturl"
+      },
+      {
+        "name": "penlight",
+        "version": "1.13.1-1",
+        "license": "MIT/X11",
+        "homepage": "https://lunarmodules.github.io/penlight"
+      },
+      {
+        "name": "pgmoon",
+        "version": "1.16.0-1",
+        "license": "MIT",
+        "homepage": "https://github.com/leafo/pgmoon"
+      },
+      {
+        "name": "version",
+        "version": "1.0.1-2",
+        "license": "Apache 2.0",
+        "homepage": "https://github.com/Kong/version.lua"
+      },
+      {
+        "name": "xmlua",
+        "version": "1.2.0-0",
+        "license": "MIT",
+        "homepage": "https://clear-code.github.io/xmlua/"
+      }
+    ]
+  }
+}

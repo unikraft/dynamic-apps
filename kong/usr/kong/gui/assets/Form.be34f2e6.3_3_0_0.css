@@ -1,0 +1,9 @@
+/*
+  This software is copyright Kong Inc. and its licensors.
+  Use of the software is subject to the agreement between your organization
+  and Kong Inc. If there is no such agreement, use is governed by and
+  subject to the terms of the Kong Master Software License Agreement found
+  at https://konghq.com/enterprisesoftwarelicense/.
+*/
+
+.roles-table{--KEmptyContentColor: var(--black-70);--KEmptyBackground: rgba(0,0,0,.03)}.roles-table .empty-state-wrapper{border-radius:3px;border:1px solid hsla(0deg,0%,59.2%,.1)}

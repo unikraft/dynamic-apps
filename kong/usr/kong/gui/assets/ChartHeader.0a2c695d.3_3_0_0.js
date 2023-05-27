@@ -1,0 +1,9 @@
+/*
+  This software is copyright Kong Inc. and its licensors.
+  Use of the software is subject to the agreement between your organization
+  and Kong Inc. If there is no such agreement, use is governed by and
+  subject to the terms of the Kong Master Software License Agreement found
+  at https://konghq.com/enterprisesoftwarelicense/.
+*/
+
+import{_ as T,z as K,Q as C,r as i,c as r,a as t,G as o,l as E,w as s,h as d,o as n,t as c,d as f,b as S,p as $,e as B,__tla as H}from"./index.84d84090.3_3_0_0.js";let p,I=Promise.all([(()=>{try{return H}catch{}})()]).then(async()=>{const u={name:"ChartHeader",props:{isLoading:{type:Boolean,default:!0},title:{type:String,default:""},infoText:{type:String,default:""}},computed:{...K(C,{docsLink:"docsEnterprise"})}},l=e=>($("data-v-2d00e99c"),e=e(),B(),e),m={class:"chart-header d-flex"},x={class:"mr-auto d-flex align-items-center"},h=l(()=>t("div",{tabindex:"0",role:"button",class:"flex"},[t("i",{class:"info-text material-icons ml-2 md-18"},"\uE88F")],-1)),v=f(" visit the docs "),_={class:"form-inline text-muted d-flex justify-content-end flex-wrap"},g={key:0,class:"align-self-center spinner-wrapper mr-4"},y=l(()=>t("div",{class:"spinner"},null,-1)),k=[y];function L(e,P,a,V,j,z){const b=i("KExternalLink"),w=i("KPop");return n(),r("div",m,[t("div",x,[o(e.$slots,"title",{},()=>[t("h4",null,c(a.title),1)],!0),a.infoText?(n(),E(w,{key:0,placement:"top",width:"320",trigger:"hover",class:"flex items-center"},{content:s(()=>[t("div",null,[f(c(a.infoText)+". To Learn more about Kong Vitals ",1),S(b,{href:e.docsLink.url+"kong-enterprise/analytics/#status-codes"},{default:s(()=>[v]),_:1},8,["href"])])]),default:s(()=>[h]),_:1})):d("",!0)]),t("div",_,[a.isLoading?(n(),r("div",g,k)):d("",!0),o(e.$slots,"header-controls",{},void 0,!0)])])}p=T(u,[["render",L],["__scopeId","data-v-2d00e99c"]])});export{p as C,I as __tla};
