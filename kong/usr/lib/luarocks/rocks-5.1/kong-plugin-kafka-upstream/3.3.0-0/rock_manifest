@@ -1,0 +1,16 @@
+rock_manifest = {
+   doc = {
+      ["CHANGELOG.md"] = "a5a215751809313dfc8a60f7379fc24d"
+   },
+   ["kong-plugin-kafka-upstream-3.3.0-0.rockspec"] = "474c03a4bf403f3527ad4d7d6ce0a1f0",
+   lua = {
+      kong = {
+         plugins = {
+            ["kafka-upstream"] = {
+               ["handler.lua"] = "f58cfa01affc3bb4dc9d8d5a3a4d81ff",
+               ["schema.lua"] = "4ab8a8e9cc2a45a41531e8bf7f909a1e"
+            }
+         }
+      }
+   }
+}

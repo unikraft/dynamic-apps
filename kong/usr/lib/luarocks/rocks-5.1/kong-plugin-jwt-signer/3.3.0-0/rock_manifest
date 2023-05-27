@@ -1,0 +1,27 @@
+rock_manifest = {
+   doc = {
+      ["CHANGELOG.md"] = "65617d50c8baf2aec1556b7a1703751f"
+   },
+   ["kong-plugin-jwt-signer-3.3.0-0.rockspec"] = "798e2964b561a48c5b686a0d53d885b5",
+   lua = {
+      kong = {
+         plugins = {
+            ["jwt-signer"] = {
+               ["api.lua"] = "7689a8ec5a69f33aa5e55863f39e69e3",
+               ["arguments.lua"] = "900f59c785e335eeae029a1a565e1320",
+               ["cache.lua"] = "4107f489534e789c78de627b36fd2cf1",
+               ["daos.lua"] = "42dfa5f97dfc72d03300d3d5e4e8d669",
+               ["env.lua"] = "641e789834123ff6b44a72579f266d0f",
+               ["handler.lua"] = "d0940714c2714e0a6caa6f22e66878ba",
+               ["log.lua"] = "96af41a5ef4f7cfca30864e0c5cb9ee5",
+               migrations = {
+                  ["000_base_jwt_signer.lua"] = "09cb9a8f8ee8310feb984304014d6883",
+                  ["001_200_to_210.lua"] = "edc68df35f8d54b2e4c6573a861f0499",
+                  ["init.lua"] = "275cbb433da28a840cf035e6e3418d3b"
+               },
+               ["schema.lua"] = "36990e01c141d1127391327d9b51ea4d"
+            }
+         }
+      }
+   }
+}

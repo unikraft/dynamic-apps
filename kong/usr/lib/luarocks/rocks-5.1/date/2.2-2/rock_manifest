@@ -1,0 +1,9 @@
+rock_manifest = {
+   ["date-2.2-2.rockspec"] = "45c2b41f774b128250c5e86e2ee5eb0d",
+   docs = {
+      ["index.html"] = "c200354ebffd0a04e3e0093473cf2375"
+   },
+   lua = {
+      ["date.lua"] = "13024e8d100f5a2fd913debc4ce7f6cd"
+   }
+}

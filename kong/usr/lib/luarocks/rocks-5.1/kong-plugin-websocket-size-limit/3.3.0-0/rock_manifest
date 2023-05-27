@@ -1,0 +1,13 @@
+rock_manifest = {
+   ["kong-plugin-websocket-size-limit-3.3.0-0.rockspec"] = "b5482b36e1ba2985b7270afff026ce89",
+   lua = {
+      kong = {
+         plugins = {
+            ["websocket-size-limit"] = {
+               ["handler.lua"] = "bda651571a1696a11d69a0905dc98429",
+               ["schema.lua"] = "2172551395aed577d72ebca6a1abb8ec"
+            }
+         }
+      }
+   }
+}

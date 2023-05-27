@@ -1,0 +1,24 @@
+rock_manifest = {
+   docs = {
+      ["doc.css"] = "70fbd0eecb19195814da61cdc45397dd",
+      ["examples.html"] = "6b551509c07d203d07312021436a229e",
+      ["index.html"] = "ed6256f4ffc125cedb1bc46f4ace97da",
+      ["license.html"] = "711fea88502d53d0be238462654553d2",
+      ["lom.html"] = "62641d45f06274f4228544815859ee3a",
+      ["luaexpat.png"] = "28cbf8c5b6228896c56b1e54c21d9812",
+      ["manual.html"] = "350c78f320e7a335a1fdab5946e6ce95",
+      ["threat.html"] = "300e5a6bea1b5ec16607684a201e32a6",
+      ["totable.html"] = "f567b6954a9d9fc88face30ecd6de32e"
+   },
+   lib = {
+      ["lxp.so"] = "4ab925c388a8f10c1073d296542f693c"
+   },
+   lua = {
+      lxp = {
+         ["lom.lua"] = "0cf9c8ed0042ea68fe49ce7b2af3e705",
+         ["threat.lua"] = "529ce7d7b412150680ac9c41d6682366",
+         ["totable.lua"] = "88bbefade00e1f8b971c4fd80500bdd7"
+      }
+   },
+   ["luaexpat-1.5.1-1.rockspec"] = "dbbbf36510c46403ebdd6af5f4a960df"
+}

@@ -1,0 +1,16 @@
+rock_manifest = {
+   doc = {
+      ["CHANGELOG.md"] = "c16c4ef0ca0dc3343588e162eef71fd3"
+   },
+   ["kong-plugin-enterprise-route-by-header-3.3.0-0.rockspec"] = "c966a4e7463903ecc6a011faba9ca1f6",
+   lua = {
+      kong = {
+         plugins = {
+            ["route-by-header"] = {
+               ["handler.lua"] = "88f83f250eda7462f00205e73e830d7c",
+               ["schema.lua"] = "9c0a5d246ca81e6e6a6284c230e22bf1"
+            }
+         }
+      }
+   }
+}

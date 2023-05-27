@@ -1,0 +1,12 @@
+rock_manifest = {
+   doc = {
+      LICENSE = "f3e80f2f78a230c20b020ba72a679d4a",
+      ["README.md"] = "f6475f37a58e9506f9b620d0f0ca62b8"
+   },
+   lua = {
+      resty = {
+         ["passwdqc.lua"] = "fd99f5fc3d0054166172f3efa08b1c39"
+      }
+   },
+   ["lua-resty-passwdqc-1.1-1.rockspec"] = "5f65508909a6c652aa8cc0c89446c7ce"
+}

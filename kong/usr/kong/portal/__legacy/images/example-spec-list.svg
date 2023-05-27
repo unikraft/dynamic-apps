@@ -1,0 +1,64 @@
+
+<svg width="810px" height="132px" viewBox="0 0 810 132" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="808" height="64"></rect>
+        <filter x="-0.2%" y="-4.7%" width="100.5%" height="107.8%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0.901960784   0 0 0 0 0.901960784   0 0 0 0 0.901960784  0 0 0 1 0" type="matrix" in="shadowOffsetOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feOffset dx="0" dy="-1" in="SourceAlpha" result="shadowOffsetOuter2"></feOffset>
+            <feGaussianBlur stdDeviation="0.5" in="shadowOffsetOuter2" result="shadowBlurOuter2"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.901960784   0 0 0 0 0.901960784   0 0 0 0 0.901960784  0 0 0 1 0" type="matrix" in="shadowBlurOuter2" result="shadowMatrixOuter2"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="shadowMatrixOuter2"></feMergeNode>
+            </feMerge>
+        </filter>
+        <rect id="path-3" x="0" y="0" width="808" height="64"></rect>
+        <filter x="-0.1%" y="-0.8%" width="100.1%" height="103.1%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0.901960784   0 0 0 0 0.901960784   0 0 0 0 0.901960784  0 0 0 1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="intro.hbs--desktop" transform="translate(-343.000000, -423.000000)">
+            <g id="content" transform="translate(320.000000, 120.000000)">
+                <g id="step-03" transform="translate(0.000000, 263.000000)">
+                    <g id="img" transform="translate(24.000000, 42.000000)">
+                        <g id="row">
+                            <g id="bg--row">
+                                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                            </g>
+                            <text id="specification" font-family="Roboto-Light, Roboto" font-size="15" font-weight="normal" line-spacing="20" fill="#000000" fill-opacity="0.45">
+                                <tspan x="197" y="37">specification</tspan>
+                            </text>
+                            <text id="02/15/2018---14:56:0" font-family="Roboto-Light, Roboto" font-size="15" font-weight="normal" line-spacing="20" fill="#000000" fill-opacity="0.45">
+                                <tspan x="331" y="37">02/15/2018 - 14:56:05</tspan>
+                            </text>
+                            <text id="spec2.yaml" font-family="Roboto-Light, Roboto" font-size="15" font-weight="normal" line-spacing="20" fill="#000000" fill-opacity="0.85">
+                                <tspan x="16" y="37">spec2.yaml</tspan>
+                            </text>
+                        </g>
+                        <g id="row" transform="translate(0.000000, 65.000000)">
+                            <g id="bg--row">
+                                <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                                <use fill="#F2FAFF" fill-rule="evenodd" xlink:href="#path-3"></use>
+                            </g>
+                            <text id="specification" font-family="Roboto-Light, Roboto" font-size="15" font-weight="normal" line-spacing="20" fill="#000000" fill-opacity="0.45">
+                                <tspan x="197" y="37">specification</tspan>
+                            </text>
+                            <text id="02/15/2018---14:56:0" font-family="Roboto-Light, Roboto" font-size="15" font-weight="normal" line-spacing="20" fill="#000000" fill-opacity="0.45">
+                                <tspan x="331" y="37">02/15/2018 - 14:56:05</tspan>
+                            </text>
+                            <text id="swagger.json" font-family="Roboto-Light, Roboto" font-size="15" font-weight="normal" line-spacing="20" fill="#000000" fill-opacity="0.85">
+                                <tspan x="16" y="37">swagger.json</tspan>
+                            </text>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,9 @@
+/*
+  This software is copyright Kong Inc. and its licensors.
+  Use of the software is subject to the agreement between your organization
+  and Kong Inc. If there is no such agreement, use is governed by and
+  subject to the terms of the Kong Master Software License Agreement found
+  at https://konghq.com/enterprisesoftwarelicense/.
+*/
+
+ul[data-v-21863719]{padding:16px 24px;background:var(--grey-100);border:1px solid var(--black-10);border-radius:3px}small[data-v-21863719]{color:var(--black-45);font-size:14px}.multi-check-list label{font-size:1rem;color:var(--black-70);font-weight:400!important;margin:0 0 0 4px;vertical-align:top;cursor:pointer}.multi-check-list li{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:start;-ms-flex-align:start;align-items:flex-start;margin-top:16px;padding-top:16px;border-top:1px solid var(--black-10)}.multi-check-list li:first-of-type{margin-top:0;padding-top:0;border-top:0}.multi-check-list li input{margin:5px 12px 0 0}

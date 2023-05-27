@@ -1,0 +1,13 @@
+rock_manifest = {
+   ["kong-plugin-websocket-validator-3.3.0-0.rockspec"] = "99478f65d72a7091b5a41898c9847a47",
+   lua = {
+      kong = {
+         plugins = {
+            ["websocket-validator"] = {
+               ["handler.lua"] = "1e98d0024ea70049fb7761c74093d91c",
+               ["schema.lua"] = "5b8e6b616de281574051ea2b2fc96cb3"
+            }
+         }
+      }
+   }
+}

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LuaExpat: XML Expat parsing for the Lua programming language</title>
+	<link rel="stylesheet" href="./doc.css" type="text/css"/>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+
+<div id="container">
+
+<div id="product">
+	<div id="product_logo"><a href="https://github.com/lunarmodules/luaexpat">
+		<img alt="LuaExpat logo" src="luaexpat.png"/>
+	</a></div>
+	<div id="product_name"><big><strong>LuaExpat</strong></big></div>
+	<div id="product_description">XML Expat parsing for the Lua programming language</div>
+</div> <!-- id="product" -->
+
+<div id="main">
+
+<div id="navigation">
+<h1>LuaExpat</h1>
+	<ul>
+		<li><strong>Home</strong>
+			<ul>
+				<li><a href="index.html#overview">Overview</a></li>
+				<li><a href="index.html#status">Status</a></li>
+				<li><a href="index.html#download">Download</a></li>
+				<li><a href="index.html#history">History</a></li>
+				<li><a href="index.html#references">References</a></li>
+				<li><a href="index.html#credits">Credits</a></li>
+			</ul>
+		</li>
+		<li><a href="manual.html">Manual</a>
+			<ul>
+				<li><a href="manual.html#introduction">Introduction</a></li>
+				<li><a href="manual.html#building">Building</a></li>
+				<li><a href="manual.html#installation">Installation</a></li>
+				<li><a href="manual.html#parser">Parser Objects</a></li>
+			</ul>
+		</li>
+		<li><a href="examples.html">Examples</a></li>
+		<li><strong>Additional parsers</strong>
+			<ul>
+				<li><a href="lom.html">Lua Object Model</a></li>
+				<li><a href="totable.html">Parse to table</a></li>
+				<li><a href="threat.html">Threat protection</a></li>
+			</ul>
+		</li>
+		<li><a href="https://github.com/lunarmodules/luaexpat">Project</a>
+			<ul>
+				<li><a href="https://github.com/lunarmodules/luaexpat/issues">Bug Tracker</a></li>
+				<li><a href="https://github.com/lunarmodules/luaexpat">Source code</a></li>
+				<li><a href="https://lunarmodules.github.io/luaexpat/">Documentation</a></li>
+			</ul>
+		</li>
+		<li><a href="license.html">License</a></li>
+	</ul>
+</div> <!-- id="navigation" -->
+
+<div id="content">
+
+<h2><a name="overview"></a>Overview</h2>
+
+<p>LuaExpat is a <a href="http://www.saxproject.org/">SAX</a> XML parser based on the
+<a href="https://libexpat.github.io/">Expat</a> library.</p>
+
+<p>LuaExpat is free software and uses the same <a href="license.html">MIT license</a>
+as Lua 5.1.</p>
+
+<h2><a name="status"></a>Status</h2>
+
+<p>Current version is 1.5.1. It was developed for Lua 5.1 to Lua 5.4, and has been tested on
+Linux and MacOS X with Expat 2.4.0+.</p>
+
+<h2><a name="download"></a>Download</h2>
+
+<p>The package can be downloaded using <a href="https://luarocks.org/search?q=luaexpat">LuaRocks</a>, or
+from the <a href="https://github.com/lunarmodules/luaexpat/releases">Github repository</a>.
+</p>
+<p>Older LuaExpat releases can be downloaded from
+<a href="http://files.luaforge.net/releases/luaexpat/LuaExpat">LuaForge</a>
+page.</p>
+
+<p>Binaries for Windows are bundled with the <a href="https://github.com/rjpcomputing/luaforwindows">Lua
+for Windows</a> project.</p>
+
+<h2><a name="history"></a>History</h2>
+
+<dl class="history">
+	<dt><strong>Version 1.5.1</strong> [03/Oct/2022]</dt>
+	<dd>
+		<ul>
+			<li>Fix: makefile no longer sets .lua files as executabel</li>
+			<li>Fix: makefile honors $RPM_OPT_FLAGS and $RPM_LD_FLAGS</li>
+			<li>Chore: added BLA test</li>
+		</ul>
+	</dd>
+
+	<dt><strong>Version 1.5.0</strong> [26/Aug/2022]</dt>
+	<dd>
+		<ul>
+			<li><strong>warning:</strong> this update requires a minimum libExpat
+			version of 2.4.0. Though at the time of writing a minimum version of
+			2.4.6 is recommended <a href="https://www.cvedetails.com/vulnerability-list.php?vendor_id=16735">
+			due to CVE's fixed</a> in the intermediate versions.</li>
+			<li>Added option "allowDTD" to the threat protection parser.</li>
+			<li>Add configuration for Billion Laughs Attack prevention. This includes adding
+			<code>#include "expat_config.h"</code>, since these functions are conditionally
+			included in the exposed API of Expat. This means that LuaExpat will now be compiled
+			using the same options used to compile Expat itself.</li>
+			<li>Expose Expat compile time constants (lxp._EXPAT_FEATURES), see
+			<a href="https://libexpat.github.io/doc/api/latest/#XML_GetFeatureList">
+			Expat documentation</a>.</li>
+		</ul>
+	</dd>
+
+	<dt><strong>Version 1.4.1</strong> [01/Apr/2022]</dt>
+	<dd>
+		<ul>
+			<li>Fix bad buffer size calculation in threat parser</li>
+		</ul>
+	</dd>
+
+	<dt><strong>Version 1.4.0</strong> [22/Mar/2022]</dt>
+	<dd>
+		<ul>
+			<li>Improved Lua version support (5.1 - 5.4)</li>
+			<li>Fix memory leak when callbacks reference a parser object</li>
+			<li>Expose Expat library version (lxp._EXPAT_VERSION)</li>
+			<li>Added 'lxp.totable' module (thanks Tom&aacute;s Guisasola Gorham)</li>
+			<li>Fix integers being returned as floats on Lua 5.3+ (thanks Kim Alvefur)</li>
+			<li>Fix XmlDecl callback can also return 'nil' for 'standalone'</li>
+			<li>Many documentation updates</li>
+			<li>Added triplet namespace setting (returnnstriplet)</li>
+			<li>Added EntityDecl handler</li>
+			<li>Added AttlistDecl handler</li>
+			<li>Added ElementDecl handler</li>
+			<li>Added SkippedEntity handler</li>
+			<li>Added EndDoctypeDecl handler</li>
+			<li>More tests and new test setup; Busted, LuaCheck, Github actions</li>
+			<li>Improved finishing, multiple nil-calls no longer throw errors</li>
+			<li>Fix 'lxp.lom' to properly handle input as function, table, or file</li>
+			<li>Added option for namespace aware parsing to the 'lxp.lom' module</li>
+			<li>Repository moved to <a href="https://github.com/lunarmodules/luaexpat">lunarmodules</a></li>
+			<li>Added threat protection parser (protects against excessivly large inputs), with options
+			for the 'lxp.lom' and 'lxp.totable' to use it.</li>
+		</ul>
+	</dd>
+
+	<dt><strong>Version 1.3.2 and Version 1.3.3</strong></dt>
+	<dd>
+		<ul>
+			<li>These versions were from a different fork by Tom&aacute;s Guisasola Gorham</li>
+			<li>Both these versions are available from <a href="https://luarocks.org/search?q=luaexpat">LuaRocks</a></li>
+			<li>The work done there has been integrated in the 1.4.0 version</li>
+		</ul>
+	</dd>
+
+	<dt><strong>Version 1.3.0</strong> [02/Apr/2014]</dt>
+	<dd>
+		<ul>
+			<li>Lua 5.2 support (thanks Tom&aacute;s Guisasola Gorham)</li>
+			<li>support for the XmlDecl handler</li>
+			<li>add parser:getcurrentbytecount() (XML_GetCurrentByteCount)</li>
+			<li>ability to disable CharacterData merging</li>
+			<li>Makefile improvements (thanks Vadim Misbakh-Soloviov)</li>
+		</ul>
+	</dd>
+
+	<dt><strong>Version 1.2.0</strong> [02/Jun/2011]</dt>
+	<dd>
+		<em>New maintainer: Matthew Wild</em>
+		<ul>
+			<li>support for the StartDoctypeDecl handler</li>
+			<li>add parser:stop() to abort parsing inside a callback</li>
+		</ul>
+	</dd>
+
+	<dt><strong>Version 1.1.0</strong> [05/Jun/2007]</dt>
+	<dd>
+		<ul>
+			<li>adapted to work on both Lua 5.0 and Lua 5.1</li>
+			<li>updated to use Expat 2.0.0</li>
+		</ul>
+	</dd>
+
+	<dt><strong>Version 1.0.2</strong> [23/Mar/2006]</dt>
+	<dd>
+		<ul>
+			<li>minor bugfix, <code>lom</code> correct module name is <code>lxp.lom</code></li>
+		</ul>
+	</dd>
+
+	<dt><strong>Version 1.0.1</strong> [06/Jun/2005]</dt>
+	<dd>
+		<ul>
+			<li>minor changes for compatibility with Expat version 1.95.8</li>
+		</ul>
+	</dd>
+
+	<dt><strong>Version 1.0</strong> [2/Dec/2004]</dt>
+
+	<dt><strong>Version 1.0 Beta</strong> [4/Apr/2004]</dt>
+
+	<dt><strong>Version 1.0 Alpha</strong> [10/Dec/2003]</dt>
+</dl>
+
+<h2><a name="references"></a>References</h2>
+
+<p>LuaExpat uses the
+<a href="https://libexpat.github.io/">Expat</a> library.
+For details on the C API please refer to the article
+<a href="https://www.xml.com/pub/a/1999/09/expat/index.html?page=1">"Using Expat"</a>.</p>
+
+<p>LuaExpat implements the <a href="http://www.saxproject.org/">SAX</a> API.</p>
+
+<h2><a name="credits"></a>Credits</h2>
+
+<p>Version 1.0 was designed by Roberto Ierusalimschy, Andr&eacute;
+Carregal and Tom&aacute;s Guisasola as part of the Kepler Project
+which holds its copyright. The implementation was coded by
+Roberto Ierusalimschy, based on a previous design by
+<a href="https://www.place.org/~nop/lua">Jay Carlson</a>.</p>
+
+<p>LuaExpat development was sponsored by
+<a href="http://www.fabricadigital.com.br">F&aacute;brica Digital</a> and
+FINEP.</p>
+
+</div> <!-- id="content" -->
+
+</div> <!-- id="main" -->
+
+</div> <!-- id="container" -->
+
+</body>
+</html>

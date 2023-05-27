@@ -1,0 +1,54 @@
+rock_manifest = {
+   doc = {
+      ["CHANGELOG.md"] = "10f1abf365cd60c0fa6597991e8ea712",
+      ["README.md"] = "d5c59ad46e8bfe2c3c7081d44ea11ffb"
+   },
+   ["kong-gql-0.2.3-0.rockspec"] = "ad3ab6ca4476255bc62615fdac0ef7a3",
+   lua = {
+      kong = {
+         gql = {
+            ["object.lua"] = "13cca0933921b63c188f24fbd5c795cb",
+            query = {
+               ["ast.lua"] = "b5f05596ed99241a78ad07539b5bad52",
+               build_ast = {
+                  ["init.lua"] = "f196e7d7d9369d1110a2a2070698c52c",
+                  ["iter_stack.lua"] = "21ac3277cadbc3a2588c5b2dfafc9d00",
+                  ["parse.lua"] = "df27cddbaec2ec747cb4e0451f189ace"
+               },
+               nodes = {
+                  ["document_node.lua"] = "a49689e9cfc6093813b7216848ca305d",
+                  ["field_node.lua"] = "6c9e15adf0d891823e17daf351bf9ed3",
+                  ["fragment_def_node.lua"] = "9cc2e325610224a5fd8188f26f94c9e8",
+                  ["fragment_spread.lua"] = "35fd4ec29e1b4e41ff31973d11a10c05",
+                  ["init.lua"] = "f7366a477c22c34d5d6ad5ffd3a59b2f",
+                  ["inline_fragment_node.lua"] = "968e9b61cf797176f87901df152f568f",
+                  ["node.lua"] = "68c73075cd31fd8f4dab33017057cf90",
+                  ["operation_node.lua"] = "46b9d53fac8395ea3a148c9c8e5eab5f",
+                  ["selectable_node.lua"] = "54c5d9e02417f49f9fe8b8548fbcc93d",
+                  types = {
+                     ["directive.lua"] = "232fe570dea0258d348ad9c0dc4656a9",
+                     ["var_def.lua"] = "8f73525f2c22795b0c9bcead5cbd61fc"
+                  }
+               }
+            },
+            schema = {
+               ["field_def.lua"] = "da68e608fcbf1cad5fa00182e03c9d21",
+               ["init.lua"] = "744645195806e20c95a729babdc4126c",
+               ["tdn.lua"] = "f5fd46de5889c8fbbef563ca0dbec88b",
+               ["type.lua"] = "25d3a51c2adbe154ed7c91e18682bcdd",
+               typedefs = {
+                  ["base.lua"] = "4c0f559172d97f3c87916527c13a8bf3",
+                  ["enum.lua"] = "febf1ec8484718798876beb352948fe4",
+                  ["input.lua"] = "6a02aeb478681c1eb891b5ebf2c684d3",
+                  ["interface.lua"] = "52f858539b56929e05caefd99d810857",
+                  ["object.lua"] = "800be7bf218d45e3f3d2764880b5ad6a",
+                  ["scalar.lua"] = "680cee80817d8fe8e8675bd0a55163fc",
+                  ["schema.lua"] = "9ae2b079a53f7cad3088926f2ac38bb9",
+                  ["union.lua"] = "c01957943f519db81d61b0a8c893aeae"
+               }
+            },
+            ["util.lua"] = "70a0dcd2033b698e3b12e57d9c392a74"
+         }
+      }
+   }
+}

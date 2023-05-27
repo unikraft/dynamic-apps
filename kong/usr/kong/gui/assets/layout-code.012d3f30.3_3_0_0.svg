@@ -1,0 +1,9 @@
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Editor-Copy" transform="translate(-928.000000, -88.000000)" fill="#FFFFFF">
+            <g id="tools" transform="translate(870.000000, 80.000000)">
+                <path d="M60,8 L72,8 C73.1045695,8 74,8.8954305 74,10 L74,22 C74,23.1045695 73.1045695,24 72,24 L60,24 C58.8954305,24 58,23.1045695 58,22 L58,10 C58,8.8954305 58.8954305,8 60,8 Z M60,12 L60,22 L72,22 L72,12 L60,12 Z M66,14 L69,14 L69,16 L66,16 L66,14 Z M67,18 L70,18 L70,20 L67,20 L67,18 Z M62,14 L64,14 L64,16 L62,16 L62,14 Z M63,18 L65,18 L65,20 L63,20 L63,18 Z" id="Combined-Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

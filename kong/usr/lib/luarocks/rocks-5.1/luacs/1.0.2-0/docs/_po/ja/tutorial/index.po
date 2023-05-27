@@ -1,0 +1,97 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+msgid ""
+"---\n"
+"title: Tutorial\n"
+"---"
+msgstr ""
+"---\n"
+"title: チュートリアル\n"
+"---"
+
+msgid "# Tutorial"
+msgstr "# チュートリアル"
+
+msgid ""
+"This document describes how to use LuaCS step by step. If you don't install Lu"
+"aCS yet, [install][install] LuaCS before you read this document."
+msgstr ""
+"このドキュメントはLuaCSの使い方を段階的に説明します。まだLuaCSをインストールしていない場合は、このドキュメントを読む前にLuaCSを[instal"
+"l][install]してください。"
+
+msgid "## Parse CSS Selectors {#parse-css-selectors}"
+msgstr "## CSSセレクターのパース {#parse-css-selectors}"
+
+msgid "TODO"
+msgstr ""
+
+msgid "## Convert to XPath {#convert-to-xpath}"
+msgstr "## XPathへ変換 {#convert-to-xpath}"
+
+msgid "You can convert CSS Selectors to [XPath][xpath]."
+msgstr "CSSセレクターを[XPath][xpath]に変換できます。"
+
+msgid "Example:"
+msgstr "例："
+
+msgid ""
+"```lua\n"
+"local luacs = require(\"luacs\")"
+msgstr ""
+
+msgid ""
+"-- Convert CSS Selectors to XPaths\n"
+"local xpaths = luacs.to_xpaths(\"ul li, a.external\")"
+msgstr ""
+"-- CSSセレクターをXPathに変換\n"
+"local xpaths = luacs.to_xpaths(\"ul li, a.external\")"
+
+msgid ""
+"for _, xpath in ipairs(xpaths) do\n"
+"  print(xpath)\n"
+"  -- /descendant::*[local-name()='ul']/descendant::*[local-name()='li']\n"
+"  -- /descendant::*[local-name()='a'][@class][contains(concat(' ', normalize-s"
+"pace(@class), ' '), ' external ')]\n"
+"end\n"
+"```"
+msgstr ""
+
+msgid ""
+"You can use [`xmlua.Searchable.css_select`][xmlua-searchable-css-select] to se"
+"arch nodes from DOM by CSS Selectors."
+msgstr ""
+"CSSセレクターでDOMからノードを検索するには[`xmlua.Searchable.css_select`][xmlua-searchable-css-s"
+"elect]が便利です。"
+
+msgid "## Next step {#next-step}"
+msgstr "## 次のステップ {#next-step}"
+
+msgid ""
+"Now, you knew all major LuaCS features! If you want to understand each feature"
+", see [reference manual][reference] for each feature."
+msgstr ""
+"これでLuaCSのすべての主な機能を学びました！それぞれの機能をより理解したい場合は、各機能の[リファレンスマニュアル][reference]を見てください"
+"。"
+
+msgid "[install]:../install/"
+msgstr ""
+
+msgid "[xpath]:https://www.w3.org/TR/xpath/"
+msgstr ""
+
+msgid ""
+"[xmlua-searchable-css-select]:https://clear-code.github.io/xmlua/reference/sea"
+"rchable.html#css-select"
+msgstr ""
+"[xmlua-searchable-css-select]:https://clear-code.github.io/xmlua/ja/reference/"
+"searchable.html#css-select"
+
+msgid "[reference]:../reference/"
+msgstr ""

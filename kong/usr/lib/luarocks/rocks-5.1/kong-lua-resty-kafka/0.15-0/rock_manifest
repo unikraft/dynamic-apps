@@ -1,0 +1,27 @@
+rock_manifest = {
+   doc = {
+      LICENSE = "0974006d6d5c1ea5a5836ccb3b144d64",
+      ["README.md"] = "339d67609165da8160e44057b0c1188e"
+   },
+   ["kong-lua-resty-kafka-0.15-0.rockspec"] = "e1bd82d9166aec3b515cc74bdca02aee",
+   lua = {
+      resty = {
+         kafka = {
+            auth = {
+               ["init.lua"] = "a8c4340eb8a0e7e11319152fc600e7ef",
+               strategies = {
+                  ["sasl.lua"] = "2e44caf54e224eb03d946a7cdc7f418e"
+               }
+            },
+            ["broker.lua"] = "2acc49818fa8918d1d27ef7f2c25d679",
+            ["client.lua"] = "238fe2bbb05677e759e83b7f6e52b72c",
+            ["errors.lua"] = "63ed772bf951a78c4087bb067f670b40",
+            ["producer.lua"] = "84e5e138647237e837e4468f4030f6b9",
+            ["request.lua"] = "7abac1edb76bb3d634e2898ac8429e52",
+            ["response.lua"] = "aafc45d61184565527ff314e2ea3662b",
+            ["ringbuffer.lua"] = "144345060570b79785379cd2ac364a68",
+            ["sendbuffer.lua"] = "cc478ddaafb842c4f219b58bcdc4d10d"
+         }
+      }
+   }
+}

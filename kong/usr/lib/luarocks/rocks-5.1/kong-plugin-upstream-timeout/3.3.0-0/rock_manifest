@@ -1,0 +1,16 @@
+rock_manifest = {
+   doc = {
+      ["CHANGELOG.md"] = "8d3073179a48c8ab87020f7d45c1596f"
+   },
+   ["kong-plugin-upstream-timeout-3.3.0-0.rockspec"] = "a0a6a42a7d85c299e4f599f2581c3504",
+   lua = {
+      kong = {
+         plugins = {
+            ["upstream-timeout"] = {
+               ["handler.lua"] = "01f25ece4c6af3fce6924a3e5577ec1b",
+               ["schema.lua"] = "bb05a9b8b3d2b91c7f3957fdefb21979"
+            }
+         }
+      }
+   }
+}

@@ -1,0 +1,228 @@
+rock_manifest = {
+   docs = {
+      Gemfile = "b27c7a69e0234f6a7f474451904feb55",
+      Rakefile = "42285fcfca60911804a8314cd12cedb4",
+      ["_config.yml"] = "09649704ad57404f3ce9979e8d436cfe",
+      _includes = {
+         ["contribute.en.html"] = "da4ea60fc811a4d1a6f0c07a55f61494",
+         ["contribute.html"] = "602e87e9ef3d17eb2b0e8de897aa862a",
+         ["contribute.ja.html"] = "6bf1080534a4d6f20dcdd1a132b6a6e2",
+         ["navbar-content.en.html"] = "83e08b6aadb64f4254a7888e59444a0b",
+         ["navbar-content.html"] = "362771e5c63fc56843d363562fe66618",
+         ["navbar-content.ja.html"] = "fa116bf5415277218c5ff6d3ee03f9b6",
+         ["site-description.html"] = "d8d64b9dce467a8198e30c4357715991"
+      },
+      _layouts = {
+         ["base.html"] = "421679222fcecafcb697916e85e0d1ab"
+      },
+      _po = {
+         ja = {
+            ["index.po"] = "0e0ee7dda972b1ec22ea81c4105d727b",
+            install = {
+               ["index.po"] = "d9b29cf7d97e1df7873a8ad47eb861c0"
+            },
+            news = {
+               ["index.po"] = "4eb291a01eb06369ef7b818a54cb920d"
+            },
+            reference = {
+               ["index.po"] = "c1ceb9678392ca046adaae694b4b7aec",
+               ["luacs.po"] = "2ab5ef7361ac712ccc21f8dce3a417cc",
+               ["parser.po"] = "47c062a3bc59e29cc43bc3b05ea589ab",
+               ["xpath-converter.po"] = "509e2bf5b46ebe77972691cdf9dd899c"
+            },
+            tutorial = {
+               ["index.po"] = "8266f0bf006e4b412b85b1882113011f"
+            }
+         }
+      },
+      assets = {
+         fonts = {
+            bootstrap = {
+               ["glyphicons-halflings-regular.eot"] = "f4769f9bdb7466be65088239c12046d1",
+               ["glyphicons-halflings-regular.svg"] = "89889688147bd7575d6327160d64e760",
+               ["glyphicons-halflings-regular.ttf"] = "e18bbf611f2a2e43afc071aa2f4e1512",
+               ["glyphicons-halflings-regular.woff"] = "fa2772327f55d8198301fdb8bcfc8158",
+               ["glyphicons-halflings-regular.woff2"] = "448c34a56d699c29117adc64c43affeb"
+            },
+            ["font-awesome"] = {
+               ["FontAwesome.otf"] = "668743fe7258676f8ef8f9b47d2a623e",
+               ["fontawesome-webfont.eot"] = "45c73723862c6fc5eb3d6961db2d71fb",
+               ["fontawesome-webfont.svg"] = "76a4f23c6be74fd309e0d0fd2c27a5de",
+               ["fontawesome-webfont.ttf"] = "7c87870ab40d63cfb8870c1f183f9939",
+               ["fontawesome-webfont.woff"] = "dfb02f8f6d0cedc009ee5887cc68f1f3",
+               ["fontawesome-webfont.woff2"] = "4b5a84aaf1c9485e060c503a0ff8cadb"
+            }
+         },
+         images = {
+            [".keep"] = "d41d8cd98f00b204e9800998ecf8427e"
+         },
+         javascripts = {
+            bootstrap = {
+               ["affix.js"] = "683c19859764baf0d17538897ea1eba2",
+               ["alert.js"] = "ac9c0d62e9f1198d915aac1465bdcb64",
+               ["button.js"] = "b7532620277e887dbbd42de56b0f47b1",
+               ["carousel.js"] = "b524f883fae2f4a59206141f3153dc93",
+               ["collapse.js"] = "2bc99ca6c9b060ba5616f41ddd5e2703",
+               ["dropdown.js"] = "853fa972e584b0876a55f9ce35566f2d",
+               ["modal.js"] = "b7d8f688e67e78c07ffde44ec4248fd9",
+               ["popover.js"] = "c7afe286c5885ebfd68c59472c2a574e",
+               ["scrollspy.js"] = "b1014ea8cb47419e09ea066201ecfb6d",
+               ["tab.js"] = "34a34f05c5ad6f14bf5fba25d4c85856",
+               ["tooltip.js"] = "ccae69febbcd9b2ef9ddb2efbb53a1a2",
+               ["transition.js"] = "3cb001675410903ecaadcfeb7c296965"
+            },
+            ["bootstrap-sprockets.js"] = "8c4dbb4a993eb832c2ce3c6f5e8914f9",
+            ["bootstrap.js"] = "8015042d0b4ac125867af5b096b175ce",
+            ["bootstrap.min.js"] = "4becdc9104623e891fbb9d38bba01be4"
+         },
+         licenses = {
+            bootstrap = {
+               LICENSE = "0c8ffbe0c6f82ea4b0a4524770f5c3fe"
+            },
+            ["font-awesome"] = {
+               LICENSE = "22a1690926a3175470fbe7880c8ddf40"
+            }
+         },
+         stylesheets = {
+            ["_bootstrap-compass.scss"] = "3fec975e3405c6cd99c01b83edb1905f",
+            ["_bootstrap-mincer.scss"] = "557a9bb02214d35a8499dd61dbb389ac",
+            ["_bootstrap-sprockets.scss"] = "1d4a4a20542be73f7e8d259e031e49e3",
+            ["_bootstrap.scss"] = "d6fac1c283279ea33708c8afa54819cb",
+            bootstrap = {
+               ["_alerts.scss"] = "c0e5396555dd4c70b9eeb314e4c4613d",
+               ["_badges.scss"] = "9384c5f60cf095ad09dc43173622d046",
+               ["_breadcrumbs.scss"] = "24c93808be39b840a66e95bf3fe89ed2",
+               ["_button-groups.scss"] = "c9b67b57469dd74683a72e2f3734e529",
+               ["_buttons.scss"] = "bb2fcb0a7f0cc6cbed09db8928c614a9",
+               ["_carousel.scss"] = "548234e87f62fd8658d4ecdeca4fabb4",
+               ["_close.scss"] = "247ef4c02f54f5bf898da8e4f6c88bd0",
+               ["_code.scss"] = "280e44d4762299678f52c56c6df4ffc2",
+               ["_component-animations.scss"] = "8c17107ac86a36d4b05a20c47d08dee9",
+               ["_dropdowns.scss"] = "203f075b01f47b0675428e8d42f194fe",
+               ["_forms.scss"] = "644e6fba1d70fda0f3b38e4a0d6c0cd4",
+               ["_glyphicons.scss"] = "592530a38e0c16407c22609c63a505ff",
+               ["_grid.scss"] = "ba7b4a2579c7f061a982830877a1c60d",
+               ["_input-groups.scss"] = "e595dc91de881fc8e145627e85ba41e8",
+               ["_jumbotron.scss"] = "2de0acd5f3f5ae5529e1f64d6fd8c94a",
+               ["_labels.scss"] = "d103671ba8c96f743916990bdf40d3b4",
+               ["_list-group.scss"] = "e514ae19883f5a3ad417d812a549dc3a",
+               ["_media.scss"] = "91aa028d54785b36583c19020bba9f00",
+               ["_mixins.scss"] = "df2dad555f64d993e27d45568b4cef39",
+               ["_modals.scss"] = "7a24ee151c07b51ba75fcf1c33b1118e",
+               ["_navbar.scss"] = "58acd058e729f304d7f69eed3448186c",
+               ["_navs.scss"] = "89b073405d01e045f89dba5cb3e49946",
+               ["_normalize.scss"] = "a81f00910a701c842ede4f497c191c80",
+               ["_pager.scss"] = "fb95dee91745bec12cdd44c4542530f5",
+               ["_pagination.scss"] = "179ed0f98ff9c131aaaadd73f51381a8",
+               ["_panels.scss"] = "e4650d16f8900eeede19116f076e9df0",
+               ["_popovers.scss"] = "6a03a7bd7f506bb33b2dc107c194428e",
+               ["_print.scss"] = "b6fef93d5689af1a0467c8fc8e9959d9",
+               ["_progress-bars.scss"] = "53de2fdfeb4c0fd4d6b4f323a507bc23",
+               ["_responsive-embed.scss"] = "2c7057d9a90998866bf84c1112caf631",
+               ["_responsive-utilities.scss"] = "67525c35b349ba0f509ba98e5500f83b",
+               ["_scaffolding.scss"] = "c5fe3cc31e1bfcf1fa79ac2b0888b731",
+               ["_tables.scss"] = "c91111e9d3f5d22ede57db4758f10b57",
+               ["_theme.scss"] = "71b5847e9a9ca349480f932cf61aa1ed",
+               ["_thumbnails.scss"] = "dd5e0a8f79dc6a539c38e05f14121c88",
+               ["_tooltip.scss"] = "1fa68e95761bca93773df135f5b7bc5f",
+               ["_type.scss"] = "1a80f6a3899de7cfb3d554cfdce18753",
+               ["_utilities.scss"] = "7e020f996c50afd24453a871098cbda1",
+               ["_variables.scss"] = "4a98667571c5899e601a01d1e7926d18",
+               ["_wells.scss"] = "3577874a42c6fe920129f07eabca106a",
+               mixins = {
+                  ["_alerts.scss"] = "058b36cec876e55731f05b7cf0e43a3e",
+                  ["_background-variant.scss"] = "a392e0874a78c4a86db7b19654f4c591",
+                  ["_border-radius.scss"] = "88e9a7b563aa11357d7bfc114708b139",
+                  ["_buttons.scss"] = "9308e147a58312a6d3e7d5ad7b47950d",
+                  ["_center-block.scss"] = "f284d54e569eba55aba017e4807b0820",
+                  ["_clearfix.scss"] = "6fc90025fc80e49fd10100ee8c689c1d",
+                  ["_forms.scss"] = "8e74e8e7145cb98df17a275f800ea089",
+                  ["_gradients.scss"] = "c256e096c556db2471dd3c6c1516074c",
+                  ["_grid-framework.scss"] = "c01cf53ad0c2700e4571691810e4674c",
+                  ["_grid.scss"] = "828243f1ad7096f947e726b748200cf1",
+                  ["_hide-text.scss"] = "418c58bf3ee53cf5f50f96c691d5f7c1",
+                  ["_image.scss"] = "1c7ab3b18895dad2de80f0dd11d13577",
+                  ["_labels.scss"] = "80f2187ccdda40c712cd2dbfb8d7a405",
+                  ["_list-group.scss"] = "55c07e91ca263fe6adf74c2dd0d96a39",
+                  ["_nav-divider.scss"] = "d9d1e810eff80b30acc3a03bf346820f",
+                  ["_nav-vertical-align.scss"] = "5cbd9ed72043e13491d9584c6bed5b1c",
+                  ["_opacity.scss"] = "39a203bc3a8cd9f7b13ac7608074a6af",
+                  ["_pagination.scss"] = "34784d1e98ba522b0f47c72fa69c4f62",
+                  ["_panels.scss"] = "b1038d1728d6b1af90add852cecc7d5d",
+                  ["_progress-bar.scss"] = "dd436b8aad1c620e630f6bbbbe373c88",
+                  ["_reset-filter.scss"] = "d2eb7cc1c9a267efed34fedabec65a9f",
+                  ["_reset-text.scss"] = "86e9bbc6877d6ff51ec6dbfc1a8e4034",
+                  ["_resize.scss"] = "a377ab0a14e899c6433cd29c2e14a978",
+                  ["_responsive-visibility.scss"] = "4af4d79bbc3b9ee602cb584c23019fc5",
+                  ["_size.scss"] = "6de6854a356f52a6fa7f939c87f137d0",
+                  ["_tab-focus.scss"] = "2dab79127e3b0e124855d44007df87da",
+                  ["_table-row.scss"] = "1ae5e672aaea920528aab0739d2ed229",
+                  ["_text-emphasis.scss"] = "854502c2432fb098fb556666c69350b0",
+                  ["_text-overflow.scss"] = "0bb73f191da9ea556ddab98d304cbaed",
+                  ["_vendor-prefixes.scss"] = "f2fb38a149f47dc26fc28904b8425d62"
+               }
+            },
+            ["font-awesome"] = {
+               ["_animated.scss"] = "39ff4f359a7b81d6585075715f41e5dc",
+               ["_bordered-pulled.scss"] = "4cad0df17bf40327feae33fa9a6c6ba2",
+               ["_core.scss"] = "ef059a98cf9de6ca5b77ee6850771cf0",
+               ["_fixed-width.scss"] = "9277ab6964a434d499873687b00be906",
+               ["_font-awesome.scss"] = "0647c61c2fc0af2d3110b3e021df2167",
+               ["_icons.scss"] = "bf191ec4814fc5a8f3039782acebf31c",
+               ["_larger.scss"] = "e95931566f6fc6ad5685c4fa9802e206",
+               ["_list.scss"] = "7107e80b053928271d5fcf422dc29490",
+               ["_mixins.scss"] = "2052155a929be2769df84be98617f310",
+               ["_path.scss"] = "ab5a9e8388563e097b5ce835601f01d2",
+               ["_rotated-flipped.scss"] = "9f5d4bc6fadea89328d2aac26574a9d8",
+               ["_stacked.scss"] = "5594237226aedfbca2fa1c7f4604c214",
+               ["_variables.scss"] = "667c28ce24bc245dd0b3b8578ea2d083"
+            },
+            ["luacs.scss"] = "2abc565906ea0af5dd95fa01df7d7a90",
+            ["syntax.css"] = "fa027245655d3bbb788bb3c9f4ca8f64"
+         }
+      },
+      ["index.md"] = "c207266e55f61b7502fcea07ae2341f5",
+      install = {
+         ["index.md"] = "a51e5e17cb6e1d6c41946563c3e05cff"
+      },
+      ja = {
+         ["index.md"] = "d3e95f5630bfa09323615c95c5c12652",
+         install = {
+            ["index.md"] = "0de08321af0eb710f7c4c2555397d561"
+         },
+         news = {
+            ["index.md"] = "c7753be719186c723ef42344ab6fd970"
+         },
+         reference = {
+            ["index.md"] = "685f5fcb2d834af6316aed62da86f4d0",
+            ["luacs.md"] = "34f95c66da949cee7516d4271cdf11f2",
+            ["parser.md"] = "e171eb0693c7d724cc6ec68d4c76f35f",
+            ["xpath-converter.md"] = "41974877f64306cd893dd910b365d32f"
+         },
+         tutorial = {
+            ["index.md"] = "261ca838e3de420cba1379dbef020178"
+         }
+      },
+      news = {
+         ["index.md"] = "c7753be719186c723ef42344ab6fd970"
+      },
+      reference = {
+         ["index.md"] = "9c6d52fd448cd258eb50701d4d323f7e",
+         ["luacs.md"] = "d4ac7e57b702d11f97e0b3c1ada6b344",
+         ["parser.md"] = "d3f07d7e8ac3b822ef280c224c3b2c84",
+         ["xpath-converter.md"] = "e77c9599f6b81a1e105975440d2160fb"
+      },
+      tutorial = {
+         ["index.md"] = "3ef49c6b7dc925ccf6f81c27bc40be08"
+      }
+   },
+   lua = {
+      luacs = {
+         ["parser.lua"] = "90c277e4b6e5013bda07653a3f7e43bc",
+         ["source.lua"] = "d0ead6f3ba1aebd4c76cb9f9c4b919f4",
+         ["xpath-converter.lua"] = "42429972f38ed6cca096df4249d2e979"
+      },
+      ["luacs.lua"] = "bff89537141f549e52b37e0929d170e6"
+   },
+   ["luacs-1.0.2-0.rockspec"] = "8cc7dc9347d8e0dc0f1d2af57bc2436f"
+}

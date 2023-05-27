@@ -1,0 +1,17 @@
+rock_manifest = {
+   doc = {
+      ["CHANGELOG.md"] = "e6ceae3551268db1709290050c3a1809"
+   },
+   ["kong-plugin-enterprise-exit-transformer-3.3.0-0.rockspec"] = "5b9fcafca6e4a080f2e6dd529e878398",
+   lua = {
+      kong = {
+         plugins = {
+            ["exit-transformer"] = {
+               ["handler.lua"] = "8e31788cabaa826b170a201f3f2bf34c",
+               ["init.lua"] = "3e990bd86446105826eb3dbfe5c15c1b",
+               ["schema.lua"] = "e9307a22d51b7629db39f65cb5c6f660"
+            }
+         }
+      }
+   }
+}

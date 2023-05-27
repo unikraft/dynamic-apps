@@ -1,0 +1,10 @@
+rock_manifest = {
+   ["bcrypt-2.3-1.rockspec"] = "e0a689964b624f07e27039107734fb53",
+   doc = {
+      LICENSE = "a4d1cee93ee0600b3bef121c15da56da",
+      ["README.md"] = "281df7ed23999a917459c6a0605cac4c"
+   },
+   lib = {
+      ["bcrypt.so"] = "66d1c80662bc78abf58f2f36a2c660f2"
+   }
+}

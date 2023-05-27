@@ -1,0 +1,279 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<head>
+    <title>lua-resty-luasocket docs</title>
+    <link rel="stylesheet" href="../ldoc.css" type="text/css" />
+</head>
+<body>
+
+<div id="container">
+
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div> <!-- id="product" -->
+
+
+<div id="main">
+
+
+<!-- Menu -->
+
+<div id="navigation">
+<br/>
+<h1>lua-resty-luasocket</h1>
+
+<ul>
+  <li><a href="../index.html">Index</a></li>
+</ul>
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#Functions">Functions</a></li>
+</ul>
+
+
+<h2>Modules</h2>
+<ul class="nowrap">
+  <li><strong>resty.luasocket</strong></li>
+  <li><a href="../modules/resty.luasocket.http.html">resty.luasocket.http</a></li>
+</ul>
+<h2>Topics</h2>
+<ul class="">
+  <li><a href="../topics/CHANGELOG.md.html">CHANGELOG</a></li>
+  <li><a href="../topics/LICENSE.md.html">The MIT License (MIT)</a></li>
+  <li><a href="../topics/manual.md.html">Manual</a></li>
+</ul>
+<h2>Examples</h2>
+<ul class="nowrap">
+  <li><a href="../examples/example.lua.html">example.lua</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<h1>Module <code>resty.luasocket</code></h1>
+<p>Socket compatibility module to enable the init-phase, by falling back to LuaSocket.</p>
+<p> Forked from <a href="https://github.com/thibaultcha/lua-resty-socket">lua-resty-socket</a>.</p>
+
+<p> <strong>NOTE</strong>: see section <a href="../topics/manual.md.html#Important_notes">Important notes</a> in the manual for limitations.</p>
+    <h3>Info:</h3>
+    <ul>
+        <li><strong>Copyright</strong>: (c) 2016-2019 Thibault Charbonnier, 2021-2023 Thijs Schreijer</li>
+        <li><strong>License</strong>: MIT, see <a href="../topics/LICENSE.md.html#">LICENSE.md</a>.</li>
+    </ul>
+
+
+<h2><a href="#Functions">Functions</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#disable_luasocket">disable_luasocket (phase, disable)</a></td>
+	<td class="summary">disables LuaSocket use for a specific phase.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#force_luasocket">force_luasocket (phase, force)</a></td>
+	<td class="summary">forces LuaSocket use for a specific phase.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#get_luasec_defaults">get_luasec_defaults ()</a></td>
+	<td class="summary">Returns a copy of the defaults table.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#set_luasec_defaults">set_luasec_defaults (defaults)</a></td>
+	<td class="summary">Sets the luasec defaults for tls connections.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#tcp">tcp (...)</a></td>
+	<td class="summary">creates a tcp socket compatible with <code>ngx.socket.tcp</code>.</td>
+	</tr>
+</table>
+
+<br/>
+<br/>
+
+
+    <h2 class="section-header "><a name="Functions"></a>Functions</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "disable_luasocket"></a>
+    <strong>disable_luasocket (phase, disable)</strong>
+    </dt>
+    <dd>
+    disables LuaSocket use for a specific phase.
+ An override for the automatic phase/socket-type detection. This setting is
+ a module global setting.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">phase</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         the phase name
+        </li>
+        <li><span class="parameter">disable</span>
+            <span class="types"><span class="type">bool</span></span>
+         set to <code>true</code> to disable, or <code>false/nil</code> to enable
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        the previous value of this setting.
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example"><span class="keyword">local</span> old_setting = sock.disable_luasocket(<span class="string">"init"</span>, <span class="keyword">true</span>)
+<span class="comment">-- do something
+</span>sock.disable_luasocket(<span class="string">"init"</span>, old_setting)</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "force_luasocket"></a>
+    <strong>force_luasocket (phase, force)</strong>
+    </dt>
+    <dd>
+    forces LuaSocket use for a specific phase.
+ An override for the automatic phase/socket-type detection. This setting is
+ a module global setting.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">phase</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         the phase name
+        </li>
+        <li><span class="parameter">force</span>
+            <span class="types"><span class="type">bool</span></span>
+         set to <code>true</code> to force, or <code>false/nil</code> to auto-detect
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        the previous value of this setting.
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example"><span class="keyword">local</span> old_setting = sock.force_luasocket(<span class="string">"timer"</span>, <span class="keyword">true</span>)
+<span class="comment">-- do something
+</span>sock.force_luasocket(<span class="string">"timer"</span>, old_setting)</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "get_luasec_defaults"></a>
+    <strong>get_luasec_defaults ()</strong>
+    </dt>
+    <dd>
+    Returns a copy of the defaults table.  The "<code>_fields</code>"" meta field lists the
+ known fields. The options will be (deep)copied, so safe to reuse/modify the table.
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+        table with options as currently in use
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example"><span class="comment">-- Setting the CAfile, to enable TLS verification.
+</span><span class="keyword">local</span> config = resty_luasocket.get_luasec_defaults()
+config.cafile = <span class="string">"/path/to/my/cafile"</span>
+resty_luasocket.set_luasec_defaults(config)</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "set_luasec_defaults"></a>
+    <strong>set_luasec_defaults (defaults)</strong>
+    </dt>
+    <dd>
+    Sets the luasec defaults for tls connections.  See <a href="../modules/resty.luasocket.html#get_luasec_defaults">get_luasec_defaults</a>.
+ The options will be (deep)copied, so safe to reuse the table. These settings
+ are module global setting.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">defaults</span> a table with the following fields:
+        <ul>
+        <li><span class="parameter">protocol</span>
+         see luasec docs <code>protocol</code>
+        </li>
+        <li><span class="parameter">key</span>
+         see luasec docs <code>key</code>
+        </li>
+        <li><span class="parameter">cert</span>
+         see luasec docs <code>certificate</code>
+        </li>
+        <li><span class="parameter">cafile</span>
+         see luasec docs <code>cafile</code>
+        </li>
+        <li><span class="parameter">options</span>
+         see luasec docs <code>options</code>
+        </li>
+        </li></ul>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "tcp"></a>
+    <strong>tcp (...)</strong>
+    </dt>
+    <dd>
+    creates a tcp socket compatible with <code>ngx.socket.tcp</code>.  The socket will fall back to
+ LuaSocket where cosockets are not supported.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">...</span>
+         same as <code>ngx.socket.tcp</code>
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        a co-sockets compatible TCP socket
+    </ol>
+
+
+
+
+</dd>
+</dl>
+
+
+</div> <!-- id="content" -->
+</div> <!-- id="main" -->
+<div id="about">
+<i>generated by <a href="http://github.com/stevedonovan/LDoc">LDoc 1.4.6</a></i>
+<i style="float:right;">Last updated 2023-04-24 13:09:54 </i>
+</div> <!-- id="about" -->
+</div> <!-- id="container" -->
+</body>
+</html>

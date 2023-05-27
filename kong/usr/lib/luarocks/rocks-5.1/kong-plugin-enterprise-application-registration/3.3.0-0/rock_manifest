@@ -1,0 +1,17 @@
+rock_manifest = {
+   doc = {
+      ["CHANGELOG.md"] = "e33cb5fdd1d2c6b835e11fb325b10f8f"
+   },
+   ["kong-plugin-enterprise-application-registration-3.3.0-0.rockspec"] = "aac949c42b2f850a5aec2cf32c22c7b1",
+   lua = {
+      kong = {
+         plugins = {
+            ["application-registration"] = {
+               ["api.lua"] = "80d68be7ccd8f10cfed35734b3184c57",
+               ["handler.lua"] = "84de89a57da0519088e711dea8bca776",
+               ["schema.lua"] = "8b39272542c1048739502004be259d05"
+            }
+         }
+      }
+   }
+}

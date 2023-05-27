@@ -1,0 +1,9 @@
+{
+  "form": {
+    "serviceEndpoint": "服务端点",
+    "serviceEndpointDesc": "通过指定完整的 URL 或其单独的元素来定义此服务的端点。",
+    "createService": "创建服务",
+    "editService": "编辑服务",
+    "editServiceWithName": "编辑服务：{{name}}"
+  }
+}

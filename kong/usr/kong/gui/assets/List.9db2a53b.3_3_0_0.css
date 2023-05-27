@@ -1,0 +1,9 @@
+/*
+  This software is copyright Kong Inc. and its licensors.
+  Use of the software is subject to the agreement between your organization
+  and Kong Inc. If there is no such agreement, use is governed by and
+  subject to the terms of the Kong Master Software License Agreement found
+  at https://konghq.com/enterprisesoftwarelicense/.
+*/
+
+.users-list,.invited-users-list{--KEmptyContentColor: var(--black-70);--KEmptyBackground: rgba(0,0,0,.03)}.users-list .empty-state-wrapper,.invited-users-list .empty-state-wrapper{border-radius:3px;border:1px solid hsla(0deg,0%,59.2%,.1)}.workspace-title[data-v-fc9662d8]{max-width:20ch}.organization .rbac-users .page-header h4,.organization .rbac-users nav{padding-bottom:0;margin-bottom:0}.organization .rbac-users .page-header .row{-webkit-box-align:center;-ms-flex-align:center;align-items:center}.organization .rbac-users .entity-list-table{margin-top:1rem}.rbac-users[data-v-3d93fe80]{--KEmptyBackground: rgba(0,0,0,.03)}.rbac-users .tab-header[data-v-3d93fe80]{margin-bottom:1rem}.rbac-users .tab-header .workspace-picker[data-v-3d93fe80]{width:auto;margin:0}.rbac-users .tab-header .workspace-picker select[data-v-3d93fe80]{margin:0;min-width:220px}.rbac-users .tab-header .btn[data-v-3d93fe80]{-ms-flex-item-align:end;align-self:flex-end}.teams .roles-list .workspace-title[data-v-a0e59e09]{margin-left:0}.teams .table td[data-v-a0e59e09]{font-size:15px;color:var(--black-70)}.teams .table td a[data-v-a0e59e09]{font-weight:400}.teams .table th[data-v-a0e59e09]{font-size:13px}@media (min-width: 768px){.teams .table th[data-v-a0e59e09]:first-of-type{width:220px}}

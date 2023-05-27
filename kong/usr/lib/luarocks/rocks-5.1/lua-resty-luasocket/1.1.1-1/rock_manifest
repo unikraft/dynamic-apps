@@ -1,0 +1,27 @@
+rock_manifest = {
+   docs = {
+      examples = {
+         ["example.lua.html"] = "023448a8626cec3cfa3106b0ab48be51"
+      },
+      ["index.html"] = "e7e7c2ba82329aac4094fc5fc4b91103",
+      ["ldoc.css"] = "7060d11d773f591de4df1a6967ed5285",
+      modules = {
+         ["resty.luasocket.html"] = "7e889c50f3412050189daa01f4b390b4",
+         ["resty.luasocket.http.html"] = "e213789926fe0fbd6635e5341247f472"
+      },
+      topics = {
+         ["CHANGELOG.md.html"] = "3210d3aec348f1fe4214de568fc40973",
+         ["LICENSE.md.html"] = "d8dac64f997c328c80c6c0862adc9d7e",
+         ["manual.md.html"] = "a78ba4f8e821e9f464bf74c1c8581c73"
+      }
+   },
+   lua = {
+      resty = {
+         luasocket = {
+            ["http.lua"] = "01f49f9fc1fc1b7bd21e6f3fe0f23a9f",
+            ["init.lua"] = "c8fcefbaf4c696132ac858841b57d331"
+         }
+      }
+   },
+   ["lua-resty-luasocket-1.1.1-1.rockspec"] = "ac1bdd07a79ef5e1142128960c3e1b62"
+}

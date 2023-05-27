@@ -1,0 +1,1042 @@
+rock_manifest = {
+   doc = {
+      ["CHANGELOG-EE.md"] = "fe6581ce1aeb851665b900f588d05779",
+      ["CHANGELOG-OLD.md"] = "cc4707157ca27a05e37494c6b81cb168",
+      ["CHANGELOG.md"] = "e6cdd40a5e03ce9b91977705cb8afcd7",
+      ["CODE_OF_CONDUCT.md"] = "af743120cacee448a6cd525fffd7618b",
+      ["CONTRIBUTING.md"] = "a4804e1bfd03323d545b3d55cccc425a",
+      ["DEVELOPER.md"] = "6533c3a7e20f63f919d75ba3470e617c",
+      LICENSE = "9f30783b8b2df8a6cc4a6bdcc5afc7a3",
+      ["README.md"] = "d2c423f4ed1a888b0e8fca16edcfebe3",
+      ["SECURITY.md"] = "e1f8d5ee040823301a62c55377e18ae0",
+      ["UPGRADE.md"] = "5288e81142dd96a0cb64c3fe5642a29d"
+   },
+   ["kong-3.3.0-0.rockspec"] = "0bca6cbaa83a7f19da77026f5fd0e5e3",
+   lua = {
+      kong = {
+         analytics = {
+            ["init.lua"] = "699406b6385bac5ff622eeddd0f6e44f"
+         },
+         api = {
+            ["api_helpers.lua"] = "a6a317b4f383dc194c468fecd1da9161",
+            ["arguments.lua"] = "33f862f6d67c545da8c61c0747fa2863",
+            ["endpoints.lua"] = "c4b9dbfd4d7083b63dd7e7ecbc980d61",
+            ["init.lua"] = "c5ce4375e297717c49edddbe6965dd2d",
+            routes = {
+               ["admins.lua"] = "a66830b1cc343f86430c325aae33ac25",
+               ["applications.lua"] = "77cebb417e92f92c1c2af1d9b6e9e528",
+               ["audit.lua"] = "19b6bc5d25ab051aae4ff4a449f7bc92",
+               ["cache.lua"] = "fad16433d344e36bd60615387610c486",
+               ["certificates.lua"] = "c88c49cca69a07215821966a4107c41e",
+               ["clustering.lua"] = "6b4e76df975056ed598c4d96580cbe05",
+               ["config.lua"] = "c3dd8e36e76f20b6eb283fd628c4cf51",
+               ["consumer_groups.lua"] = "49fb01cba6f7ff5bf088631a55269c25",
+               ["consumers.lua"] = "14cf444a09830e7337ea6d5ac6770d45",
+               ["debug.lua"] = "f3db53a65d2f3afd7daf7059b27d292e",
+               ["developers.lua"] = "b544a6f0fe136e7d812a18ad49d42266",
+               ["entities.lua"] = "3360d5c600e842395417df9dc507e731",
+               ["event_hooks.lua"] = "d666a498ebb07bbd6da6b29f886080b2",
+               ["files.lua"] = "6aca9b43421931ae4e7e92bc48406465",
+               ["groups.lua"] = "d2259d91fe1ef2604d8807b61f60596a",
+               ["health.lua"] = "75f18cf34e048ac0e8b0bdcc846460a8",
+               ["keyring.lua"] = "62a7dc382a53706a4c9d6a3ca750dbfb",
+               ["kong.lua"] = "000b4e4ce250e447a7438cbaeb691ac1",
+               ["license.lua"] = "3fdc20dcecf05c037c2af6f5fd66b258",
+               ["plugins.lua"] = "4a43ca5900aacb28c23da648eae816e0",
+               ["rbac.lua"] = "8305732425f48b88b22fea4515bef795",
+               ["routes.lua"] = "c24db5072d3b9f59691310e0f527eb82",
+               ["services.lua"] = "be261e25f162b772d5f07c95ab0368ab",
+               ["snis.lua"] = "1d07ae4b86ad518deb51ac79af6a5731",
+               ["tags.lua"] = "20471fa25c4f1c9f5db0e59e492588ff",
+               ["targets.lua"] = "a9da7de62b55c3954745282b544150d9",
+               ["upstreams.lua"] = "37f9a4147647c961ded37b8690591059",
+               ["vitals.lua"] = "2b96eb6dd4e5b58be4806b45f2aac086",
+               ["workspaces.lua"] = "68efb0b08df3c71dbe77cbc8200a3723"
+            }
+         },
+         cache = {
+            ["init.lua"] = "440179d717739e744f2225bc15319310",
+            ["marshall.lua"] = "f048f103ba86bb4056a51a572ebca2ff",
+            ["warmup.lua"] = "3615f6eb3d3ce3681ec8b60abd186918"
+         },
+         cluster_events = {
+            ["init.lua"] = "6636f0fa5b92fcb20203db5a52905cf5",
+            strategies = {
+               ["cassandra.lua"] = "c32c769ff495fe1492525077b6c59e3d",
+               ["off.lua"] = "69e91ed4578bd9de40fbccd92feb60a7",
+               ["postgres.lua"] = "e065a696eac4a07d3e96396d121ec203"
+            }
+         },
+         clustering = {
+            compat = {
+               ["checkers.lua"] = "174bde652a7a3aab21aee68e1ae673b9",
+               ["init.lua"] = "60aadc1898b28ea8402b80b9e9392651",
+               ["removed_fields.lua"] = "da40ea267b91e71eff15b53c9fedc34d",
+               ["version.lua"] = "564afe75f88a8e7a3390573017e3a354"
+            },
+            ["config_helper.lua"] = "8cb2e12ab97f7abf79f5b3060c08b37e",
+            config_sync_backup = {
+               ["init.lua"] = "0711e09ae25e00e6a6b1210f63dcd4fa",
+               strategies = {
+                  ["gcs.lua"] = "c64aef103490e45d78e967373a80e1b3",
+                  ["s3.lua"] = "249320e3c8dda63a942f3d79cd6d0854"
+               }
+            },
+            ["control_plane.lua"] = "badcee33ab77f9cd604f1b12e2d933f2",
+            ["data_plane.lua"] = "db75318bfd146cdaff6ca3d26db2255d",
+            ["events.lua"] = "c11282498150f90b3534038895e02d59",
+            ["init.lua"] = "b952ca402e38eb121268255fe46f7c1b",
+            ["telemetry.lua"] = "9b4a82276f5c4b631270a5dc4ed0edfd",
+            ["tls.lua"] = "15199415883b7d6f81d5a55198f136f5",
+            ["utils.lua"] = "95499b5ec66b94eb11f9a8bf8c53a2cd"
+         },
+         cmd = {
+            ["check.lua"] = "2f0aa6359f733872e46a47f1458253dc",
+            ["config.lua"] = "c74e10b6cd61b347ce82c84f39f729ee",
+            ["health.lua"] = "c5a32a790f93fe5d4b0fd69b7660acce",
+            ["hybrid.lua"] = "4eba33b2783b6eb462441d4131e22e64",
+            ["init.lua"] = "aa85bc67c2123374be0b82b4d69f2487",
+            ["migrations.lua"] = "8284a5ad7ab31afc582a0fd57ab1dc28",
+            ["prepare.lua"] = "da2b49ec49e4523ea183465ab7e67664",
+            ["quit.lua"] = "520979e214b5d2093b1e9ec18f4a505e",
+            ["reload.lua"] = "85d3ac5113e1ae163d344e218ab57eee",
+            ["restart.lua"] = "6de482c3549fa26f2b81247fd8bbe5da",
+            ["roar.lua"] = "b9e2d270d9d147605a556813a55b2542",
+            ["runner.lua"] = "0b3751602e15b26ecab4921cbd11dbf7",
+            ["start.lua"] = "a01de678738cbf96e6b83e32e7a2c69d",
+            ["stop.lua"] = "59f9bd45cc56f60932884cd10456740f",
+            utils = {
+               ["env.lua"] = "4cc80f174c3cfd60bd8792db46450d14",
+               ["kill.lua"] = "44220af8e97865e07c3f481094561cb2",
+               ["log.lua"] = "d2e889c10e26f455d131b09e045e67f9",
+               ["migrations.lua"] = "6fab9118f52ff2a6519897b819177ca7",
+               ["nginx_signals.lua"] = "e16ca13d2d807edfd2e4618b9ecf9c80",
+               ["prefix_handler.lua"] = "8d927346e7bd6b43dce1e657623993f5",
+               ["process_secrets.lua"] = "b14513b0ec13c5ceafa9b7b2b2e1a0bb",
+               ["tty.lua"] = "ddcae6b9cbe1f2923a4890f0e6452d71"
+            },
+            ["vault.lua"] = "2e12adf03bb05d89d504625c75880cc9",
+            ["version.lua"] = "580fcb75a73fb7d617c64c8adb8a1d9a"
+         },
+         ["concurrency.lua"] = "2502bcd965e17d2f862b0efdb1d1d35c",
+         conf_loader = {
+            ["init.lua"] = "ab3e6d1181a6083fc5cb800fecb34ad7",
+            ["listeners.lua"] = "f685949c3b6eb020ec85e4e16eadb997"
+         },
+         ["constants.lua"] = "68bdde1edab2a4296731069878180eec",
+         counters = {
+            ["init.lua"] = "4c9fda8ee511a0e47df98a80a64a7938",
+            sales = {
+               ["init.lua"] = "b20f69035da077910f002f9a8ae296c5",
+               strategies = {
+                  cassandra = {
+                     ["init.lua"] = "6da81a3bfff921208ff890381fd95139"
+                  },
+                  clustering = {
+                     ["init.lua"] = "6ec40fc27f2a22eaa6fc4e5b85786252"
+                  },
+                  ["common.lua"] = "dbcfe8f06b96615ab90a2992c7708383",
+                  off = {
+                     ["init.lua"] = "09fb201fc15ae1974c94017b2cd8083d"
+                  },
+                  postgres = {
+                     ["init.lua"] = "2eb28202b0ff23c8869cea592f51dca1"
+                  }
+               }
+            }
+         },
+         db = {
+            dao = {
+               ["admins.lua"] = "0c5d6992937f964811a032d8c7656377",
+               ["application_instances.lua"] = "e78ae6447c81673a20cd2492c3a65eee",
+               ["applications.lua"] = "288fb959a9176c0c966b62959cb08005",
+               ["certificates.lua"] = "a41dbb50ce3ef3657d85580b71a91707",
+               ["consumer_group_consumers.lua"] = "0194372c9821453f344c78c2c3d0a046",
+               ["consumers.lua"] = "742c03bb455df9f66c20352233eea5d1",
+               ["developers.lua"] = "0377106664e593bb465637c1e4da5bc6",
+               ["document_objects.lua"] = "f6143e4735ff8e5f1bf782255640551c",
+               ["files.lua"] = "1e7ea20cfcfe2f09bdc1313005d11390",
+               ["init.lua"] = "1a37d3c4b5d4af24b600dcc065e44b40",
+               ["key_sets.lua"] = "ed5bfffcdfefbe32d66a862284f37c87",
+               ["keyring_meta.lua"] = "89206127671bb0332e525d4de54de68e",
+               ["keys.lua"] = "b8fad228af9c73f568eb609f8cfa7035",
+               ["plugins.lua"] = "4b8c3123016a93185365802ada647c11",
+               ["rbac_role_endpoints.lua"] = "095fa15e31ca613572cd2fa773b5a0dd",
+               ["rbac_role_entities.lua"] = "585b7ea387dbf2ae36b3f4dbcb20ccb7",
+               ["rbac_roles.lua"] = "7b2b28fcbc8887df578d16c7912ed830",
+               ["rbac_users.lua"] = "18bd1d6c33c3779eaba46188167ee6df",
+               ["routes.lua"] = "f1ca585f2865ad6f21a6e0ac6b9e36f4",
+               ["services.lua"] = "3534e0be5e7f55f4e93bd123751531f7",
+               ["snis.lua"] = "c4a08b2162f0fd17b49dd0b16f68525b",
+               ["tags.lua"] = "4376378562b36b93448da63031ebae36",
+               ["targets.lua"] = "9c0cf3ae90af813b341cc008286ec8ab",
+               ["vaults.lua"] = "e6b112c082f2f601c786b940d26f347a",
+               ["workspaces.lua"] = "8c3be38adfe9affb46013c122c930d88"
+            },
+            declarative = {
+               ["export.lua"] = "1d15167609841fb30202230cce35ad1f",
+               ["import.lua"] = "52b9adabc65ae18747db584fd772d2cb",
+               ["init.lua"] = "2c8a945280b2fb9c116d1a2cc0c5f3cf",
+               ["marshaller.lua"] = "48b788b093bc40e4d976fc1ac42eb999",
+               migrations = {
+                  ["init.lua"] = "3d5f5a9e1036f2678752b9b999d6f45d",
+                  ["route_path.lua"] = "bfc32dcd81629dbe0ac3c53f65d54a2a"
+               }
+            },
+            ["errors.lua"] = "6892d5101fd715c00ade417ad3b55799",
+            ["init.lua"] = "6e0760c39992f96ba8bd34ccfab30c4b",
+            ["iteration.lua"] = "2661e63bcec6c37d5f30ead43c786850",
+            migrations = {
+               core = {
+                  ["000_base.lua"] = "842b18da40a6d58464e93ba88ec35b1e",
+                  ["003_100_to_110.lua"] = "1cf21455267d3c4841d9df0368bee4f0",
+                  ["004_110_to_120.lua"] = "0f596008f7e93eb76730b3bbf24c735e",
+                  ["005_120_to_130.lua"] = "ae753e06c60f7cc25d517f1eecb8c273",
+                  ["006_130_to_140.lua"] = "024f57f4dde1e1cdc46eedaf6b706630",
+                  ["007_140_to_150.lua"] = "0caed73f5d7d9f1c58f0de01889bc23e",
+                  ["008_150_to_200.lua"] = "8016ac93a5bfcdb78044a6b2f14cc12a",
+                  ["009_200_to_210.lua"] = "af1db9e7c44d0ec2b3c89ca7e063c9d2",
+                  ["010_210_to_211.lua"] = "80fca10c78b24a1698bd843352d0f1bf",
+                  ["011_212_to_213.lua"] = "72c51b6491ee34bc18cc66045abee3fb",
+                  ["012_213_to_220.lua"] = "2e0c34e266bafa8e82e581299ce547f0",
+                  ["013_220_to_230.lua"] = "e29bd73a96311ec1723b154e15e40742",
+                  ["014_230_to_260.lua"] = "15fc4fbf1dd6998a70f0b00e17e2d758",
+                  ["015_260_to_270.lua"] = "02ac67fc53b4f2763ebfbfd53e690ce1",
+                  ["016_270_to_280.lua"] = "538e3b77d9b70a2db925208ffbf37a7f",
+                  ["016_280_to_300.lua"] = "95a0e2c71f3eb42897c29ae0b32938f4",
+                  ["017_300_to_310.lua"] = "a4e5d4672f1cf0867ac699075da9938e",
+                  ["018_310_to_320.lua"] = "c501dc05397776eba7e96a408d53968c",
+                  ["019_320_to_330.lua"] = "961a63399ba8f65dbb47fec94fdf62d5",
+                  ["init.lua"] = "5ebf93e9a2c42f3be26ee1f23cf575da"
+               },
+               ["migrate_path_280_300.lua"] = "4f2379256dc787dec30b2a3b49f2c8ae",
+               operations = {
+                  ["200_to_210.lua"] = "1f05576a3b92fed3f558497ee0eba5b0",
+                  ["210_to_211.lua"] = "7ed0cd6d4eab0da7f8c162b0b95d6bf1",
+                  ["212_to_213.lua"] = "978e98dc3b49598f80753467d6e2e307",
+                  ["230_to_260.lua"] = "46ee4e95391002981f0c52503d405a0f",
+                  ["280_to_300.lua"] = "3ce0bc28cca608ff61d8cb1bcb7d61f8"
+               },
+               ["state.lua"] = "ccd4bd726e65611d980fc865a029308c",
+               ["subsystems.lua"] = "55e63a30de1355be0aa0c47d8bd61428"
+            },
+            schema = {
+               entities = {
+                  ["admins.lua"] = "63421ed7e80faf766cb73a36e04212bf",
+                  ["application_instances.lua"] = "8f27275e91883d39d5d47f9020ddecfb",
+                  ["applications.lua"] = "0e2901dfa0965d08d85b38214f8e7964",
+                  ["audit_objects.lua"] = "63c300d3eb837dad6ca75fe94bc9d97a",
+                  ["audit_requests.lua"] = "1ff53f13623aab45833d703ce842be20",
+                  ["ca_certificates.lua"] = "bf83edf7fe16104375b391a6a5396b85",
+                  ["certificates.lua"] = "3a0924da1bec9bd86d509b6e1ddd8802",
+                  ["clustering_data_planes.lua"] = "f895b1e18d62fc0ed19aae9d1ea4b83e",
+                  ["consumer_group_consumers.lua"] = "73da70eee58decdaedc7d7a4d84f3193",
+                  ["consumer_group_plugins.lua"] = "c28afc1f7645cebb7141673efe7118ec",
+                  ["consumer_groups.lua"] = "81e13591677fc46584ff01f8948f9612",
+                  ["consumer_reset_secrets.lua"] = "bae3b77362bfe2b7a2680fba2551e6af",
+                  ["consumers.lua"] = "d23ece9c744abca01d9cc3286abf6b3d",
+                  ["credentials.lua"] = "516d089aceb23065e3ff2776bfc647e9",
+                  ["developers.lua"] = "1d4e2559d99012bf1a211aae33ddafb9",
+                  ["document_objects.lua"] = "af245a23f3dc316643efdc3a59eb7be2",
+                  ["event_hooks.lua"] = "2f68779e0866918a378db76abe60cad0",
+                  ["event_hooks_subschemas.lua"] = "e8b05bc9b3703ddc68315ba9adedeca0",
+                  ["files.lua"] = "54eb26d4099dce5caa0b41a5755e6719",
+                  ["group_rbac_roles.lua"] = "4f32afbccd6273c2e04fdd2ecfa36b2d",
+                  ["groups.lua"] = "aa60cebc70ebcbe24ed9928a6f6d3f99",
+                  ["key_sets.lua"] = "a84c6c659667a75e403457684ecda36a",
+                  ["keyring_keys.lua"] = "27aea271515fb85fce18b84e33b75157",
+                  ["keyring_meta.lua"] = "8596c10c0867af5d929fa43c7be33664",
+                  ["keys.lua"] = "caff264fd278a5424475db1adb627154",
+                  ["legacy_files.lua"] = "87dc6d6e74beed8237575147327477e6",
+                  ["licenses.lua"] = "7356b894e5b488a95411dca8551c4459",
+                  ["login_attempts.lua"] = "810ec34f3fc3d0dab60db161dc0fff20",
+                  ["parameters.lua"] = "5f55aaf288f1e00728edb10a541d5a78",
+                  ["plugins.lua"] = "3274119702ed003fe9dfeb15ce58adc8",
+                  ["rbac_role_endpoints.lua"] = "2af62d747c935b91a9b87b01dc5998f1",
+                  ["rbac_role_entities.lua"] = "01175633ed0dde871bfd646c589b877c",
+                  ["rbac_roles.lua"] = "abef968247f6bf8c6b7899dee5dda208",
+                  ["rbac_user_roles.lua"] = "3674d49ac5c693fc66741d46fa33aaa3",
+                  ["rbac_users.lua"] = "ca5fd09ca25150348f455cb9770ce77b",
+                  ["routes.lua"] = "77dd7b525e99503b1c0f9825f9f3f26e",
+                  ["routes_subschemas.lua"] = "9fe24097ddd2f2a8fcc2903935dcc50e",
+                  ["services.lua"] = "056a957cf2c37de93bbfea8c8e8d9d1d",
+                  ["snis.lua"] = "12e2a1a6a1e92a6d8f8b389031386f6c",
+                  ["tags.lua"] = "6ef2660cb11c2637f5b0709cf936bba4",
+                  ["targets.lua"] = "9c674a6ec9df83b51bbcb2dfff4e1b41",
+                  ["upstreams.lua"] = "4440fda4ee04e0c36cd6ab8c71d8d994",
+                  ["vaults.lua"] = "03805e82f46d5851c1a249b557f1c1b6",
+                  ["workspace_entity_counters.lua"] = "45b18c7e7a9ad8c8acce13fb22192463",
+                  ["workspaces.lua"] = "1c66810bbefb4665fc27a1572dc8a1bd"
+               },
+               ["entity.lua"] = "bd52bce95f5cef859247e241a81db953",
+               ["init.lua"] = "ac8f9f47b6125a96362851f3b20d8084",
+               ["metaschema.lua"] = "05c8a3b8bd8014f2250a3a6af4b9ed65",
+               others = {
+                  ["declarative_config.lua"] = "27198c7aee3e4f351037014df50104e0",
+                  ["migrations.lua"] = "50b098a6b9bf4368387dfd71a8e6ee34"
+               },
+               ["plugin_dependency.lua"] = "26537b6175e038dd3bcfd8c2a10cad04",
+               ["plugin_loader.lua"] = "b51905536d24f2e67864c9983491e231",
+               ["topological_sort.lua"] = "3f10f47754c38e2fad2f8fd33b3ed7fa",
+               ["topsort_plugins.lua"] = "dbc6c3c7ba425b909dc350ff5e3576d3",
+               ["typedefs.lua"] = "a6e1a957ac031c64b1208efb30ec370d",
+               ["vault_loader.lua"] = "cd3d58ce32da735692aa042f2a9a82d4"
+            },
+            strategies = {
+               cassandra = {
+                  ["admins.lua"] = "8fa3bb940c38c96d348291fe2a94ceab",
+                  ["connector.lua"] = "b69e4a0e008eb12f22e0a8127323dc20",
+                  ["consumer_group_consumers.lua"] = "5b62a335359dc1dff1373aad0a600501",
+                  ["consumers.lua"] = "4017c93354785c517f14211551ad697d",
+                  ["init.lua"] = "251d04097d93dcb5166edaabe1f500ea",
+                  ["keyring_meta.lua"] = "d1d7ca351ece121a7712d04197b9403e",
+                  ["rbac_role_endpoints.lua"] = "dc489d798bbac23701c41677caef7f58",
+                  ["rbac_role_entities.lua"] = "ce244db69f0245882ceb35ea8fba7c95",
+                  ["tags.lua"] = "ba6f792bc868cf1255df128065f9bbe9"
+               },
+               ["connector.lua"] = "6f385b9dfe7ebd53944f2bdc55cfee65",
+               ["init.lua"] = "aecd421e27624d0e39ce9b91d3b85e97",
+               off = {
+                  ["admins.lua"] = "e1de65579ab6499f06fee4807058da56",
+                  ["connector.lua"] = "b0b22aa708d2baba38bec71fa4d8bc06",
+                  ["consumer_group_consumers.lua"] = "6d84c2f9a5839ffc47bc9e140fee6017",
+                  ["consumers.lua"] = "fd47e7e09fed3db1fde30255f85bf5b2",
+                  ["init.lua"] = "bd4dcce8cfdd948970620ca37ffce71e",
+                  ["tags.lua"] = "266a00bc5889c19431abe0f771dd281b"
+               },
+               postgres = {
+                  ["admins.lua"] = "b9549659499eaf1288704dbaa35b175a",
+                  ["connector.lua"] = "a5732dcd71bbf231b0aa88d923b06373",
+                  ["consumer_group_consumers.lua"] = "45b924e46fe7a8280a5cf6ffe02d02ee",
+                  ["consumers.lua"] = "a11371f2a0dedaa821bf7ed201d907dc",
+                  ["iam_token_handler.lua"] = "0ec94da5bf45d0881f4ce27d7e8802c3",
+                  ["init.lua"] = "a2ce95accc3fa9140ecfe80a8496b407",
+                  ["keyring_meta.lua"] = "9dfb3ef14387f6a1f39e736de45f5a1b",
+                  ["rbac_role_endpoints.lua"] = "48443fd9bb1a9e7c78fcee3440706404",
+                  ["rbac_role_entities.lua"] = "d01a6c6d00bb256ef2dbaebe43a76ed5",
+                  ["routes.lua"] = "fcd1a7ada90c8c2461f5ed124a6d404d",
+                  ["tags.lua"] = "df43b00c6ac669d442255e822bcc4ea0"
+               }
+            }
+         },
+         debug = {
+            ["init.lua"] = "5add507e60b333f1110cc63b4924f4c5"
+         },
+         ["deprecation.lua"] = "71e015f25929501a11d8f954ee07a28c",
+         enterprise_edition = {
+            admin = {
+               ["emails.lua"] = "1cec2f2c1efa0bcd3a52f0f4184ca57b"
+            },
+            ["admins_helpers.lua"] = "04d7f6fc774a40e06e143ab6c6a36352",
+            ["api_helpers.lua"] = "f500b2f4775637d34c112330d0588c26",
+            ["audit_log.lua"] = "d44d29fb97f93f4cda68ac7c2e4b9433",
+            ["auth_helpers.lua"] = "75f9fcb9434cf516ece82186da6d0d48",
+            ["auth_plugin_helpers.lua"] = "8e8d8e55a2f5f5ef46ba1b7c154e445a",
+            ["cert_utils.lua"] = "92fb8dff63a0308f8d41a78ccc44b1d8",
+            clustering = {
+               ["tls.lua"] = "0de8500ff30b8f3b9d1bc4886c75ca0a"
+            },
+            ["conf_loader.lua"] = "6a95251247a5f2887ed18c3595f01912",
+            ["constants.lua"] = "7a2ce6dc477ff5f59b0f5ae96be929f7",
+            ["consumer_groups_helpers.lua"] = "95942b6f86329d3101cd73bb70a0fcc1",
+            ["consumer_reset_secret_helpers.lua"] = "97e38554a59054d6d76025e6cca98821",
+            ["crud_helpers.lua"] = "cc7e40b5678b0ef6733547c28015ce98",
+            dao = {
+               ["enums.lua"] = "02071997de1d7e2ae97b8935190a45d6",
+               ["factory.lua"] = "d3f47d9531ccfa975cbce79fc56edbf9"
+            },
+            db = {
+               declarative = {
+                  ["init.lua"] = "88f0ec8b2d2a3ef83d462cc8b4f60b4f"
+               },
+               ["init.lua"] = "d5cf5958099c95ce03e4e511765c64ae",
+               migrations = {
+                  enterprise = {
+                     ["000_base.lua"] = "8e63a49cd48fb04b0a59da42df4589f7",
+                     ["006_1301_to_1302.lua"] = "db7d59459c8ab914db233ce7de0eb7ae",
+                     ["006_1301_to_1500.lua"] = "cac2cb751184b1044c98654223c61748",
+                     ["007_1500_to_1504.lua"] = "8d4fda3c88888b896ab55a4ccfe71497",
+                     ["007_1500_to_2100.lua"] = "e3b67bc4e018ca455f2d4ba700314d2d",
+                     ["008_1504_to_1505.lua"] = "645239a13ac815a86f6328c865a614f9",
+                     ["009_1506_to_1507.lua"] = "099271f5acc643ea1a2ce8b07d21e0cf",
+                     ["009_2100_to_2200.lua"] = "3eff3bf9359f771a45903b77ed01701c",
+                     ["010_1500_to_2100.lua"] = "110926e4bfd624887dbf46e8565bde1b",
+                     ["010_2200_to_2211.lua"] = "d47e8c7e43e74e6cbf70e03a843881b4",
+                     ["010_2200_to_2300.lua"] = "db06d47a6a0f76ae1e6eb3fab61c2010",
+                     ["010_2200_to_2300_1.lua"] = "9fba78b9eef218ddb84951ca0e0badb2",
+                     ["011_2300_to_2600.lua"] = "a3d9e0281533e93940ac5bdbad3d09d3",
+                     ["012_2600_to_2700.lua"] = "37458a14c1adbf384847977605382b77",
+                     ["012_2600_to_2700_1.lua"] = "9876dafcb7c706f9f75e6ee18e6d083f",
+                     ["013_2700_to_2800.lua"] = "556dccf0d1e99f908a7af82a01766e52",
+                     ["014_2800_to_3000.lua"] = "90cfd2ba33e9625ef4d2a51c93b20f86",
+                     ["015_3000_to_3100.lua"] = "fd2ab58d888746949326d3b9c77fbcd4",
+                     ["016_3100_to_3200.lua"] = "a0c5b58910e8a59358beb0b537e51890",
+                     ["017_3200_to_3300.lua"] = "8d1aa5caf379ef4c61def930d14628f8",
+                     ["init.lua"] = "a6f7a6afe0f3ea409f56e749ba89aec7"
+                  },
+                  ["migrate_core_entities.lua"] = "368d7eb530b1a9275904f2f30775f0d2",
+                  operations = {
+                     ["1500_to_2100.lua"] = "f3e9c5655cc60239dc20137d4ba4bf52",
+                     ["2600_to_2700.lua"] = "513655013693cef26a2326fde6ac8da2"
+                  }
+               },
+               ["typedefs.lua"] = "3189964b84305f02e3f2be0a8429f8b8"
+            },
+            ["debug_info_patch.lua"] = "5abe6ba0c0e2c595b7b7a1f0ace2ddaf",
+            ["distributions_constants.lua"] = "5543bc0e9bf2ea55e6888b157aea9e78",
+            ["event_hooks.lua"] = "b79a2c08a8cff24ffa29126b62634788",
+            ["feature_flags.lua"] = "00fbf62e5c85f78f6f85c91980cf41ff",
+            ["init.lua"] = "66c2977872345dfc88675a468940d882",
+            ["invoke_plugin.lua"] = "0a8af11f1976252d9aee4e52fcb9c084",
+            ["jwe.lua"] = "e8c6eb9f6e7404cbc798b934a188a45c",
+            ["jwt.lua"] = "7cb5eff3ed0abe26a74d4da4d8716bbf",
+            kafka = {
+               plugins = {
+                  ["producers.lua"] = "0eda8d4b34896dc95e26eca974e1e36a"
+               }
+            },
+            ["license_helpers.lua"] = "26249e0eea8ceaba056172315a92762d",
+            ["license_utils.lua"] = "a6079e56fa9a7c9c658d0fe9d67b7da7",
+            ["licensing.lua"] = "382856825035cbd858e9b7111ce2c5f2",
+            ["meta.lua"] = "b06f6319b114d0a937c99997f7f4219b",
+            oauth = {
+               ["error_codes.lua"] = "b1bb62579efb61d4ed796085b2d06080"
+            },
+            pdk = {
+               private = {
+                  ["websocket.lua"] = "9ad758ab3f8ae8e30aba3b4938d62751"
+               },
+               ["response.lua"] = "b3d6200778084bcf419d8865aea993d1",
+               ["websocket.lua"] = "33ada6d331cc4b4feb7c9d1028859b92"
+            },
+            ["plugin_overwrite.lua"] = "7935bd64946cb02430538c2b9bea9847",
+            profiling = {
+               ["cpu.lua"] = "657ac210557e59e788ebe338f49b4c89",
+               ["gc_snapshot.lua"] = "df8a32f16970e6ec726944d0cdd1855b"
+            },
+            ["proxies.lua"] = "117d87e30951b0ec79cdd0a349a54001",
+            redis = {
+               ["init.lua"] = "64ea233e3a029852eadf79d2f6224cd0"
+            },
+            runloop = {
+               ["handler.lua"] = "e25a55886864d0575fbdfa35f877eb03",
+               websocket = {
+                  ["proxy.lua"] = "3fdfd5e7bc6d7d574af0a34ee08e77d9"
+               },
+               ["websocket.lua"] = "5aa2eafb632ba6b0600023874d1f77d4"
+            },
+            ["smtp_client.lua"] = "b0bbc60114996007b47b3c7ba116f2df",
+            status = {
+               ["init.lua"] = "194988724e730c73a7abc211ed4646ac"
+            },
+            tls = {
+               plugins = {
+                  ["certificate.lua"] = "b02943b8f2165b579d4a832202afc0a3",
+                  ["sni_filter.lua"] = "69f632672a240a8103830c019763d1d1"
+               }
+            },
+            transformations = {
+               plugins = {
+                  ["json_navigator.lua"] = "65b1001b8883302cd61ef34cb03ab57b"
+               }
+            },
+            ["utils.lua"] = "4a082f0faeaae5ebedf0985b4e149ac8",
+            workspaces = {
+               ["route_collision.lua"] = "13d2c9c35b4e444ae60f329881fdcb3d",
+               ["scope.lua"] = "8fa635dfba159f7801de5e4f58746beb"
+            }
+         },
+         ["error_handlers.lua"] = "e25bfe21b8196e97f4f7adb3f65a9db7",
+         ["global.lua"] = "24b250a55e68cb83c627f4d5d1760e2e",
+         ["globalpatches.lua"] = "4fef6ae02c6363ab05f02437479617d9",
+         ["hooks.lua"] = "8e8d2c2ccd4e22982df6919b23d9f87d",
+         ["init.lua"] = "9825f7b0a743c36cfbe63524c79fae15",
+         keyring = {
+            ["init.lua"] = "fe504854254b3379bf7dcc4d1fd12a38",
+            ["startup.lua"] = "76f5361eeeedccd89d7a173acf4c1570",
+            strategies = {
+               ["cluster.lua"] = "a3c5c96e3fd35791352581c055250fcf",
+               ["vault.lua"] = "cb6cd0b3d239e8d7b87a79d63cb8c301"
+            },
+            ["utils.lua"] = "4aadc88afc87d8c06f8a58c1599dff22"
+         },
+         ["meta.lua"] = "aadf58e641d5eaf9754c96b47b50b329",
+         pdk = {
+            client = {
+               ["tls.lua"] = "d970a6701aed56454d615ced6cf126dd"
+            },
+            ["client.lua"] = "743ddf30552903b8edfff83e6f56b796",
+            ["cluster.lua"] = "f9850e42fbd6027e07c12e6800d0367c",
+            ["ctx.lua"] = "b5baf507ff2c7b5ef94e864af79ccfd7",
+            ["init.lua"] = "18d4786a91460c39fac3c094bea8800b",
+            ["ip.lua"] = "9288c652bc383d99bbb0fb8576dc4924",
+            ["jwe.lua"] = "88c7dd9837eb7bb7f44f923631168ec4",
+            ["log.lua"] = "d65de01d434c26c04025b7f0a2384046",
+            ["nginx.lua"] = "12f33b5927d2ce8ee87ab1503fea8645",
+            ["node.lua"] = "4d9acfaed8c4af5bf5e54dc8f334dcbc",
+            ["plugin.lua"] = "e47ef573d7cfbc088ba25c9a564bc9d2",
+            private = {
+               ["checks.lua"] = "a7810ba99b2a3440ba9d28af4fe7d2b5",
+               ["node.lua"] = "54acb18a9c0170f73171a83c291e16ff",
+               ["phases.lua"] = "27d06922a9ddea7422c962ef6ef01cdc"
+            },
+            ["request.lua"] = "4eb602c9d9e9c2c883529e8f7d84af1e",
+            ["response.lua"] = "d99baa410c277661761e103043420fbf",
+            ["router.lua"] = "551fde9b3bf28f5b4e113ae4b40b5706",
+            service = {
+               ["request.lua"] = "ea77a484e8281a6645e8b8f17549a185",
+               ["response.lua"] = "74c998a42106bc5cf3ee9215d015f72c"
+            },
+            ["service.lua"] = "fe42ea166bd4a6566a517425a1a969c2",
+            ["table.lua"] = "902f96c0579fdfe27ddace8fd3902b1a",
+            ["tracing.lua"] = "9bba2280c3a0fe50854b3bcbd5a0a5c3",
+            ["vault.lua"] = "11b4db013813a17dc3b722f0bc8b44f9",
+            ["websocket.lua"] = "73d088aebba2b6d7dd30ce23c1562d5d"
+         },
+         plugins = {
+            acl = {
+               ["acls.lua"] = "0b34e1d7bade15d2a770d3148576a9f2",
+               ["api.lua"] = "912e2bb558e4d7d23dbf86ceaabe7a05",
+               ["daos.lua"] = "33094017a5eae2ddc354a6c1974d11be",
+               ["groups.lua"] = "32aed9606fc0fc86559adf2f41186c18",
+               ["handler.lua"] = "10d9750afd3c51ccc181d120e2abda63",
+               migrations = {
+                  ["000_base_acl.lua"] = "b48880a6887ef5bc24c1b03f4cef1ec5",
+                  ["002_130_to_140.lua"] = "6f91d126a542f025d2d3f895469fdf3e",
+                  ["003_200_to_210.lua"] = "12dcf77070cc67a0aa793a91fa566c24",
+                  ["004_212_to_213.lua"] = "22fdfe7eeee854b55175c7a179b3616c",
+                  enterprise = {
+                     ["001_1500_to_2100.lua"] = "f58f5d745d5758fa4f3a25a0a12c276d",
+                     ["init.lua"] = "e31a3cf8045e0d6421df1c2f4e3ae76e"
+                  },
+                  ["init.lua"] = "0d10f1190646843e1b612b668b33b134"
+               },
+               ["schema.lua"] = "f62f8e3bed697bfceb35197466cdaaae"
+            },
+            acme = {
+               ["api.lua"] = "684ae9672819d7aa5872f0521650337e",
+               ["client.lua"] = "021bce0b42b6d150cd03cdb12b6ee9e7",
+               ["daos.lua"] = "37fcaeeb80b5e8d6c09b8e7cc4340c54",
+               ["handler.lua"] = "301e039b68c823d807c77148e924d828",
+               migrations = {
+                  ["000_base_acme.lua"] = "1ba42d36233536214ccd9d7b40090479",
+                  ["001_280_to_300.lua"] = "55b0ba4092b7c30c46051fd897486a0e",
+                  ["002_320_to_330.lua"] = "2d881c6930bfbdae7908e83cbc76161e",
+                  ["init.lua"] = "6ce7ef7f66ae8aa919c3f0de5487488f"
+               },
+               ["reserved_words.lua"] = "932c02c6cb6ec03bcc09c299f542c4b1",
+               ["schema.lua"] = "f9ec6e340125992f5a6639a6d7a36545",
+               storage = {
+                  ["kong.lua"] = "95e475b8b29d123767dcef8af1c951f5"
+               }
+            },
+            ["aws-lambda"] = {
+               ["aws-serializer.lua"] = "34b70685de058f43efc033c7877c486e",
+               ["handler.lua"] = "d2d441e4b0971749eb9adceea945ac12",
+               ["iam-ec2-credentials.lua"] = "c97edbe36a24e0d9e49c22b2492467a3",
+               ["iam-ecs-credentials.lua"] = "edbcc47842f3347789de627a060d49ae",
+               ["iam-sts-credentials.lua"] = "d2fcb55abedb7f50243b4e000c166446",
+               ["request-util.lua"] = "da88424e0ce2aa949cf92a759f224af0",
+               ["schema.lua"] = "6f1a0e09197c73d8f7f003b2916fa179",
+               ["v4.lua"] = "0dc29dabacf93d57e8f7b46b73000805"
+            },
+            ["azure-functions"] = {
+               ["handler.lua"] = "2515a960f58e1d312c30032a243f4cf8",
+               ["schema.lua"] = "06ea0e768946ab7ee18a91a898c69c8a"
+            },
+            ["basic-auth"] = {
+               ["access.lua"] = "f33be3b50d5c003097958083dd743045",
+               ["api.lua"] = "aa31da21c7938dd88e49ba1d423ef87c",
+               ["crypto.lua"] = "0ecb0d3631ec82dc3a9571728ee47a03",
+               ["daos.lua"] = "bf841178265f295e3ab313333977202e",
+               ["handler.lua"] = "c56499c56243e51ed33dec57713e8a68",
+               migrations = {
+                  ["000_base_basic_auth.lua"] = "31d96399dbf37827dc72f1b44f668940",
+                  ["002_130_to_140.lua"] = "4db376b162f0140cb15c6837103155df",
+                  ["003_200_to_210.lua"] = "2eb8a75d88ec3387436990f1dd4ad148",
+                  enterprise = {
+                     ["001_1500_to_2100.lua"] = "7bfb750e97b9d587389197545b56d2ab",
+                     ["init.lua"] = "e31a3cf8045e0d6421df1c2f4e3ae76e"
+                  },
+                  ["init.lua"] = "300e74da0ea003d91e4a3762d4aac8ab"
+               },
+               ["schema.lua"] = "20582f2b98b6df850620adaf97fbb4dd"
+            },
+            ["bot-detection"] = {
+               ["handler.lua"] = "6b3e4e79040c2b2572001c1e861efad3",
+               migrations = {
+                  ["001_200_to_210.lua"] = "301b7d2be19166280702e5872a3f5479",
+                  ["init.lua"] = "ef98d3fd7047bed26f847e2e17f72d93"
+               },
+               ["rules.lua"] = "29f00cf3772285f982bf0b50df362c7c",
+               ["schema.lua"] = "7239c723df48f955075a79bff35648e4"
+            },
+            ["correlation-id"] = {
+               ["handler.lua"] = "3b9639de55df352acc85be039270a400",
+               ["schema.lua"] = "077f7192bfbcb1e46a622cb8f0e79c39"
+            },
+            cors = {
+               ["handler.lua"] = "402faccc0d673b9188c2c0521f45af03",
+               ["schema.lua"] = "481995d316b681cb19b134daa18e9e38"
+            },
+            datadog = {
+               ["handler.lua"] = "a32c562236d5a839b3c4c03433f4cb71",
+               ["schema.lua"] = "d26a438c627158b642acc69e34b95236",
+               ["statsd_logger.lua"] = "757255b08ecb865011cacd2a80312a28"
+            },
+            ["file-log"] = {
+               ["handler.lua"] = "2246990ba1b0596abc9a2ac0278ac679",
+               ["schema.lua"] = "196da108e7c2c368b4e90db66b7d912f"
+            },
+            ["grpc-gateway"] = {
+               ["deco.lua"] = "c8f7cca3e787523b3a8db47adfb366cd",
+               ["handler.lua"] = "15953f6b033dd64c04668183425ca199",
+               ["schema.lua"] = "8c9a993f130c6dcd7b7187b30e95c5fe"
+            },
+            ["grpc-web"] = {
+               ["deco.lua"] = "5f4c2e29f74a620f78b80b0eaf688e09",
+               ["handler.lua"] = "e422626db81e117d3ddc89ff0bb3aa55",
+               ["schema.lua"] = "6da0f53ec3b69c241791e3d7998385c6"
+            },
+            ["hmac-auth"] = {
+               ["access.lua"] = "3968705e6bb81cba87911290d6cee490",
+               ["daos.lua"] = "3dcf002191a5e29f2224dc5a4ec675a1",
+               ["handler.lua"] = "a60a6c7968cd88df3ac0bc68bacdd780",
+               migrations = {
+                  ["000_base_hmac_auth.lua"] = "8ac111ff842e632fca28b0c6744ca0b6",
+                  ["002_130_to_140.lua"] = "923b52197f9a426e603be46fd20296bc",
+                  ["003_200_to_210.lua"] = "43dfc857b85837a7a13c47e6de611d20",
+                  enterprise = {
+                     ["001_1500_to_2100.lua"] = "8290e4f8041ff2985a4349344af22400",
+                     ["init.lua"] = "e31a3cf8045e0d6421df1c2f4e3ae76e"
+                  },
+                  ["init.lua"] = "ff3a0ab808d0c2bf3677286c37c725cc"
+               },
+               ["schema.lua"] = "2522e66d68850e35b30a28ac6546e2a7"
+            },
+            ["http-log"] = {
+               ["handler.lua"] = "54b9f0525067a1713b673ef04e819962",
+               migrations = {
+                  ["001_280_to_300.lua"] = "0a7f2c70c22a21b439b1b1ae8aefaaf2",
+                  ["init.lua"] = "5f60b95565bafe587cdbf8233442eeb9"
+               },
+               ["schema.lua"] = "0719e44e2bd00a7e78524fd820860689"
+            },
+            ["ip-restriction"] = {
+               ["handler.lua"] = "c2f50fded49803051831e32ca1e1e947",
+               migrations = {
+                  ["001_200_to_210.lua"] = "ab1b8e75e8d33b646524bbb64c1e691f",
+                  ["init.lua"] = "ef98d3fd7047bed26f847e2e17f72d93"
+               },
+               ["schema.lua"] = "4a5fd48717b5d899d643ea9bf91d17cb"
+            },
+            jwt = {
+               ["daos.lua"] = "2237fcbe8715ef182ac21425df383f10",
+               ["handler.lua"] = "182bc01b3819955fd5ce8b6516333fe8",
+               ["jwt_parser.lua"] = "d8364b9ab5d226ee5ad2ee2eace9f089",
+               migrations = {
+                  ["000_base_jwt.lua"] = "8e6a5665f7b47fe93b25f9ad549a37c3",
+                  ["002_130_to_140.lua"] = "55d320927fbb0018ffca048845deff77",
+                  ["003_200_to_210.lua"] = "17e27181c26fcc70c9d1837d56411b48",
+                  enterprise = {
+                     ["001_1500_to_2100.lua"] = "a7c4dbc3403fff2de575d3091e62f2b9",
+                     ["init.lua"] = "e31a3cf8045e0d6421df1c2f4e3ae76e"
+                  },
+                  ["init.lua"] = "2ba2a86e441d340eac1379a98de1d452"
+               },
+               ["schema.lua"] = "71869cbc29c3b30b4343aaf01a896b46"
+            },
+            ["key-auth"] = {
+               ["daos.lua"] = "91295c6f95637906b6df86bf814c0443",
+               ["handler.lua"] = "977d31f3cf30f7edfcc2e0c2ee51cf90",
+               migrations = {
+                  ["000_base_key_auth.lua"] = "5629c6b9d41930ff6927afec4ab50ccc",
+                  ["002_130_to_140.lua"] = "5641d457450f323a81f412aeb5bdaa86",
+                  ["003_200_to_210.lua"] = "e162b08cc6fdea0382841b5797a4c81e",
+                  ["004_320_to_330.lua"] = "3ab0a3e9306cf4a155116811ec5b6521",
+                  enterprise = {
+                     ["001_1500_to_2100.lua"] = "8f86244ae445377bd4b01748644b38b4",
+                     ["init.lua"] = "e31a3cf8045e0d6421df1c2f4e3ae76e"
+                  },
+                  ["init.lua"] = "0c96be698bbede0afe691ab11df7e17d"
+               },
+               ["schema.lua"] = "8704a0a495b0ccdc7f8894a2b093d302"
+            },
+            ["ldap-auth"] = {
+               ["access.lua"] = "4995d433514ed00946ffab6509393888",
+               ["asn1.lua"] = "67691df316105ae50bdca03f30b9251b",
+               ["handler.lua"] = "0a90c34ac807d8f9fc0c193c2328a5d5",
+               ["ldap.lua"] = "46fb8727d8f8f7241b418332db7f6ba6",
+               ["schema.lua"] = "3f39da39e77fab309476dec1df98174e"
+            },
+            loggly = {
+               ["handler.lua"] = "eee49294b72df149c96139af7769177f",
+               ["schema.lua"] = "a1cad490c11eecb2c474cbf1c2b0098c"
+            },
+            oauth2 = {
+               ["access.lua"] = "92688ab6262ed40595870c569f9231dc",
+               daos = {
+                  ["oauth2_tokens.lua"] = "978916f31e92662050155d671972e4ce"
+               },
+               ["daos.lua"] = "78f44af94cf713a6ae9548255b3a0e7d",
+               ["handler.lua"] = "acf2ccdfb5a658346279ffd99037fdd7",
+               migrations = {
+                  ["000_base_oauth2.lua"] = "3c9425ada77b27ae1e485b2f34caca01",
+                  ["003_130_to_140.lua"] = "9e5fc4afc7dabce85f5fa530346ce699",
+                  ["004_200_to_210.lua"] = "8b78dd7b535bd11362ed0acec891a844",
+                  ["005_210_to_211.lua"] = "df201598046733b1a4c910e5582a9b69",
+                  ["006_320_to_330.lua"] = "8f3ac3425d5b7743bc5f4a378347107a",
+                  ["007_320_to_330.lua"] = "3ddb27dd5fd54d98d4da389a19f72df3",
+                  enterprise = {
+                     ["001_1500_to_2100.lua"] = "8db95ebb4b49e4207fc4070496a88ffb",
+                     ["002_2200_to_2211.lua"] = "64851302ffbe22436c66ab9685ca6a94",
+                     ["init.lua"] = "03410018461aa08e9f5eb02e9c7f38ab"
+                  },
+                  ["init.lua"] = "dd0d45faf608aeca168c443b02b43d7a"
+               },
+               ["schema.lua"] = "e96cc7477615e618a991c3da6f2e63ca",
+               ["secret.lua"] = "1e541e8f4675277e2146e2cc47e919ff"
+            },
+            opentelemetry = {
+               ["handler.lua"] = "3fb140d210d071f5322cab5c5ac0c514",
+               ["otlp.lua"] = "782fddb36d35bafe4c10f8dc1e8e0872",
+               ["proto.lua"] = "0558634071a674aa2cda8f9d8fccaac1",
+               ["schema.lua"] = "7043602853f20e3305f3f5fe301dcc90"
+            },
+            ["post-function"] = {
+               ["handler.lua"] = "94f1feb6e7b2f0eabc1a91e9016ac536",
+               migrations = {
+                  ["001_280_to_300.lua"] = "1503a892b8429b8aead7a446dc9718f4",
+                  ["init.lua"] = "5f60b95565bafe587cdbf8233442eeb9"
+               },
+               ["schema.lua"] = "89dffbe0ac15e07fa611217f993119fc"
+            },
+            ["pre-function"] = {
+               ["_handler.lua"] = "5ebdd039ab504fbc1907978acfa6bef1",
+               ["_schema.lua"] = "6e096af17d3ae600efce4a497171e101",
+               ["handler.lua"] = "88a617e5c226904f6cb7466b3c0ab4f3",
+               migrations = {
+                  ["001_280_to_300.lua"] = "d4d6bab84d9280f571fb0850e8094ce3",
+                  ["_001_280_to_300.lua"] = "45b4ef7faf2ddcc8ac238e1bcfde9a93",
+                  ["init.lua"] = "5f60b95565bafe587cdbf8233442eeb9"
+               },
+               ["schema.lua"] = "a886cbc5fdfd5f2510bb2eb06c8b2733"
+            },
+            prometheus = {
+               ["api.lua"] = "8ec563f9472f6130998a95408291ac49",
+               enterprise = {
+                  ["exporter.lua"] = "5582ce5d84e0e38081691c2b4f25256e"
+               },
+               ["exporter.lua"] = "46f029556d18dd91af77729575e2e819",
+               ["handler.lua"] = "2dfddf0f5e402bcdd0ee35d2dd1fe0a9",
+               ["prometheus.lua"] = "a5d31fbc5d62ef58a3091d9a8d4188b5",
+               ["schema.lua"] = "342380237cba0be313125f892bbe27a3",
+               ["serve.lua"] = "7744eeff63de07530393b18316e3a2fe",
+               ["status_api.lua"] = "2e457bc37022e4bb5602c87ff5034f2a"
+            },
+            ["proxy-cache"] = {
+               ["api.lua"] = "7a145e3914eccd406a2df200304e6816",
+               ["cache_key.lua"] = "e564c1dc6f2a15d26dc6a46d5799a73a",
+               ["handler.lua"] = "1177cc6f7c5f59017bedaa2b8e411e2a",
+               ["schema.lua"] = "34bfc92b9fdaf6926f130dfab0c35246",
+               strategies = {
+                  ["init.lua"] = "7547eb29e446a47c87d9bdb793f4def7",
+                  ["memory.lua"] = "f39753df50dc22b6c5994009fa622c3d"
+               }
+            },
+            ["rate-limiting"] = {
+               ["daos.lua"] = "334a1396d0ef2c5fccb07030ef2b7750",
+               ["expiration.lua"] = "5c340453fef58ea94e0c842c8a7f5a29",
+               ["handler.lua"] = "7e10dc882d0daa6a36c68067a0a32668",
+               migrations = {
+                  ["000_base_rate_limiting.lua"] = "07e413953a2ed4c61b167857babd3cc6",
+                  ["003_10_to_112.lua"] = "f8f425e05828bc925955f745f6825467",
+                  ["004_200_to_210.lua"] = "6b0481c20816766928399a1bb3623443",
+                  ["005_320_to_330.lua"] = "de9fe2776cf543b6c7471ddbae044805",
+                  ["init.lua"] = "1edd60a6c040f47a152ecff863f24597"
+               },
+               policies = {
+                  ["cluster.lua"] = "277b633139829d6a6f7550aa45313034",
+                  ["init.lua"] = "2b182be46d50ee1edf7b48b084adbd28"
+               },
+               ["schema.lua"] = "5f6cd95658e734b6d27c277c0adb21bb"
+            },
+            ["request-size-limiting"] = {
+               ["handler.lua"] = "c78c54fa4631ee5bf34cd4cd801db496",
+               ["schema.lua"] = "c9421ac1b982e3595f7e720fa6175ff2"
+            },
+            ["request-termination"] = {
+               ["handler.lua"] = "b684b04ab860d0aaa54a5d9294044757",
+               ["schema.lua"] = "35a0489f49cd26d21786220e4dfab069"
+            },
+            ["request-transformer"] = {
+               ["access.lua"] = "fbdcc40705cf04fbbddcd40c6bd43343",
+               ["handler.lua"] = "08b8e5c82e42e12aa2f254801f990800",
+               migrations = {
+                  ["cassandra.lua"] = "cd4408d21bf208513c0e51aa8e4e1159",
+                  ["common.lua"] = "7893c42ca5af370ba28f93f9193728c3",
+                  ["postgres.lua"] = "2410395b15038a12d9a174ffd7788a2d"
+               },
+               ["schema.lua"] = "37e757fd92d69041dc966cb858fdf856"
+            },
+            ["response-ratelimiting"] = {
+               ["access.lua"] = "be66a945fdc3938aa57be6112e01b57a",
+               ["handler.lua"] = "5ba3f294f2ccd864769e4f3184c56a3d",
+               ["header_filter.lua"] = "1fae6a63e68c7a4b158b9a7c5a748671",
+               ["log.lua"] = "da6d18a4623a981ba4a9aad83348ffdf",
+               migrations = {
+                  ["000_base_response_rate_limiting.lua"] = "4261e9ab379871045bb75b9048be14a1",
+                  ["init.lua"] = "8f8fe5664b932a3b076c1487bf0d185e"
+               },
+               policies = {
+                  ["cluster.lua"] = "902bdfbde5c840b4832b6d6933bc5b1b",
+                  ["init.lua"] = "bd895be31837f16c3953a3463b38769a"
+               },
+               ["schema.lua"] = "4dbf580553bebe2352dfcb1e2db5d6f0"
+            },
+            ["response-transformer"] = {
+               ["body_transformer.lua"] = "729c7a194bc7ef6f08a97ddd0e074c18",
+               feature_flags = {
+                  ["limit_body.lua"] = "b498c80fefb137e7022e885d7156d03d"
+               },
+               ["handler.lua"] = "87fa323034ebbace54b5a147c2e21dda",
+               ["header_transformer.lua"] = "4658bd70b89d45de74babca2840ac69e",
+               ["schema.lua"] = "d596ba88b91f5758854327cc6bee079d"
+            },
+            session = {
+               ["access.lua"] = "5cff82e65a68c497590db68ca45aa581",
+               ["daos.lua"] = "ad127edbe50ff61a2162d3038d41e873",
+               ["handler.lua"] = "ced3b0fb7284f299d75ac42d22f782af",
+               ["header_filter.lua"] = "7c08d2b71a2ab962e20a5e14c32c40e9",
+               migrations = {
+                  ["000_base_session.lua"] = "9d0031323cbc13d38862572f1c11c568",
+                  ["001_add_ttl_index.lua"] = "fcbbe0e2a021af31bcfb2b5fd4c3d024",
+                  ["002_320_to_330.lua"] = "07fe4c9de4d777f295d3cd0e5c6900f2",
+                  ["init.lua"] = "18120f9616264dae5fbabdfb7c3f4973"
+               },
+               ["schema.lua"] = "8682b6357581c512036c0c9b437962b4",
+               ["session.lua"] = "472cb3950e626e1fcfa8b28328166329",
+               storage = {
+                  ["kong.lua"] = "c2b3f88fdc2acdc0607ea329652ee5bd"
+               }
+            },
+            statsd = {
+               ["constants.lua"] = "b389312095c475f1c1d30f40974bf3a7",
+               ["handler.lua"] = "c302c43ddc1cd70d7b3590059b5819df",
+               ["log.lua"] = "db31b808411d6251d432ccb7154e2b34",
+               ["schema.lua"] = "ce8b2b5962a4d4c6a3c6a1a704180b7d",
+               ["statsd_logger.lua"] = "468f63fe15123ebe54daa77cfd74dfa7"
+            },
+            syslog = {
+               ["handler.lua"] = "18cb77e144b3b7a780beb78fe4319cbe",
+               ["schema.lua"] = "cfc89f104c905e38b28f538705c1eb45"
+            },
+            ["tcp-log"] = {
+               ["handler.lua"] = "8ddd0d5856a14353116f20cd8abd023e",
+               ["schema.lua"] = "16c741435c02052214f4c1f3903a0412"
+            },
+            ["udp-log"] = {
+               ["handler.lua"] = "45453bf8fe5938daac112e2d0d23b0f9",
+               ["schema.lua"] = "96c5d80663317cefdd08b1b04743d2db"
+            },
+            zipkin = {
+               ["handler.lua"] = "10f0e104177f148863dcd58c4f81c756",
+               ["reporter.lua"] = "d27278ce44d69925e7f733bb637a1754",
+               ["request_tags.lua"] = "10b3aa358940c4ec630061dbafb5f911",
+               ["schema.lua"] = "9a0b86b15604b95c16a0457df3173b01",
+               ["span.lua"] = "fd59a23a9e1bf588f4ad5db5aeb400db"
+            }
+         },
+         portal = {
+            ["api.lua"] = "feaa5fec2e3fda43ee530df27536a94f",
+            ["app_auth_strategies.lua"] = "55f55cb029d285069770da3c0b6cadfe",
+            ["auth.lua"] = "b4b1857dd2f3a416245862d0ebba26c6",
+            ["crud_helpers.lua"] = "9816008e13a4cddcceafc62c4acc7dae",
+            ["dao_helpers.lua"] = "5eba633c0ed6a866696becb89ad89399",
+            ["emails.lua"] = "fbfb101c99f53c2da969ba5bdc94ecee",
+            ["file_helpers.lua"] = "bbd9bcd0c63c31dd28486b4be47b10fd",
+            ["gui.lua"] = "2b094465a30f432d7a5c0db9428cdd7b",
+            ["gui_helpers.lua"] = "8172babef8ead58efbe570b356ce3499",
+            ["init.lua"] = "511d1559e4ad18033b7c93326c25b414",
+            ["legacy_renderer.lua"] = "ecd0b9d347db2cf1bc2f91e915f0964b",
+            migrations = {
+               ["01_initial_files.lua"] = "59ae2aa0d77d033f0b4af7e9e4ed7976",
+               ["01_legacy_files.lua"] = "1c48e1eded38f1ad13552862d5771ffa"
+            },
+            ["permissions.lua"] = "bde4cf987c11fba0781ebde8a3035205",
+            render_toolset = {
+               base = {
+                  ["boolean.lua"] = "b3b11fe063b3da10da7bf98e877d1961",
+                  ["init.lua"] = "781fb00e033a3f562419f77302b8c17f",
+                  ["number.lua"] = "f1a4b97491865e20ace97b3225bb5a07",
+                  ["string.lua"] = "d33323f1d55a46acf3bd666c1903894c",
+                  ["table.lua"] = "17f7839a95435408dae31816bd428fd0"
+               },
+               ["handler.lua"] = "79a5aa8e398a4fc5e066e42201d7eddd",
+               ["helpers.lua"] = "ada931f0d922cf962ba48edb43cccd9b",
+               ["looper.lua"] = "53f4473884dbcd560a570ace4167afc5",
+               ["markdown.lua"] = "d782ab1c47e577173d6661da98d0a526",
+               page = {
+                  ["init.lua"] = "48f1dee7cf01c32cc1556bcbc4e21379"
+               },
+               portal = {
+                  ["init.lua"] = "89dc377ea9f4bc1be1649360703dfa6e"
+               },
+               theme = {
+                  ["init.lua"] = "0fee8d23647a8f4e227fdc608706aee8"
+               },
+               user = {
+                  ["init.lua"] = "d77793c7282e9b4492028f163f6314da"
+               }
+            },
+            ["renderer.lua"] = "3d4004138c1ca456cb7b16b5c1903979",
+            ["router.lua"] = "511716c864b6def68d8977f381277a3c",
+            ["template.lua"] = "9e6ce862e570ed4ff5e67982dadad3cc",
+            ["utils.lua"] = "ca860533eefdd3ec329ef0cd60cb3820",
+            ["workspace_config.lua"] = "59e86b91cd4e8a824e3240c71ff3fcfe"
+         },
+         rbac = {
+            ["init.lua"] = "e3719ae39fd62c4f1ff1233e74611f80"
+         },
+         ["reports.lua"] = "a4e9221ba1f839a2dc584c7229ba10b8",
+         resty = {
+            ["ctx.lua"] = "345bd162c2f83c2de7e10e5f2369c5ce",
+            dns = {
+               ["client.lua"] = "9ea5eda30d10233d58495966ed4931de",
+               ["utils.lua"] = "2cb8fd566c4844424002e7e8fdecd0c5"
+            },
+            ["lock.lua"] = "5580ca9342eb0d9e33bd97408c01f6c5"
+         },
+         router = {
+            ["atc.lua"] = "c35f653d21da2cb289bdbdaeb6832a10",
+            ["compat.lua"] = "9727572d8f0cb69230f3c43940fea463",
+            ["expressions.lua"] = "af9091b25756196e6694cd73f830455d",
+            ["init.lua"] = "5110d076f66f26906d30788a8db9adac",
+            ["traditional.lua"] = "2d713000d7d9790ad0d53c778dd077f9",
+            ["utils.lua"] = "a9e3d50560e69508d53fee4144409935"
+         },
+         runloop = {
+            balancer = {
+               ["balancers.lua"] = "2def058801a7a5b652505cbb3a84e630",
+               ["consistent_hashing.lua"] = "9da96df826050a4d2ea93927eff13177",
+               ["healthcheckers.lua"] = "dd67798b43f28740c4e1b632a49be382",
+               ["init.lua"] = "d4e51d73b2ffd93b33b7718e424c03ae",
+               ["latency.lua"] = "6843920316324dd843b4e82f0673ef35",
+               ["least_connections.lua"] = "b08b2df54a57e581f40f43f66d5c4e19",
+               ["round_robin.lua"] = "f2815ed703c245d1b2bb48e90e0b990f",
+               ["targets.lua"] = "667acd7da94fcfd46a8c550606ed479f",
+               ["upstreams.lua"] = "7f3340b694a3385310db9b0ee9f333e2"
+            },
+            ["certificate.lua"] = "78107ee3d46cf5e6e14f5ff9f37a3d68",
+            ["events.lua"] = "eeaa7b5b380b1846d44bda3569ff248a",
+            ["handler.lua"] = "aaf2a05e9dce1af6f6d4653d70cf1f13",
+            plugin_servers = {
+               ["init.lua"] = "7ff56935b9577a10cea809cc3ff3910f",
+               ["mp_rpc.lua"] = "150cf1310b29b292a5b1699128d4dd3c",
+               ["pb_rpc.lua"] = "b26bb7ab61a50710c9346001b1462fbf",
+               ["process.lua"] = "49621596d8315ccae6f8b4717193626e"
+            },
+            ["plugins_iterator.lua"] = "ddff656415354c9dac34654f9e0082e3"
+         },
+         status = {
+            ["init.lua"] = "fbabcc4d09396fffaafa460b323070a0",
+            ["ready.lua"] = "9f2c8bfa22335f2b18f00c7026365c84"
+         },
+         templates = {
+            ["kong_defaults.lua"] = "613e86a2728e4981d61bd6b50c730963",
+            ["kong_yml.lua"] = "a7714be06ae96899cfe6a448bb2789cc",
+            ["nginx.lua"] = "985c9756dca2c3cdde012f392d014b48",
+            ["nginx_kong.lua"] = "5b958fc8bb995376c9846cb10c4b5bfd",
+            ["nginx_kong_gui_include.lua"] = "913224eb278b811a251ed352026bc421",
+            ["nginx_kong_stream.lua"] = "7969d8a6d48039b30b5376c6b4ab1173"
+         },
+         tools = {
+            ["channel.lua"] = "0b62cac4ae3fe47d430ec7b8952f6fcc",
+            ["dns.lua"] = "f6749167104bfafb236e14bfd83c3913",
+            ["grpc.lua"] = "c89754db450797642d253314e5e367a3",
+            ["json-schema"] = {
+               draft4 = {
+                  ["init.lua"] = "595ffa472a5827ac783f8be85f0bd87f"
+               }
+            },
+            ["kong-lua-sandbox.lua"] = "bf60f09e547e0497ee7422ca9db3b346",
+            ["messaging.lua"] = "f32fe7d1577d4d91004131ea3693366c",
+            ["mime_type.lua"] = "a004189f0797b3d9a68979e95ee663c8",
+            ["protobuf.lua"] = "1d29a1b963d7524f1be807a531ecae9f",
+            public = {
+               ["rate-limiting"] = {
+                  ["init.lua"] = "a76880972cb9af5e41cc6c6d05adaa89",
+                  strategies = {
+                     ["cassandra.lua"] = "3b87d049a5288fa0c8c52babbc472a10",
+                     ["postgres.lua"] = "9b68ef461758e1670b01a13d80dbf979",
+                     ["redis.lua"] = "e6a3846bad79619e6e9134e220c73e32"
+                  }
+               }
+            },
+            ["queue.lua"] = "9f02ad562022d89228f76e37521da8ba",
+            ["queue_schema.lua"] = "a4b7024dc0752a0e2cd6726e0d7f494a",
+            ["sandbox.lua"] = "957ac48a7ed19adbc4c64bfca2f12adf",
+            ["stream_api.lua"] = "9ff767c620d6312e7e8a3c37b090b3b1",
+            ["timestamp.lua"] = "2044987f08b0e5b8cca3c19937b73d14",
+            ["uri.lua"] = "1d176fdf101661326d29d7f7e6e879e4",
+            ["utils.lua"] = "c7583e4af594aec59cb8f2185ca37d09"
+         },
+         tracing = {
+            ["init.lua"] = "72d6052b2bfcdcb30604517cd8e95627",
+            ["instrumentation.lua"] = "e00330380313a24fc15ae4ef04e1c4a3",
+            ["propagation.lua"] = "505f72f25e09a183416beedf26ed5277",
+            ["strategies.lua"] = "87f4339ec26476f903cfa7aac9c5c727"
+         },
+         vaults = {
+            aws = {
+               ["init.lua"] = "14e0d860b6735cc96243942351d578e3",
+               ["schema.lua"] = "3f71ee94de51bc45d2dff25dc9b2999e"
+            },
+            env = {
+               ["init.lua"] = "c43c719a9b831522262c3bed077c7f83",
+               ["schema.lua"] = "7507f919ebfe071edca87568ef416b22"
+            },
+            gcp = {
+               ["init.lua"] = "cd8b2ae5b2c2b994396d248a327ae1a2",
+               ["schema.lua"] = "a05f459ca8c946c26b9122cd6726dbed"
+            },
+            hcv = {
+               ["init.lua"] = "48cdd22981d90b360ead5b938e7cc4af",
+               ["kube.lua"] = "ad4cabe8b5b73174db0de01c364dc3f2",
+               ["schema.lua"] = "71fd96f7ee1d31d2369cb0c4aec723bc"
+            }
+         },
+         vitals = {
+            cassandra = {
+               ["strategy.lua"] = "2c9555e98a6e09d9c3cfb73e8f33f8c6"
+            },
+            clustering = {
+               ["strategy.lua"] = "098df6e4261e190095a69291cf9ecaa6"
+            },
+            influxdb = {
+               ["strategy.lua"] = "8d8e16120527a4e2436ac2493999cf15"
+            },
+            ["init.lua"] = "b8068ca8eae07577acd118f24a0ebf72",
+            off = {
+               ["strategy.lua"] = "f241791d82fe27817f04289c3eb5a5ce"
+            },
+            postgres = {
+               ["strategy.lua"] = "6eaaaf5e55de78b483c704eb924ec52f",
+               ["table_rotater.lua"] = "cc78d4f8703bc632710fc8b8211df83b"
+            },
+            prometheus = {
+               statsd = {
+                  ["handler.lua"] = "1cbead6968e23f075d3e6b9257462bed",
+                  ["logger.lua"] = "7273acba991a59196d22169508240bd6"
+               },
+               ["strategy.lua"] = "0cfabbc3c7784507a52ccef68298e337"
+            },
+            ["utils.lua"] = "8539188ee873c4ce6a30e5b542497305"
+         },
+         workspaces = {
+            ["counters.lua"] = "62ce16ab2b92b309b98865011e10d8a1",
+            ["init.lua"] = "311d840d221c0074bc124a3e84e6ecd1"
+         }
+      }
+   }
+}

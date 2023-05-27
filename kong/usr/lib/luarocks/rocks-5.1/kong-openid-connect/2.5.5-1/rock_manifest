@@ -1,0 +1,40 @@
+rock_manifest = {
+   doc = {
+      ["CHANGELOG.md"] = "a23130de507475606c1f22ec1062da7b",
+      ["README.md"] = "f909509be748022ce9ab9a9e690fc952"
+   },
+   ["kong-openid-connect-2.5.5-1.rockspec"] = "9f8675c1a8aba85a7a91e0e6b3c674ad",
+   lua = {
+      kong = {
+         ["openid-connect"] = {
+            ["array.lua"] = "51abcc90c87865a063aeb90242838ddc",
+            ["authorization.lua"] = "2a70513af4f0fb579e1ef43cdfd4906b",
+            ["claims.lua"] = "237c005a33a64e9ec67417c182b12f8d",
+            ["client.lua"] = "45ac925ddf21d4bd17d2a126541a3d0e",
+            ["codec.lua"] = "5937eaab10cba1e6989528aefe3629d7",
+            ["configuration.lua"] = "73a1a68e96f328aa6560a698d746c102",
+            ["debug.lua"] = "3ab1251d7938e5b47473577e14fa457c",
+            ["deflate.lua"] = "5c5ca5e4680559468f07a968b1660112",
+            ["hash.lua"] = "1542bf804b6677dbdd17094afae16ced",
+            ["issuer.lua"] = "ad39ca3ab192bbe69b6d063b2fbc2517",
+            ["jwa.lua"] = "6195335483acf67d0cbc4840b78b1fe9",
+            ["jwe.lua"] = "a2d7f63f6673f174f3fd910616a3968d",
+            ["jwks.lua"] = "d533d92ae8fb4814117492365e0f6ba5",
+            ["jws.lua"] = "98f51f9178bb0397ac6037c3e5738440",
+            ["jwt.lua"] = "80a3ac26040a8786cbc680514b7b715e",
+            ["keys.lua"] = "d10a66dec93c8f157b65a314a5adac05",
+            ["nyi.lua"] = "22cf7ace311c057df06553fa02a4a7f8",
+            ["options.lua"] = "3ba93d5bb4769147169bba97aa724073",
+            ["pkey.lua"] = "34e8a178efe7a4a2aa4c328b9be38ff3",
+            ["random.lua"] = "22584125548b85bcd8ecc3ae9dcb1334",
+            ["set.lua"] = "e61af9a08a82ec9873be0216e2c6d63e",
+            ["token.lua"] = "28bb3f0122180e747f9058c3c151ee01",
+            ["uri.lua"] = "42b1c0c7c346f43e59024f70d2d0d018",
+            validation = {
+               ["jwk.lua"] = "a65b7b86ef74e1a1d61f93fb76c03927"
+            }
+         },
+         ["openid-connect.lua"] = "581c90e391650329d8e4a1f6fb464896"
+      }
+   }
+}

@@ -1,0 +1,28 @@
+rock_manifest = {
+   doc = {
+      LICENSE = "5528cd43476a1dbfe3dc34b86b307eae",
+      ["README.md"] = "75bd600271f6f938306d251ad590392e"
+   },
+   lua = {
+      resty = {
+         timerng = {
+            ["array.lua"] = "a50bb1424d9872c6cfd14b20118b3938",
+            ["constants.lua"] = "d07cb7b9b44cfdaaa654b2c34f89fae4",
+            ["init.lua"] = "ab548241cdb6c5193b93a1b8be494eb0",
+            ["job.lua"] = "5b4582416a795aaf3fb9ec44e0940a0b",
+            thread = {
+               ["group.lua"] = "77c81e0ce149a16d9349dfcb4c754cbc",
+               ["loop.lua"] = "b50412771565dd36620afcf90a4eda04",
+               ["super.lua"] = "3cf53cef7e2ec7ce43ec523f714ecf30",
+               ["worker.lua"] = "b45169a8192b24333d29b743f9322fc6"
+            },
+            ["utils.lua"] = "36b6703cd3bf0c0d40966142b5d21ba4",
+            wheel = {
+               ["group.lua"] = "54f9f70a8ee4eb61df8db04ecad10962",
+               ["init.lua"] = "d54fe77717a0c3a0290d288459fd70c4"
+            }
+         }
+      }
+   },
+   ["lua-resty-timer-ng-0.2.5-1.rockspec"] = "1065928dd7d5c0d884d0916885caff36"
+}

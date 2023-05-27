@@ -1,0 +1,9 @@
+/*
+  This software is copyright Kong Inc. and its licensors.
+  Use of the software is subject to the agreement between your organization
+  and Kong Inc. If there is no such agreement, use is governed by and
+  subject to the terms of the Kong Master Software License Agreement found
+  at https://konghq.com/enterprisesoftwarelicense/.
+*/
+
+import{_ as x,r as n,o as l,c as d,b as i,w as a,d as C,t as r,K as o,L as _,h as p,l as w,a as e,V as B,__tla as L}from"./index.84d84090.3_3_0_0.js";let y,T=Promise.all([(()=>{try{return L}catch{}})()]).then(async()=>{const m="/__km_base__/assets/icon-kong-entity.fc5f0b6e.3_3_0_0.svg?external",u="/__km_base__/assets/icon-add.4bfde7b3.3_3_0_0.svg?external",f={name:"EntityListEmptyState",props:{title:{type:String,required:!0},message:{type:String,required:!0},ctaText:{type:String,default:""},showCtaLink:{type:Boolean,default:!0},ctaPath:{type:Object,default:()=>{}},rbacSettings:{type:Object,required:!1,default:()=>({})},canEdit:{type:Boolean,default:!0},transparent:{type:Boolean,default:!1}},methods:{handleCTA(){this.$router.push({...this.ctaPath})}}},g=e("div",{class:"card-icon mb-4"},[e("img",{src:m,alt:""})],-1),h={key:0,class:"my-4"},b=e("img",{class:"cta-icon",src:u,alt:"add"},null,-1);function k(A,K,t,q,P,S){const c=n("RbacValidate"),E=n("KButton"),v=n("KEmptyState");return l(),d("div",{class:B({"entity-list-emptystate":!0,"transparent-emptystate":t.transparent})},[i(v,{"cta-is-hidden":""},{title:a(()=>[g,C(" "+r(t.title),1)]),message:a(()=>[i(c,o(_(t.rbacSettings)),{default:a(({isAllowed:s})=>[s&&t.canEdit?(l(),d("div",h,r(t.message),1)):p("",!0)]),_:1},16)]),cta:a(()=>[i(c,o(_(t.rbacSettings)),{default:a(({isAllowed:s})=>[s&&t.canEdit&&t.showCtaLink?(l(),w(E,{key:0,class:"flex items-center gap-1",appearance:"primary",onClick:S.handleCTA},{default:a(()=>[b,e("div",null,r(t.ctaText),1)]),_:1},8,["onClick"])):p("",!0)]),_:1},16)]),_:1})],2)}y=x(f,[["render",k]])});export{y as E,T as __tla};

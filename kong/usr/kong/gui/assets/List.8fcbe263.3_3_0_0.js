@@ -1,0 +1,9 @@
+/*
+  This software is copyright Kong Inc. and its licensors.
+  Use of the software is subject to the agreement between your organization
+  and Kong Inc. If there is no such agreement, use is governed by and
+  subject to the terms of the Kong Master Software License Agreement found
+  at https://konghq.com/enterprisesoftwarelicense/.
+*/
+
+import{ag as w,J as b,aC as k,n as E,C as e,q as R,c as x,b as D,ay as t,o as G,y as L,__tla as M}from"./index.84d84090.3_3_0_0.js";import{G as S,__tla as V}from"./style.3f96527a.3_3_0_0.js";import{u as q,a as B,b as s,__tla as J}from"./useRbacPermission.15766885.3_3_0_0.js";import{__tla as N}from"./monaco-editor.90904fcf.3_3_0_0.js";let n,P=Promise.all([(()=>{try{return M}catch{}})(),(()=>{try{return V}catch{}})(),(()=>{try{return J}catch{}})(),(()=>{try{return N}catch{}})()]).then(async()=>{let o;o={class:"pt-4"},n=w({__name:"List",setup(j){const c="certificates",r=L("rbac"),l=b(),{workspace:i}=k(l),p=E(),_=e(()=>({name:"create-certificate"})),u=e(()=>a=>({name:"view-certificate",params:{id:a,workspace:i.value}})),d=e(()=>a=>({name:"update-certificate",params:{id:a,workspace:i.value}})),m=R({...q(),isExactMatch:!0,createRoute:_,getViewRoute:u,getEditRoute:d}),y=e(()=>()=>s(r,{path:c,action:"create"})),f=e(()=>a=>s(r,{path:`${c}/${a.id}`,action:"read"})),h=e(()=>a=>s(r,{path:`${c}/${a.id}`,action:"update"})),C=e(()=>a=>s(r,{path:`${c}/${a.id}`,action:"delete"})),{onCopySuccess:$,onCopyError:g}=B(),v=a=>{p.notify({message:`${a.id} Certificate successfully deleted!`,type:"success"})};return(a,z)=>(G(),x("section",o,[D(t(S),{config:m,"can-create":t(y),"can-delete":t(C),"can-edit":t(h),"can-retrieve":t(f),"onCopy:success":t($),"onCopy:error":t(g),"onDelete:success":v},null,8,["config","can-create","can-delete","can-edit","can-retrieve","onCopy:success","onCopy:error"])]))}})});export{P as __tla,n as default};

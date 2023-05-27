@@ -1,0 +1,9 @@
+/*
+  This software is copyright Kong Inc. and its licensors.
+  Use of the software is subject to the agreement between your organization
+  and Kong Inc. If there is no such agreement, use is governed by and
+  subject to the terms of the Kong Master Software License Agreement found
+  at https://konghq.com/enterprisesoftwarelicense/.
+*/
+
+.admin-permission-form .vue-form-generator .form-group{width:50%}.admin-permission-form .wrapper{width:100%}.admin-permission-form label{font-size:14px;font-weight:500;color:var(--black-85)}.admin-permission-form .checklist{padding-left:1rem}.admin-permission-form .field-checklist,.admin-permission-form .field-input{display:inline-block}.admin-permission-form .field-checklist:nth-of-type(1){padding-right:1rem}.admin-permission-form .field-checklist .form-control{padding:0;border-color:var(--grey-400)}.admin-permission-form .field-checklist .listbox{padding:1rem;background-color:var(--grey-100)}.admin-permission-form .field-checklist .listbox .list-row{line-height:20px}.admin-permission-form .field-checklist .listbox .list-row label{font-size:15px;font-weight:400!important}.btn-link[data-v-5a183207]:hover,.btn-link[data-v-5a183207]:focus{color:var(--blue-500);text-decoration:none}.endpointFormModal .k-modal .modal-dialog{max-width:750px!important}.endpointFormModal .k-modal .modal-footer{display:none!important}td:not(.no-results){overflow:visible}

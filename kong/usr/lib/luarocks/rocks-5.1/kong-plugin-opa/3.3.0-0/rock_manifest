@@ -1,0 +1,17 @@
+rock_manifest = {
+   doc = {
+      ["CHANGELOG.md"] = "7927990b2d7d8ac7b43d95e4f246acf9"
+   },
+   ["kong-plugin-opa-3.3.0-0.rockspec"] = "824817910d827b2a23658f4e09b63659",
+   lua = {
+      kong = {
+         plugins = {
+            opa = {
+               ["decision.lua"] = "e27a8708961f31daff8ca12471aa8100",
+               ["handler.lua"] = "6c67c226073f6e54ce26e5c81de3db4f",
+               ["schema.lua"] = "12df893932ee1b6cb85e1e72bc9d9ed9"
+            }
+         }
+      }
+   }
+}

@@ -1,0 +1,16 @@
+rock_manifest = {
+   doc = {
+      ["CHANGELOG.md"] = "9a31b54f61ae1828fe9592f4423b05ea"
+   },
+   ["kong-plugin-enterprise-forward-proxy-3.3.0-0.rockspec"] = "66aef1f7d94469037074a99494521cb9",
+   lua = {
+      kong = {
+         plugins = {
+            ["forward-proxy"] = {
+               ["handler.lua"] = "74f98eb5dc1a7b436ba68ed076ef23a0",
+               ["schema.lua"] = "4ca5af4e8e553945a9da565715d6bf4e"
+            }
+         }
+      }
+   }
+}

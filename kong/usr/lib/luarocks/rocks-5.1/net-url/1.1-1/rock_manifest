@@ -1,0 +1,12 @@
+rock_manifest = {
+   doc = {
+      ["LICENSE.txt"] = "5f3be2ecb37e76453ba62029998c4196",
+      ["readme.md"] = "479f04099d712a499854563e09a5a52d"
+   },
+   lua = {
+      net = {
+         ["url.lua"] = "1d13aeb4dd46e9a93fc029affd5ea368"
+      }
+   },
+   ["net-url-1.1-1.rockspec"] = "9dc53bfc02fc48c49e693c93dddfe0b1"
+}

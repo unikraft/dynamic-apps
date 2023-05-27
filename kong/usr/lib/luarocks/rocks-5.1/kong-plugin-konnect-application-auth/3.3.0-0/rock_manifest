@@ -1,0 +1,21 @@
+rock_manifest = {
+   doc = {
+      ["README.md"] = "0e8a4a36f31f16d76713a696e2e1c56a"
+   },
+   ["kong-plugin-konnect-application-auth-3.3.0-0.rockspec"] = "dc2e2261ab6e7f0faf02260bac71b4b6",
+   lua = {
+      kong = {
+         plugins = {
+            ["konnect-application-auth"] = {
+               ["daos.lua"] = "ff363750bdcd5a14687e65502ac0fade",
+               ["handler.lua"] = "57e0cac371204e91f4e3f955ba9e01fc",
+               migrations = {
+                  ["000_base_konnect_applications.lua"] = "c81bc8fd5a16ca3d56cb16ac89db1cf2",
+                  ["init.lua"] = "0ababf770565e090ee41ff3ae3afba2b"
+               },
+               ["schema.lua"] = "79fa9ca2efc3a331992d6511817d3634"
+            }
+         }
+      }
+   }
+}

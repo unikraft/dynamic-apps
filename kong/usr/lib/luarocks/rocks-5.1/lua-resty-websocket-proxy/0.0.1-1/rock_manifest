@@ -1,0 +1,14 @@
+rock_manifest = {
+   doc = {
+      LICENSE = "e3fc50a88d0a364313df4b21ef20c29e",
+      ["README.md"] = "a693927f7f3dd5e20944dc4e0838a93d"
+   },
+   lua = {
+      resty = {
+         websocket = {
+            ["proxy.lua"] = "ce1e5cbdc366cf830c84e23c0fd37af5"
+         }
+      }
+   },
+   ["lua-resty-websocket-proxy-0.0.1-1.rockspec"] = "271cb3aa1f4eb5846dd7bd3db491e16b"
+}

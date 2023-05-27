@@ -1,0 +1,64 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+msgid ""
+"---\n"
+"title: Reference manual\n"
+"---"
+msgstr ""
+"---\n"
+"title: リファレンスマニュアル\n"
+"---"
+
+msgid "# Reference manual"
+msgstr "# リファレンスマニュアル"
+
+msgid ""
+"This document describes about all features. [Tutorial][tutorial] focuses on ea"
+"sy to understand only about important features. This document focuses on compl"
+"eteness. If you don't read [tutorial][tutorial] yet, read tutorial before read"
+" this document."
+msgstr ""
+"このドキュメントはすべての機能を説明します。[チュートリアル][tutorial]は重要な機能だけを簡単に理解できることを重視しています。このドキュメントは"
+"網羅性を重視しています。まだ[チュートリアル][tutorial]を読んでいないのであれば、このドキュメントを読む前にチュートリアルを読んでください。"
+
+msgid "## Modules {#modules}"
+msgstr "## モジュール {#modules}"
+
+msgid "LuaCS has only one public modules. It's `luacs` main module."
+msgstr "LuaCSには1つだけ公開モジュールがあります。それは`luacs`メインモジュールです。"
+
+msgid "  * [`luacs`][luacs]: The main module."
+msgstr "  * [`luacs`][luacs]: メインモジュール。"
+
+msgid "## Classes {#classes}"
+msgstr "## クラス {#classes}"
+
+msgid "LuaCS provides the following classes:"
+msgstr "LuaCSは以下のクラスを提供します。"
+
+msgid "  * [`luacs.Parser`][parser]: The class for parsing CSS Selectors."
+msgstr "  * [`luacs.Parser`][parser]: CSSセレクターをパースするクラス。"
+
+msgid ""
+"  * [`luacs.XPathConverter`][xpath-converter]: The class to convert CSS Select"
+"ors to XPaths."
+msgstr "  * [`luacs.XPathConverter`][xpath-converter]: CSSセレクターをXPathに変換するクラス。"
+
+msgid "[tutorial]:../tutorial/"
+msgstr ""
+
+msgid "[luacs]:luacs.html"
+msgstr ""
+
+msgid "[parser]:parser.html"
+msgstr ""
+
+msgid "[xpath-converter]:xpath-converter.html"
+msgstr ""

@@ -1,0 +1,9 @@
+/*
+  This software is copyright Kong Inc. and its licensors.
+  Use of the software is subject to the agreement between your organization
+  and Kong Inc. If there is no such agreement, use is governed by and
+  subject to the terms of the Kong Master Software License Agreement found
+  at https://konghq.com/enterprisesoftwarelicense/.
+*/
+
+import{ag as w,J as b,aC as k,n as E,C as e,q as R,c as x,b as A,ay as t,o as D,y as K,__tla as L}from"./index.84d84090.3_3_0_0.js";import{K as S,__tla as q}from"./style.3f96527a.3_3_0_0.js";import{u as B,a as H,b as s,__tla as J}from"./useRbacPermission.15766885.3_3_0_0.js";import{__tla as M}from"./monaco-editor.90904fcf.3_3_0_0.js";let n,N=Promise.all([(()=>{try{return L}catch{}})(),(()=>{try{return q}catch{}})(),(()=>{try{return J}catch{}})(),(()=>{try{return M}catch{}})()]).then(async()=>{let o;o={class:"pt-4"},n=w({__name:"CA_List",setup(P){const c="ca_certificates",r=K("rbac"),l=b(),{workspace:i}=k(l),_=E(),p=e(()=>({name:"create-ca-certificate"})),u=e(()=>a=>({name:"view-ca-certificate",params:{id:a,workspace:i.value}})),d=e(()=>a=>({name:"update-ca-certificate",params:{id:a,workspace:i.value}})),m=R({...B(),isExactMatch:!0,createRoute:p,getViewRoute:u,getEditRoute:d}),y=e(()=>()=>s(r,{path:c,action:"create"})),f=e(()=>a=>s(r,{path:`${c}/${a.id}`,action:"read"})),C=e(()=>a=>s(r,{path:`${c}/${a.id}`,action:"update"})),h=e(()=>a=>s(r,{path:`${c}/${a.id}`,action:"delete"})),{onCopySuccess:$,onCopyError:g}=H(),v=a=>{_.notify({message:`${a.id} CA Certificate successfully deleted!`,type:"success"})};return(a,V)=>(D(),x("section",o,[A(t(S),{config:m,"can-create":t(y),"can-delete":t(h),"can-edit":t(C),"can-retrieve":t(f),"onCopy:success":t($),"onCopy:error":t(g),"onDelete:success":v},null,8,["config","can-create","can-delete","can-edit","can-retrieve","onCopy:success","onCopy:error"])]))}})});export{N as __tla,n as default};

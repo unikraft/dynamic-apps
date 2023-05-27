@@ -1,0 +1,242 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+msgid ""
+"---\n"
+"title: xmlua.Searchable\n"
+"---"
+msgstr ""
+
+msgid "# `xmlua.Searchable` module"
+msgstr "# `xmlua.Searchable`モジュール"
+
+msgid "## Summary"
+msgstr "## 概要"
+
+msgid "It provides features that search nodes by [XPath][xpath]."
+msgstr "[XPath][xpath]を使ってノードを検索する機能を提供します。"
+
+msgid "## Methods"
+msgstr "## メソッド"
+
+msgid "### `search(xpath[, namespace]) -> xmlua.NodeSet` {#search}"
+msgstr ""
+
+msgid "It searches nodes by XPath and returns as [`xmlua.NodeSet`][node-set] object."
+msgstr "XPathを使ってノードを検索し[`xmlua.NodeSet`][node-set]オブジェクトを返します。"
+
+msgid ""
+"If the receiver is a [`xmlua.Document`][document], the context node in XPath i"
+"s the root node."
+msgstr "レシーバーが[`xmlua.Document`][document]の場合はXPathのコンテキストノードはルートノードになります。"
+
+msgid ""
+"If the receiver is a [`xmlua.Element`][element], the context node in XPath is "
+"the element. It means that \"`.`\" XPath is the receiver element."
+msgstr ""
+"レシーバーが[`xmlua.Element`][element]の場合、XPathのコンテキストノードはレシーバーの要素になります。つまり、XPathの「`"
+".`」はレシーバーの要素です。"
+
+msgid ""
+"`xpath`: XPath to search nodes as `string`.\n"
+"`namespace`: Customized namespace. If you use the default namespace, you must "
+"omit this argument."
+msgstr ""
+"`xpath`: ノードを検索するためのXPath文字列です。\n"
+"`namespace`: カスタマイズされた名前空間です。デフォルトの名前空間を使用する場合は、この引数を省略する必要があります。"
+
+msgid "If XPath searching is failed, it raises an error."
+msgstr "XPathでの検索に失敗した場合は、エラーが発生します。"
+
+msgid "Example:"
+msgstr "例："
+
+msgid ""
+"```lua\n"
+"local xmlua = require(\"xmlua\")"
+msgstr ""
+
+msgid ""
+"local xml = [[\n"
+"<root>\n"
+"  <sub1>text1</sub1>\n"
+"  <sub2>text2</sub2>\n"
+"  <sub3>text3</sub3>\n"
+"</root>\n"
+"]]"
+msgstr ""
+
+msgid "local document = xmlua.XML.parse(xml)"
+msgstr ""
+
+msgid ""
+"-- Searches all sub elements under the <root> element\n"
+"local all_subs = document:search(\"/root/*\")"
+msgstr ""
+"-- <root>要素配下の要素をすべて検索します。\n"
+"local all_subs = document:search(\"/root/*\")"
+
+msgid ""
+"-- You can use \"#\" for getting the number of matched nodes\n"
+"print(#all_subs) -- -> 3"
+msgstr ""
+"-- \"#\"を使ってマッチしたノードの数を出力できます。\n"
+"print(#all_subs) -- -> 3"
+
+msgid ""
+"-- You can access the N-th node by \"[]\".\n"
+"print(all_subs[1]:to_xml()) -- -> <sub1>text1</sub1>\n"
+"print(all_subs[2]:to_xml()) -- -> <sub2>text2</sub2>\n"
+"print(all_subs[3]:to_xml()) -- -> <sub3>text3</sub3>\n"
+"```"
+msgstr ""
+"-- \"[]\"を使って、N番目のノードにアクセスできます。\n"
+"print(all_subs[1]:to_xml()) -- -> <sub1>text1</sub1>\n"
+"print(all_subs[2]:to_xml()) -- -> <sub2>text2</sub2>\n"
+"print(all_subs[3]:to_xml()) -- -> <sub3>text3</sub3>\n"
+"```"
+
+msgid "You can search from an element."
+msgstr "ルート要素からでも検索できます。"
+
+msgid ""
+"-- Root element\n"
+"local root = document:root()"
+msgstr ""
+"-- ルート要素\n"
+"local root = document:root()"
+
+msgid ""
+"-- Searches all sub elements under the <root> element\n"
+"local all_subs = root:search(\"*\")"
+msgstr ""
+"-- <root>要素配下の要素をすべて検索します。\n"
+"local all_subs = root:search(\"*\")"
+
+msgid ""
+"You can also search document with namespace.\n"
+"If you want to use the default namespace, you must specify the namespace expli"
+"citly as below."
+msgstr ""
+"名前空間のあるドキュメントを検索することもできます。\n"
+"デフォルトの名前空間を使いたい場合は、以下のように明示的に名前空間を指定する必要があります。"
+
+msgid ""
+"local xml = [[\n"
+"<example:root xmlns:example=\"http://example.com/\">\n"
+"  <example:sub>text</example:sub>\n"
+"</example:root>\n"
+"]]"
+msgstr ""
+
+msgid ""
+"local example_sub = document:search(\"/example:root/example:sub\")\n"
+"print(example_sub[1]:to_xml()) -- -> <example:sub>text</example:sub>\n"
+"```"
+msgstr ""
+
+msgid "You can also use customize the namespace as below."
+msgstr "以下のように、カスタマイズした名前空間を使うこともできます。"
+
+msgid ""
+"local namespaces = {\n"
+"  {\n"
+"    prefix = \"e\",\n"
+"    href = \"http://example.com/\",\n"
+"  }\n"
+"}"
+msgstr ""
+
+msgid ""
+"local example_sub = document:search(\"/e:root/e:sub\", namespace)\n"
+"print(example_sub[1]:to_xml()) -- -> <example:sub>text</example:sub>\n"
+"```"
+msgstr ""
+
+msgid "### `xpath_search(xpath) -> xmlua.NodeSet` {#xpath-search}"
+msgstr ""
+
+msgid "It's an alias of [`search`][search]."
+msgstr "[`search`][search]の別名です。"
+
+msgid "### `css_select(css_selectors) -> xmlua.NodeSet` {#css-select}"
+msgstr ""
+
+msgid ""
+"It searches nodes by [CSS Selectors][css-selectors] and returns as [`xmlua.Nod"
+"eSet`][node-set] object."
+msgstr "[CSSセレクター][css-selectors]を使ってノードを検索し[`xmlua.NodeSet`][node-set]オブジェクトを返します。"
+
+msgid ""
+"If the receiver is a [`xmlua.Document`][document], the context node in CSS Sel"
+"ectors is the root node."
+msgstr "レシーバーが[`xmlua.Document`][document]の場合はCSSセレクターのコンテキストノードはルートノードになります。"
+
+msgid ""
+"If the receiver is a [`xmlua.Element`][element], the context node in CSS Selec"
+"tors is the element. It means that the current element is the receiver element"
+"."
+msgstr ""
+"レシーバーが[`xmlua.Element`][element]の場合、CSSセレクターのコンテキストノードはレシーバーの要素になります。つまり、現在の要素"
+"がレシーバーの要素になります。"
+
+msgid "`css_selectors`: CSS Selectors to search nodes as `string`."
+msgstr "`css_selectors`: ノードを検索するためのCSSセレクター文字列です。"
+
+msgid "If CSS Selectors is invalid, it raises an error."
+msgstr "CSSセレクターが不正な場合はエラーが発生します。"
+
+msgid ""
+"-- Searches all sub elements under the <root> element\n"
+"local all_subs = document:css_select(\"root *\")"
+msgstr ""
+"-- <root>要素配下の要素をすべて検索します。\n"
+"local all_subs = document:css_select(\"root *\")"
+
+msgid ""
+"-- Searches all sub elements under the <root> element\n"
+"local all_subs = root:css_select(\"*\")"
+msgstr ""
+"-- <root>要素配下の要素をすべて検索します。\n"
+"local all_subs = root:css_select(\"*\")"
+
+msgid "## See also"
+msgstr "## 参照"
+
+msgid "  * [XPath][xpath]: The XPath specification."
+msgstr "  * [XPath][xpath]: XPathの仕様です。"
+
+msgid ""
+"  * [`xmlua.Document`][document]: The class for HTML document and XML document"
+"."
+msgstr "  * [`xmlua.Document`][document]: HTMLドキュメントとXMLドキュメント用のクラスです。"
+
+msgid "  * [`xmlua.Element`][element]: The class for element node."
+msgstr "  * [`xmlua.Element`][element]: 要素ノード用のクラスです。"
+
+msgid "  * [`xmlua.NodeSet`][node-set]: The class for multiple nodes."
+msgstr "  * [`xmlua.NodeSet`][node-set]: 複数ノードを扱うためのクラスです。"
+
+msgid "[xpath]:https://www.w3.org/TR/xpath/"
+msgstr ""
+
+msgid "[search]:#search"
+msgstr ""
+
+msgid "[css-selectors]:https://www.w3.org/TR/selectors-3/"
+msgstr ""
+
+msgid "[document]:document.html"
+msgstr ""
+
+msgid "[element]:element.html"
+msgstr ""
+
+msgid "[node-set]:node-set.html"
+msgstr ""

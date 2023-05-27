@@ -1,0 +1,9 @@
+{
+  "form": {
+    "serviceEndpoint": "Gateway Service endpoint",
+    "serviceEndpointDesc": "Define the endpoint for this Gateway Service by specifying the full URL or by its separate elements.",
+    "createService": "Create Gateway Service",
+    "editService": "Edit Gateway Service",
+    "editServiceWithName": "Edit Gateway Service: {{name}}"
+  }
+}

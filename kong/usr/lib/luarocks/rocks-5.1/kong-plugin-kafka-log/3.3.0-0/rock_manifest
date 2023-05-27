@@ -1,0 +1,16 @@
+rock_manifest = {
+   doc = {
+      ["CHANGELOG.md"] = "af344d875d8da0d7957ad8a3adbe3918"
+   },
+   ["kong-plugin-kafka-log-3.3.0-0.rockspec"] = "e0f8f0145cc2e03d9743f2127dd1ce77",
+   lua = {
+      kong = {
+         plugins = {
+            ["kafka-log"] = {
+               ["handler.lua"] = "ffeadf548b85cf96b651e79e60bdf2ef",
+               ["schema.lua"] = "94002e87e20342110e1dfde1043e0f52"
+            }
+         }
+      }
+   }
+}

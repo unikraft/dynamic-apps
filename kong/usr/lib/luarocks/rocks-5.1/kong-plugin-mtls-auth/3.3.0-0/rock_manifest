@@ -1,0 +1,33 @@
+rock_manifest = {
+   doc = {
+      ["CHANGELOG.md"] = "f4e2952b790ad46cbd4e8f173b04050d"
+   },
+   ["kong-plugin-mtls-auth-3.3.0-0.rockspec"] = "57df5ad365a611b3caaabd7d6f3992e3",
+   lua = {
+      kong = {
+         plugins = {
+            ["mtls-auth"] = {
+               ["access.lua"] = "7b3fc1e99402a0eda88f2167fb317917",
+               ["api.lua"] = "17946ae2c539f298f115465ebf41a36f",
+               ["cache.lua"] = "9be9b31578a833f54a7a2dcbddbde508",
+               ["crl_client.lua"] = "f0d86a329b5d152c93715d5e0fd8fa72",
+               ["daos.lua"] = "b8d2f9df68babd220a191784c992ee85",
+               ["handler.lua"] = "ccd2ba34fdf2467e440db15a95a0b05d",
+               migrations = {
+                  ["000_base_mtls_auth.lua"] = "67c8176396527fb2417573562411c571",
+                  ["001_200_to_210.lua"] = "0f61e2ec9d827ca4307369a796bc47a7",
+                  ["002_2200_to_2300.lua"] = "88e7dd2467fbab117e2003577c5b3e41",
+                  enterprise = {
+                     ["001_1500_to_2100.lua"] = "3849b40bfee8c4bf4760d3c3173f2029",
+                     ["002_2200_to_2300.lua"] = "44dee10fb1e2ec61921920ad06705b31",
+                     ["init.lua"] = "7c307f51351266b926a1ea407f7a85e5"
+                  },
+                  ["init.lua"] = "4583044cb4b5c1b0c2341b5d84f937b0"
+               },
+               ["ocsp_client.lua"] = "c2f2632580eabe733f4dade83adb3c6a",
+               ["schema.lua"] = "cec3d4a84ff8d9b4d04f18e2fb0beaf9"
+            }
+         }
+      }
+   }
+}

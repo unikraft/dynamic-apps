@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LuaExpat: XML Expat parsing for the Lua programming language</title>
+	<link rel="stylesheet" href="./doc.css" type="text/css"/>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+
+<div id="container">
+
+<div id="product">
+	<div id="product_logo"><a href="https://github.com/lunarmodules/luaexpat">
+		<img alt="LuaExpat logo" src="luaexpat.png"/>
+	</a></div>
+	<div id="product_name"><big><strong>LuaExpat</strong></big></div>
+	<div id="product_description">XML Expat parsing for the Lua programming language</div>
+</div> <!-- id="product" -->
+
+<div id="main">
+
+<div id="navigation">
+<h1>LuaExpat</h1>
+	<ul>
+		<li><a href="index.html">Home</a>
+			<ul>
+				<li><a href="index.html#overview">Overview</a></li>
+				<li><a href="index.html#status">Status</a></li>
+				<li><a href="index.html#download">Download</a></li>
+				<li><a href="index.html#history">History</a></li>
+				<li><a href="index.html#references">References</a></li>
+				<li><a href="index.html#credits">Credits</a></li>
+			</ul>
+		</li>
+		<li><a href="manual.html">Manual</a>
+			<ul>
+				<li><a href="manual.html#introduction">Introduction</a></li>
+				<li><a href="manual.html#building">Building</a></li>
+				<li><a href="manual.html#installation">Installation</a></li>
+				<li><a href="manual.html#parser">Parser Objects</a></li>
+			</ul>
+		</li>
+		<li><a href="examples.html">Examples</a></li>
+		<li><strong>Additional parsers</strong>
+			<ul>
+				<li><a href="lom.html">Lua Object Model</a></li>
+				<li><strong>Parse to table</strong></li>
+				<li><a href="threat.html">Threat protection</a></li>
+			</ul>
+		</li>
+		<li><a href="https://github.com/lunarmodules/luaexpat">Project</a>
+			<ul>
+				<li><a href="https://github.com/lunarmodules/luaexpat/issues">Bug Tracker</a></li>
+				<li><a href="https://github.com/lunarmodules/luaexpat">Source code</a></li>
+				<li><a href="https://lunarmodules.github.io/luaexpat/">Documentation</a></li>
+			</ul>
+		</li>
+		<li><a href="license.html">License</a></li>
+	</ul>
+</div> <!-- id="navigation" -->
+
+<div id="content">
+
+<h2><a name="introduction"></a>Introduction</h2>
+
+<p>The "table" parser is another way of representing XML data in Lua tables.</p>
+
+
+<h2><a name="characteristics"></a>Characteristics</h2>
+
+<p>The model represents each XML element as a Lua table. The characteristics of
+this format are:</p>
+
+<ul>
+	<li>The XML nodes are represented as a table.</li>
+	<li>child elements are in the array part of the table; where Text nodes are
+	strings, and Child nodes are sub-tables</li>
+
+	<li>The Tag name is stored in the array at index 0, so outside the regular
+	array range in Lua</li>
+
+	<li>Attributes are stored in the hash-part of the table, as key-value pairs</li>
+</ul>
+
+
+<h3>Functions</h3>
+
+<dl class="reference">
+	<dt><strong>totable.parse(string|function|table|file[, opts])</strong></dt>
+	<dd>Parses the input into the table format and returns it. The input can be;
+		<ul>
+			<li><em>string</em>: the entire XML document as a string</li>
+			<li><em>function</em>: an iterator that returns the next chunk of the
+			XML document on each call, and returns <em>nil</em> when finished</li>
+			<li><em>table</em>: an array like table that contains the chunks
+			that combined make up the XML document</li>
+			<li><em>file</em>: an open file handle from which the XML document will
+			be read line-by-line, using <code>read()</code>. <strong>Note</strong>:
+			the file will not be closed when done.</li>
+		</ul>
+		The second parameter <em>opts</em> is an options table that supports the
+		following options;
+		<ul>
+			<li><em>separator (string)</em>: the namespace separator character to
+			use, setting this will enable namespace aware parsing.</li>
+			<li><em>threat (table)</em>: a <a href="threat.html#options">threat
+			protection options</a> table. If provided the threat protection parser
+			will be used instead of the regular <em>lxp</em> parser.</li>
+		</ul>
+		Upon parsing errors it will return <code>nil, err, line, col, pos</code>.
+	</dd>
+
+	<dt><strong>totable.clean(t)</strong></dt>
+	<dd>Traverses the tree recursively, and drops all whitespace-only Text nodes.
+	Returns the (modified) input table.</dd>
+
+	<dt><strong>totable.torecord()</strong></dt>
+	<dd>Traverses the tree recursively, and will update every entry that is a Tag
+	with only 1 Text node as child element, to a key-value entry.
+	<strong>Note</strong>: Any attributes on the converted element will be lost!
+	If the key already exists (duplicate tag names, or an attribute by that name)
+	then it will not update the entry. Returns the (modified) input table.
+	</dd>
+</dl>
+
+<h2><a name="examples"></a>Examples</h2>
+
+<p>For a string like</p>
+
+<pre class="example">
+s = [[
+&lt;person id="123"&gt;
+	&lt;first&gt;John&lt;/first&gt;
+	&lt;last&gt;Doe&lt;/last&gt;
+&lt;/abc&gt;
+]]
+</pre>
+
+<p>A call like</p>
+
+<pre class="example">
+    tab = lxp.totable.parse (s)
+</pre>
+
+<p>Would result in a table equivalent to</p>
+
+<pre class="example">
+tab = {
+	[0] = "person",     -- tag names go into array index 0
+	id = "123",         -- attribute names go into the hash part of the table
+	[1] = "\n\t"        -- Note that the new-line and tab characters are preserved
+	on the table
+	[2] = {
+		[0] = "first",
+		[1] = "John",
+	},
+	[3] = "\n\t"
+	[4] = {
+		[0] = "last",
+		[1] = "Doe",
+	},
+	[5] = "\n"
+}
+</pre>
+
+<p>After a call to <code>clean</code> like this <code>lxp.totable.clean (tab)</code>
+the empty whitespace elements will be removed:</p>
+
+<pre class="example">
+tab = {
+	[0] = "person",
+	id = "123",
+	[1] = {
+		[0] = "first",
+		[1] = "John",
+	},
+	[3] = {
+		[0] = "last",
+		[1] = "Doe",
+	},
+}
+</pre>
+
+<p>After a call to <code>torecord</code> like this <code>lxp.totable.torecord (tab)</code>
+the single-textfield nodes are turned into key-value pairs:</p>
+
+
+<pre class="example">
+tab = {
+	[0] = "person",
+	id = "123",
+	first = "John",
+	last = "Doe",
+}
+</pre>
+
+</div> <!-- id="content" -->
+
+</div> <!-- id="main" -->
+
+</div> <!-- id="container" -->
+
+</body>
+</html>

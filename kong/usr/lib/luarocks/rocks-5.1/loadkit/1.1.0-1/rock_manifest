@@ -1,0 +1,9 @@
+rock_manifest = {
+   doc = {
+      ["README.md"] = "7d16a407fab7f6991c15b0b38c962cc6"
+   },
+   ["loadkit-1.1.0-1.rockspec"] = "b6f072a603b3982ec4189042c5b17dc5",
+   lua = {
+      ["loadkit.lua"] = "1c3a6446cd55da6e36dc095e095dc3ea"
+   }
+}

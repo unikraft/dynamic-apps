@@ -1,0 +1,13 @@
+rock_manifest = {
+   ["kong-plugin-tls-metadata-headers-3.3.0-0.rockspec"] = "e18b79ddef7bb6afc9f5fe7e944723a5",
+   lua = {
+      kong = {
+         plugins = {
+            ["tls-metadata-headers"] = {
+               ["handler.lua"] = "b807afd5b67cf28c8f57606c01c58ddd",
+               ["schema.lua"] = "69829ed5cd0f2bf4d9cfc5952aba4946"
+            }
+         }
+      }
+   }
+}
