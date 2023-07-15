@@ -5,6 +5,8 @@ name=traefik
 appname=${name}-${version}
 tarball=${appname}.src.tar.gz
 
+extract=../extract.sh
+
 echo "Cleaning artefacts ..."
 rm -rf ${tarball} ${appname} ${name}
 
@@ -40,3 +42,8 @@ popd +0
 if test -f ${appname}/${name}; then
     ln -s ${appname}/${name} ./${name}
 fi
+
+echo "Extracting dependencies ..."
+$extract ./${name}
+
+echo "Done"
