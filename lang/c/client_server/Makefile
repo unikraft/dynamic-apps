@@ -3,7 +3,7 @@ LDFLAGS = -pie
 
 .PHONY: all clean
 
-all: server client helloworld
+all: server client
 
 server: server.o
 
@@ -13,10 +13,6 @@ client: client.o
 
 client.o: client.c
 
-helloworld: helloworld.o
-
-helloworld.o: helloworld.c
-
 clean:
-	-rm -f helloworld server client
+	-rm -f server client
 	-rm -f *~
