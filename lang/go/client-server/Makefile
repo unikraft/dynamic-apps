@@ -2,7 +2,7 @@
 
 GO = $(shell which go)
 
-all: server client helloworld
+all: server client
 
 server: server.go
 	$(GO) build -linkshared $<
@@ -10,9 +10,6 @@ server: server.go
 client: client.go
 	$(GO) build -linkshared $<
 
-helloworld: helloworld.go
-	$(GO) build -linkshared $<
-
 clean:
-	-rm -f helloworld server client
+	-rm -f server client
 	-rm -f *~
