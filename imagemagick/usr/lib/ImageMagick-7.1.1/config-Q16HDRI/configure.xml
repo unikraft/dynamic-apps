@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuremap [
+  <!ELEMENT configuremap (configure)+>
+  <!ATTLIST configuremap xmlns CDATA #FIXED ''>
+  <!ELEMENT configure EMPTY>
+  <!ATTLIST configure xmlns CDATA #FIXED '' name NMTOKEN #REQUIRED
+    value CDATA #REQUIRED>
+]>
+<!--
+  ImageMagick build configuration.
+-->
+<configuremap>
+  <configure name="CC" value="gcc"/>
+  <configure name="CFLAGS" value="-I/usr/include/libxml2  -I/usr/include/webp  -I/usr/include/webp   -I/usr/include/cairo -I/usr/include/libpng16 -I/usr/include/freetype2 -I/usr/include/harfbuzz -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/sysprof-4 -pthread -I/usr/include/pixman-1  -I/usr/include/librsvg-2.0 -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/sysprof-4 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libpng16 -I/usr/include/cairo -I/usr/include/freetype2 -I/usr/include/harfbuzz -pthread -I/usr/include/pixman-1  -I/usr/include/libraw  -I/usr/include/libpng16  -I/usr/include/pango-1.0 -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/sysprof-4 -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/fribidi -I/usr/include/cairo -I/usr/include/pixman-1 -pthread   -I/usr/include/OpenEXR -pthread -I/usr/include/Imath   -I/usr/include/lqr-1 -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/sysprof-4 -pthread  -I/usr/include/openjpeg-2.5    -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/harfbuzz -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/sysprof-4 -pthread -I/usr/include/fribidi  -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/harfbuzz -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/sysprof-4 -pthread  -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/harfbuzz -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/sysprof-4 -pthread  -pthread      -fopenmp -Wall -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection -g -ffile-prefix-map=/build/imagemagick/src=/usr/src/debug/imagemagick -flto=auto -fexceptions -pthread -DMAGICKCORE_HDRI_ENABLE=1 -DMAGICKCORE_QUANTUM_DEPTH=16"/>
+  <configure name="CODER_PATH" value="/usr/lib/ImageMagick-7.1.1/modules-Q16HDRI/coders"/>
+  <configure name="CONFIGURE_PATH" value="/etc/ImageMagick-7/"/>
+  <configure name="CONFIGURE" value="./configure  '--prefix=/usr' '--sysconfdir=/etc' '--enable-shared' '--disable-static' '--with-dejavu-font-dir=/usr/share/fonts/TTF' '--with-gs-font-dir=/usr/share/fonts/gsfonts' 'PSDelegate=/usr/bin/gs' 'XPSDelegate=/usr/bin/gxps' 'PCLDelegate=/usr/bin/gpcl6' '--enable-hdri' '--enable-opencl' '--without-gslib' '--with-djvu' '--with-fftw' '--with-jxl' '--with-lqr' '--with-modules' '--with-openexr' '--with-openjp2' '--with-perl' '--with-perl-options=INSTALLDIRS=vendor' '--with-rsvg' '--with-webp' '--with-wmf' '--with-xml' '--without-autotrace' '--without-dps' '--without-fpx' '--without-gcc-arch' '--without-gvc' 'CFLAGS=-march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection -g -ffile-prefix-map=/build/imagemagick/src=/usr/src/debug/imagemagick -flto=auto' 'LDFLAGS=-Wl,-O1,--sort-common,--as-needed,-z,relro,-z,now -flto=auto' 'CXXFLAGS=-march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/imagemagick/src=/usr/src/debug/imagemagick -flto=auto'"/>
+  <configure name="COPYRIGHT" value="Copyright (C) 1999 ImageMagick Studio LLC"/>
+  <configure name="CPPFLAGS" value="-I/usr/include/ImageMagick-7"/>
+  <configure name="CXXFLAGS" value="-march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection -Wp,-D_GLIBCXX_ASSERTIONS -g -ffile-prefix-map=/build/imagemagick/src=/usr/src/debug/imagemagick -flto=auto -pthread"/>
+  <configure name="CXX" value="g++"/>
+  <configure name="DEFS" value="-DHAVE_CONFIG_H"/>
+  <configure name="DELEGATES" value="bzlib cairo djvu fftw fontconfig freetype heic jbig jng jp2 jpeg jxl lcms lqr lzma openexr pangocairo png ps raqm raw rsvg tiff webp wmf x xml zip zlib zstd"/>
+  <configure name="DISTCHECK_CONFIG_FLAGS" value="'CFLAGS=-march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions         -Wp,-D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security         -fstack-clash-protection -fcf-protection -g -ffile-prefix-map=/build/imagemagick/src=/usr/src/debug/imagemagick -flto=auto' 'LDFLAGS=-Wl,-O1,--sort-common,--as-needed,-z,relro,-z,now -flto=auto'  --disable-deprecated  --with-quantum-depth=16  --with-jemalloc=no  --with-umem=no  --with-autotrace=no  --with-dps=no  --with-dejavu-font-dir=/usr/share/fonts/TTF  --with-flif=no  --with-fpx=no  --with-gslib=no  --with-fontpath=  --with-gs-font-dir=/usr/share/fonts/gsfonts  --with-gvc=no "/>
+  <configure name="DOCUMENTATION_PATH" value="/usr/share/doc/ImageMagick-7"/>
+  <configure name="EXEC-PREFIX" value="/usr"/>
+  <configure name="EXECUTABLE_PATH" value="/usr/bin"/>
+  <configure name="FEATURES" value="DPC HDRI Cipher OpenCL OpenMP Modules"/>
+  <configure name="FILTER_PATH" value="/usr/lib/ImageMagick-7.1.1/modules-Q16HDRI/filters"/>
+  <configure name="GIT_REVISION" value="21298" />
+  <configure name="HOST" value="x86_64-pc-linux-gnu"/>
+  <configure name="INCLUDE_PATH" value="/usr/include/ImageMagick-7"/>
+  <configure name="LDFLAGS" value="-L/usr/lib -Wl,-O1,--sort-common,--as-needed,-z,relro,-z,now -flto=auto "/>
+  <configure name="LIBRARY_PATH" value="/usr/lib/ImageMagick-7.1.1"/>
+  <configure name="LIBS" value=" -llcms2   -lfreetype  -lraqm  -llqr-1 -lglib-2.0  -lfftw3  -lxml2   -lfontconfig -lfreetype  -lXext   -lSM -lICE -lX11  -lXt -lbz2 -lz  -lzip   -lltdl  -lm    -lpthread   -lgomp"/>
+  <configure name="LIB_VERSION_NUMBER" value="7,1,1,15"/>
+  <configure name="LIB_VERSION" value="0x711"/>
+  <configure name="NAME" value="ImageMagick"/>
+  <configure name="PCFLAGS" value="-fopenmp -DMAGICKCORE_HDRI_ENABLE=1 -DMAGICKCORE_QUANTUM_DEPTH=16"/>
+  <configure name="PREFIX" value="/usr"/>
+  <configure name="QuantumDepth" value="16"/>
+  <configure name="RELEASE_DATE" value="2023-07-30"/>
+  <configure name="SHAREARCH_PATH" value="/usr/lib/ImageMagick-7.1.1/config-Q16HDRI"/>
+  <configure name="SHARE_PATH" value="/usr/share/ImageMagick-7"/>
+  <configure name="TARGET_CPU" value="x86_64"/>
+  <configure name="TARGET_OS" value="linux-gnu"/>
+  <configure name="TARGET_VENDOR" value="pc"/>
+  <configure name="VERSION" value="7.1.1"/>
+  <configure name="WEBSITE" value="https://imagemagick.org"/>
+</configuremap>
