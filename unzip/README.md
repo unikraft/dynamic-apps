@@ -20,8 +20,6 @@ ldd $(which unzip)
  libc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007f6154248000)
  /lib64/ld-linux-x86-64.so.2 (0x00007f61545ab000)
 ```
-
- 
 You can copy the dynamic libraries required to run the `unzip` by using:
 
 ```console
