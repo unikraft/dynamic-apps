@@ -6,7 +6,7 @@ It's meant to be used with the binary-compatibility mode of Unikraft.
 The contents are:
 
 * /usr/bin/unzip: pre-built Linux ELF
-* lib/, lib64/: pre-extracted dynamic libraries required to run the `unzip`
+* `lib/`, `lib64/`: pre-extracted dynamic libraries required to run the `unzip`
 
 
 ## (Re)Extract Dynamic Libraries
