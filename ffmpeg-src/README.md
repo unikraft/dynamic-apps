@@ -3,6 +3,12 @@
 You can use the scripts in this repository to build [FFmpeg](https://ffmpeg.org/).
 For detailed instructions on how to use `FFmpeg`, please visit the [official documentation](https://ffmpeg.org/documentation.html).
 
+## Dependencies
+
+On Ubuntu run following commands before running `./build.sh`:
+sudo apt install nasm
+sudo apt install pkg-config
+
 ## Building
 
 Run the `./build.sh` script.
