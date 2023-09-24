@@ -11,7 +11,8 @@ The contents are:
 
 ## (Re)Extract Dynamic Libraries
 
-You can see the list of dynamics libraries for the `unzip` command using the ldd command:
+You can see the list of dynamics libraries for the `unzip` command using the `ldd` command:
+
 ```
 ldd $(which unzip)
  linux-vdso.so.1 (0x00007ffed119f000)
