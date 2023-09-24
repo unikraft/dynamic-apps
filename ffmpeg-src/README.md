@@ -6,8 +6,11 @@ For detailed instructions on how to use `FFmpeg`, please visit the [official doc
 ## Dependencies
 
 On Ubuntu run following commands before running `./build.sh`:
+
+```
 sudo apt install nasm
 sudo apt install pkg-config
+```
 
 ## Building
 

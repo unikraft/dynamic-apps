@@ -1,9 +1,10 @@
 #!/bin/bash
 
-# Clean up.
+# Clean up
 rm -fr ffmpeg* app-ffmpeg
 
-git clone https://git.ffmpeg.org/ffmpeg.git ffmpeg
+git clone --depth 1 --branch n6.0 https://git.ffmpeg.org/ffmpeg.git ffmpeg
+
 
 echo "Configuring ffmpeg..."
 pushd ffmpeg &> /dev/null || exit 1
