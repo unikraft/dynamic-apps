@@ -53,4 +53,6 @@ It's easiest to run the server with the binary-compatibility mode of Unikraft by
 sudo ./run.sh -d -r ../dynamic-apps/unzip /usr/bin/unzip hosts.zip
 ```
 
-It will unzip the zip file hosts.zip.
+It will unzip the file `hosts.zip` in the `hosts` file.
+
+You can check it out using ... <TODO: add command snippet with cat ../dynamic-apps/unzip/hosts>
