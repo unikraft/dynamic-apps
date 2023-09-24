@@ -35,7 +35,7 @@ Copying /lib64/ld-linux-x86-64.so.2 ...
 
 ## Run for Linux
 
-To test the ELF under Linux, run it as any other executable:
+To test the ELF under Linux, run it as any other executable, while in the `../dynamic-apps/unzip/` directory:
 
 ```console
 /usr/bin/unzip hosts.zip
