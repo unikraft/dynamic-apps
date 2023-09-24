@@ -55,4 +55,4 @@ sudo ./run.sh -d -r ../dynamic-apps/unzip /usr/bin/unzip hosts.zip
 
 It will unzip the file `hosts.zip` in the `hosts` file.
 
-You can check it out using ... <TODO: add command snippet with cat ../dynamic-apps/unzip/hosts>
+You can check it out using `cat ../dynamic-apps/unzip/hosts`
