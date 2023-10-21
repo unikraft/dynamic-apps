@@ -4,7 +4,7 @@ This is a repository of built/configured Linux dynamic ELFs to be used with the 
 Each directory consists of all required files to run the ELFs in binary-compatibility mode:
 
 * the actual ELF
-* the dyamic/shared libraries it depends on
+* the dynamic/shared libraries it depends on
 * configuration files
 
 The best way to use these applications is via the [`run_elfloader` script](https://github.com/unikraft/run-app-elfloader).
