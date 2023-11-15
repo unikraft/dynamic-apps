@@ -1,0 +1,9 @@
+/*
+  This software is copyright Kong Inc. and its licensors.
+  Use of the software is subject to the agreement between your organization
+  and Kong Inc. If there is no such agreement, use is governed by and
+  subject to the terms of the Kong Master Software License Agreement found
+  at https://konghq.com/enterprisesoftwarelicense/.
+*/
+
+.k-button[data-v-6f5c1fd9] .kong-icon{height:1rem}.show-page-header{margin-bottom:1.5rem}.show-page-header h1,.show-page-header h2,.show-page-header h3,.show-page-header h4,.show-page-header h5,.show-page-header h6,.show-page-header nav{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;margin-bottom:0;padding-bottom:0}.show-page-header h1 .title,.show-page-header h2 .title,.show-page-header h3 .title,.show-page-header h4 .title,.show-page-header h5 .title,.show-page-header h6 .title,.show-page-header nav .title{vertical-align:middle}.show-page-header .updated_at{color:var(--black-45);font-size:var(--type-sm);margin-bottom:var(--spacing-xs);min-width:-webkit-fit-content;min-width:-moz-fit-content;min-width:fit-content}.show-page-header .k-slideout{z-index:10000}.show-page-header .k-slideout .panel{max-width:680px!important}.tags[data-v-25ee8650]{margin-right:50px;gap:12px}.tags .tags-label[data-v-25ee8650]{color:var(--black-45, rgba(0, 0, 0, .5))}

@@ -1,0 +1,32 @@
+rock_manifest = {
+   doc = {
+      ["Changes.md"] = "dbd7489a5838d52b6f9dc5e10ed43a8e",
+      LICENSE = "3242b0b33ef1acb60aea985b19e36fed",
+      ["README.md"] = "9cbda5d0dd0b52f8d816faad90bf5d3d"
+   },
+   lua = {
+      resty = {
+         session = {
+            ["dshm.lua"] = "acb4a05de5b24c5aa26b38efa50ee1c7",
+            file = {
+               ["thread.lua"] = "896b6d0844938a07c7a43ba1767cd6d0",
+               ["utils.lua"] = "63f836c13f30632264bd1b9eaa766ec2"
+            },
+            ["file.lua"] = "763463ba5b520a242f4ce03de990dedb",
+            ["memcached.lua"] = "ba228c3376dbb7871e383797c18daae6",
+            ["mysql.lua"] = "d5e9d041fe05fb8d92c060e73537a4c3",
+            ["postgres.lua"] = "c3243d94ec55ce292bb2ac86a8e3a16a",
+            redis = {
+               ["cluster.lua"] = "093f8cf44bcaa2d46e160b6576ef9add",
+               ["common.lua"] = "12c91c69c47f70e6c427d6defc59b9af",
+               ["sentinel.lua"] = "f030f7f00ebff60eab26c0e8e5ff552e"
+            },
+            ["redis.lua"] = "5bccdcf25b03403c5a8748175e60b098",
+            ["shm.lua"] = "028bfd3b053d596cbfbb250377932fca",
+            ["utils.lua"] = "93e1b59d0bfc5374b169512c5558d219"
+         },
+         ["session.lua"] = "64531e7f74b2f44574345886fccb3f57"
+      }
+   },
+   ["lua-resty-session-4.0.3-1.rockspec"] = "087707eb85e36c224bba731981ba4a37"
+}

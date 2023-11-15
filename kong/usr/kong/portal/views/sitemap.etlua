@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <% for idx, url_obj in pairs(xml_urlset) do %>
+    <url>
+      <% for key, value in pairs(url_obj) do %>
+        <<%=key%>><%=value%></<%=key%>>
+      <% end %>
+    </url>
+  <% end %>
+</urlset>

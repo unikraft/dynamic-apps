@@ -1,0 +1,11 @@
+rock_manifest = {
+   doc = {
+      ["README.md"] = "fe02714871d464a30dff9d25bda7c778"
+   },
+   lua = {
+      resty = {
+         ["counter.lua"] = "2852321bc42c146004bf90474851a005"
+      }
+   },
+   ["lua-resty-counter-0.2.1-1.rockspec"] = "ff0ecbfc1423e8e7e41eb42396f414c0"
+}

@@ -1,0 +1,9 @@
+/*
+  This software is copyright Kong Inc. and its licensors.
+  Use of the software is subject to the agreement between your organization
+  and Kong Inc. If there is no such agreement, use is governed by and
+  subject to the terms of the Kong Master Software License Agreement found
+  at https://konghq.com/enterprisesoftwarelicense/.
+*/
+
+.vtab-nav-item[data-v-dc9a4bc9]{cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;padding:10px;border-radius:4px;text-overflow:ellipsis;overflow:hidden;white-space:nowrap}.vtab-nav-item-active[data-v-dc9a4bc9]{color:var(--blue-500);background:var(--blue-100);font-weight:700}.vtab-nav-item-disabled[data-v-dc9a4bc9]{opacity:.5;cursor:not-allowed}.vtab-container[data-v-831b7af1]{border-top:1px solid var(--black-10);display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row}.vtab-container .vtab-nav-wrapper[data-v-831b7af1]{top:0;position:sticky;height:100%;min-width:200px;max-width:25%;-ms-flex-negative:0;flex-shrink:0}.vtab-container .vtab-divider[data-v-831b7af1]{width:1px;-ms-flex-item-align:stretch;align-self:stretch;background:var(--black-10)}.vtab-container .vtab-main[data-v-831b7af1]{-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;padding:32px 0 32px 32px;min-width:0}

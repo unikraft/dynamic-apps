@@ -1,0 +1,29 @@
+rock_manifest = {
+   doc = {
+      ["CHANGELOG.md"] = "7c2eaf2dc619bdbb1f72e5ac546a699e"
+   },
+   ["kong-plugin-response-transformer-advanced-3.3.0-0.rockspec"] = "8653a5b18f64a0ca8cfe9f9d89ab34d2",
+   lua = {
+      kong = {
+         plugins = {
+            ["response-transformer-advanced"] = {
+               ["body_transformer.lua"] = "0cd2f5a1f0161182e6afeb6f3c89532f",
+               ["constants.lua"] = "68dc39766e43a7a595c79ec284f93ff0",
+               feature_flags = {
+                  ["limit_body.lua"] = "ba50125734aa51ede55620519d293a0e"
+               },
+               ["handler.lua"] = "73a63a67f59993560159a88decb7665d",
+               ["header_transformer.lua"] = "f6b5068def9cb56168952493796127c1",
+               migrations = {
+                  enterprise = {
+                     ["001_1500_to_2100.lua"] = "9067008cbc7bfb6479bd235778bebb57",
+                     ["init.lua"] = "e31a3cf8045e0d6421df1c2f4e3ae76e"
+                  }
+               },
+               ["schema.lua"] = "b6dc6b59a57ef12124e00036ab5de654",
+               ["transform_utils.lua"] = "3cfa02e4124c37b9373d24ffc4047932"
+            }
+         }
+      }
+   }
+}

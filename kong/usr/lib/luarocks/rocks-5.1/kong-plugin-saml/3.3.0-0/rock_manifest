@@ -1,0 +1,72 @@
+rock_manifest = {
+   ["kong-plugin-saml-3.3.0-0.rockspec"] = "8e8c081a72d583aa2a056977e7bd8831",
+   lua = {
+      kong = {
+         plugins = {
+            saml = {
+               ["consumers.lua"] = "60b5cc79f617a6ee4ecb15bce1c10677",
+               ["handler.lua"] = "6edd7674ffd1fdc7cd3d5716f3b9503e",
+               ["log.lua"] = "c74a911250d02e47a5b24790e9e81e01",
+               ["saml.lua"] = "c7cb2607b183555e757f2cb8c33861e6",
+               ["schema.lua"] = "f01afec47d5e03c70396ce4858076341",
+               ["sessions.lua"] = "22008cb50fbd8bb0163152324bc7a50f",
+               utils = {
+                  ["canon.lua"] = "d74bd11ca6c71e5defb78abe05a3c811",
+                  ["crypt.lua"] = "2d6aa905211b88e2acf042085eca6125",
+                  ["digest.lua"] = "5e82f0fc4beffcfbbfb7f8fa5aa6f6e3",
+                  ["evp.lua"] = "be1b946b4cc10be07407f9ad9741a786",
+                  ["helpers.lua"] = "ab79eca2fbcc6baf7081456219afd2c9",
+                  ["timestamp.lua"] = "d2391b657411cc1caf38c4bf449b8a8c",
+                  ["xmlcatalog.lua"] = "1868de5859b88247737ed184df5c1fbf",
+                  ["xmlschema.lua"] = "ba640742fded7ee301b0dd6e5ab6c9d2",
+                  ["xpath.lua"] = "f048f387167fb9fa17d0e6b248f28771",
+                  ["xslt.lua"] = "dfedcec96406d136d5d6585079ac9119"
+               }
+            }
+         }
+      }
+   },
+   xml = {
+      ["Makefile.saml-xsd"] = "3d8971dbc483208d0415d9fbcf277533",
+      ["make-authn-request.xslt"] = "3da3f548ceaed150792e48fb597c65e9",
+      xsd = {
+         ["saml-metadata.xml"] = "52de6a596e465f22418b930572291de5",
+         ["saml-schema-assertion-2.0.xsd"] = "a6dc9abcc0cb7bd4e53c51642f46ffaa",
+         ["saml-schema-authn-context-2.0.xsd"] = "39d70d2e7c2a1cc344970b688378d1f5",
+         ["saml-schema-authn-context-auth-telephony-2.0.xsd"] = "203ae33aa356e4fd1e2506b1d86f6395",
+         ["saml-schema-authn-context-ip-2.0.xsd"] = "db0efc39c8924dcfb880962e1b720fad",
+         ["saml-schema-authn-context-ippword-2.0.xsd"] = "37eb605aaa9a1318e2864f64735efb2f",
+         ["saml-schema-authn-context-kerberos-2.0.xsd"] = "0fca11e59d65c937454316b258492bb1",
+         ["saml-schema-authn-context-mobileonefactor-reg-2.0.xsd"] = "f161a291c4c29b1500659fb16a17e079",
+         ["saml-schema-authn-context-mobileonefactor-unreg-2.0.xsd"] = "04415afde5bd5947366d856464c5046b",
+         ["saml-schema-authn-context-mobiletwofactor-reg-2.0.xsd"] = "9517eeb7b7653eceb0a32ef61af2ee05",
+         ["saml-schema-authn-context-mobiletwofactor-unreg-2.0.xsd"] = "7b76a449f11687ec17f40d75b75889b8",
+         ["saml-schema-authn-context-nomad-telephony-2.0.xsd"] = "6bcce267b938ec57e93f5a4589df7b05",
+         ["saml-schema-authn-context-personal-telephony-2.0.xsd"] = "fb88f8920aa9f364bd92afd293ba0296",
+         ["saml-schema-authn-context-pgp-2.0.xsd"] = "82c3fb5d510d578439712b304cac6496",
+         ["saml-schema-authn-context-ppt-2.0.xsd"] = "e62e3ae20c1ffff379e7a330c5fdf944",
+         ["saml-schema-authn-context-pword-2.0.xsd"] = "952c99719fd2b6ce81784dc242c1bf6d",
+         ["saml-schema-authn-context-session-2.0.xsd"] = "26051d001bc4fbf77fe97702dcc80ea6",
+         ["saml-schema-authn-context-smartcard-2.0.xsd"] = "d3f15e9d1dddbfa76b18ba706da5e12d",
+         ["saml-schema-authn-context-smartcardpki-2.0.xsd"] = "5c6797e5d36a9cdf14912a2123e7933d",
+         ["saml-schema-authn-context-softwarepki-2.0.xsd"] = "18aa4ae067e7d58fe720e6f150f7037c",
+         ["saml-schema-authn-context-spki-2.0.xsd"] = "825653c0f5471a36ebef72b26d7fbbff",
+         ["saml-schema-authn-context-srp-2.0.xsd"] = "f913b231764e430af86f839e24062856",
+         ["saml-schema-authn-context-sslcert-2.0.xsd"] = "bd0cbb7972dc9e59ccef31769535c8c1",
+         ["saml-schema-authn-context-telephony-2.0.xsd"] = "91b61a98bf03efce201dc6ffb5c654d8",
+         ["saml-schema-authn-context-timesync-2.0.xsd"] = "5305c384c1a8d0d3849ca147617ee171",
+         ["saml-schema-authn-context-types-2.0.xsd"] = "9158f0febb2babfe7a447ed4f1d1c537",
+         ["saml-schema-authn-context-x509-2.0.xsd"] = "cc4350b27d2025041c8bf5a2b25b7203",
+         ["saml-schema-authn-context-xmldsig-2.0.xsd"] = "614ccd96072f95d21451044046689357",
+         ["saml-schema-dce-2.0.xsd"] = "b186818a9de89b8fe661f326df896a77",
+         ["saml-schema-ecp-2.0.xsd"] = "97b8ad8c7705db46debc32e025d68900",
+         ["saml-schema-metadata-2.0.xsd"] = "5e51b32537f39efce8793614fd829ac5",
+         ["saml-schema-protocol-2.0.xsd"] = "03a153a3ed30c97493d9dea816706fc3",
+         ["saml-schema-x500-2.0.xsd"] = "5402606e5f4339723ca7a0c1051343ea",
+         ["saml-schema-xacml-2.0.xsd"] = "25382cc51a2cfb6d34c4e2b4e6082014",
+         ["xenc-schema.xsd"] = "34ef818a2a486473fc59b45bf4f5ece3",
+         ["xml.xsd"] = "d4314590e7e7aaf6bcd508be0fd1c614",
+         ["xmldsig-core-schema.xsd"] = "0e3c70c2f5660c61194ac64c3fa429de"
+      }
+   }
+}

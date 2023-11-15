@@ -1,0 +1,327 @@
+rock_manifest = {
+   docs = {
+      Gemfile = "b27c7a69e0234f6a7f474451904feb55",
+      Rakefile = "c11440d27dd7839b62ba82302d83cc99",
+      ["_config.yml"] = "fc41ae8b1c18ca84a3609812df7b2964",
+      _includes = {
+         ["contribute.en.html"] = "63a55e0aef47991534fb60644db697ec",
+         ["contribute.html"] = "602e87e9ef3d17eb2b0e8de897aa862a",
+         ["contribute.ja.html"] = "90a0e8255aa1dea8f7d9d4a20dadb349",
+         ["navbar-content.en.html"] = "756a5760c4e869f1f2f1c0e213a5f20e",
+         ["navbar-content.html"] = "362771e5c63fc56843d363562fe66618",
+         ["navbar-content.ja.html"] = "5b043312184a722afb1929c8ef4521dc",
+         ["site-description.html"] = "d8d64b9dce467a8198e30c4357715991"
+      },
+      _layouts = {
+         ["base.html"] = "c7830ba4c50b4805784edd60e398af36"
+      },
+      _po = {
+         ja = {
+            ["index.po"] = "dc0b1699b465abc1497bfffa9c45a1a8",
+            install = {
+               ["index.po"] = "d512b527d038453c7311bda975abf80d"
+            },
+            news = {
+               ["index.po"] = "d31a2587070973ced58034874c20a1bc"
+            },
+            reference = {
+               ["cdata-section.po"] = "945c145f30d384ba18aaad93f5a3867d",
+               ["comment.po"] = "6d1ce773c4e764b64c0f084bd9c9af27",
+               ["document-fragment.po"] = "b53270168c3742615d20f9bcd8536b43",
+               ["document-type.po"] = "40d1f5cfef2ab2704d002ae2c662cced",
+               ["document.po"] = "a4fcf5705e956033b815111db89e6c2c",
+               ["element.po"] = "4dd460216bbf51aa4ca36f8684fbe14a",
+               ["error-code-list.po"] = "38870cbd9dedaad5b41a814a23c55c60",
+               ["error-domain-list.po"] = "8b3fc12d70709e87d120510cd74ff947",
+               ["error-level-list.po"] = "98b550b873064f5dda558e0e3e5b4876",
+               ["html-sax-parser.po"] = "9262f998433a8c94b7e69b934eb2718f",
+               ["html.po"] = "e1b03bb420aed53ebc232418f8241b0d",
+               ["index.po"] = "7a4070f6f57cea169ccf5820052f8e44",
+               ["namespace.po"] = "c977d7517e6c4f689b06530bb33007a2",
+               ["node-set.po"] = "018efce0201e3f523201542c59ecce07",
+               ["node.po"] = "45dacff28b2749bf15bfff64f5c4f1a2",
+               ["processing-instruction.po"] = "eb2f065e7e1b3b99fd408bee02e3fb9b",
+               ["searchable.po"] = "e838c18cc7838fad5737f3b47248883b",
+               ["serializable.po"] = "ddc2bbc4bbceeb7a8de5f345094f8809",
+               ["text.po"] = "f61616a0e01473da488b6586c8015005",
+               ["xml-sax-parser.po"] = "43eb9c86b858997110a09e3e543ccb6f",
+               ["xml-stream-sax-parser.po"] = "4848f3a0c735c3703deba97120ce679a",
+               ["xml.po"] = "11c2bc31998d32ffd2f69988937107a6",
+               ["xmlua.po"] = "24ff72089105eaaf22c5d17387079275"
+            },
+            tutorial = {
+               ["index.po"] = "960c54249b5c9a81a4f50e8c61a3b035"
+            }
+         }
+      },
+      assets = {
+         fonts = {
+            bootstrap = {
+               ["glyphicons-halflings-regular.eot"] = "f4769f9bdb7466be65088239c12046d1",
+               ["glyphicons-halflings-regular.svg"] = "89889688147bd7575d6327160d64e760",
+               ["glyphicons-halflings-regular.ttf"] = "e18bbf611f2a2e43afc071aa2f4e1512",
+               ["glyphicons-halflings-regular.woff"] = "fa2772327f55d8198301fdb8bcfc8158",
+               ["glyphicons-halflings-regular.woff2"] = "448c34a56d699c29117adc64c43affeb"
+            },
+            ["font-awesome"] = {
+               ["FontAwesome.otf"] = "668743fe7258676f8ef8f9b47d2a623e",
+               ["fontawesome-webfont.eot"] = "45c73723862c6fc5eb3d6961db2d71fb",
+               ["fontawesome-webfont.svg"] = "76a4f23c6be74fd309e0d0fd2c27a5de",
+               ["fontawesome-webfont.ttf"] = "7c87870ab40d63cfb8870c1f183f9939",
+               ["fontawesome-webfont.woff"] = "dfb02f8f6d0cedc009ee5887cc68f1f3",
+               ["fontawesome-webfont.woff2"] = "4b5a84aaf1c9485e060c503a0ff8cadb"
+            }
+         },
+         images = {
+            [".keep"] = "d41d8cd98f00b204e9800998ecf8427e"
+         },
+         javascripts = {
+            bootstrap = {
+               ["affix.js"] = "683c19859764baf0d17538897ea1eba2",
+               ["alert.js"] = "ac9c0d62e9f1198d915aac1465bdcb64",
+               ["button.js"] = "b7532620277e887dbbd42de56b0f47b1",
+               ["carousel.js"] = "b524f883fae2f4a59206141f3153dc93",
+               ["collapse.js"] = "2bc99ca6c9b060ba5616f41ddd5e2703",
+               ["dropdown.js"] = "853fa972e584b0876a55f9ce35566f2d",
+               ["modal.js"] = "b7d8f688e67e78c07ffde44ec4248fd9",
+               ["popover.js"] = "c7afe286c5885ebfd68c59472c2a574e",
+               ["scrollspy.js"] = "b1014ea8cb47419e09ea066201ecfb6d",
+               ["tab.js"] = "34a34f05c5ad6f14bf5fba25d4c85856",
+               ["tooltip.js"] = "ccae69febbcd9b2ef9ddb2efbb53a1a2",
+               ["transition.js"] = "3cb001675410903ecaadcfeb7c296965"
+            },
+            ["bootstrap-sprockets.js"] = "8c4dbb4a993eb832c2ce3c6f5e8914f9",
+            ["bootstrap.js"] = "8015042d0b4ac125867af5b096b175ce",
+            ["bootstrap.min.js"] = "4becdc9104623e891fbb9d38bba01be4"
+         },
+         licenses = {
+            bootstrap = {
+               LICENSE = "0c8ffbe0c6f82ea4b0a4524770f5c3fe"
+            },
+            ["font-awesome"] = {
+               LICENSE = "22a1690926a3175470fbe7880c8ddf40"
+            }
+         },
+         stylesheets = {
+            ["_bootstrap-compass.scss"] = "3fec975e3405c6cd99c01b83edb1905f",
+            ["_bootstrap-mincer.scss"] = "557a9bb02214d35a8499dd61dbb389ac",
+            ["_bootstrap-sprockets.scss"] = "1d4a4a20542be73f7e8d259e031e49e3",
+            ["_bootstrap.scss"] = "d6fac1c283279ea33708c8afa54819cb",
+            bootstrap = {
+               ["_alerts.scss"] = "c0e5396555dd4c70b9eeb314e4c4613d",
+               ["_badges.scss"] = "9384c5f60cf095ad09dc43173622d046",
+               ["_breadcrumbs.scss"] = "24c93808be39b840a66e95bf3fe89ed2",
+               ["_button-groups.scss"] = "c9b67b57469dd74683a72e2f3734e529",
+               ["_buttons.scss"] = "bb2fcb0a7f0cc6cbed09db8928c614a9",
+               ["_carousel.scss"] = "548234e87f62fd8658d4ecdeca4fabb4",
+               ["_close.scss"] = "247ef4c02f54f5bf898da8e4f6c88bd0",
+               ["_code.scss"] = "280e44d4762299678f52c56c6df4ffc2",
+               ["_component-animations.scss"] = "8c17107ac86a36d4b05a20c47d08dee9",
+               ["_dropdowns.scss"] = "203f075b01f47b0675428e8d42f194fe",
+               ["_forms.scss"] = "644e6fba1d70fda0f3b38e4a0d6c0cd4",
+               ["_glyphicons.scss"] = "592530a38e0c16407c22609c63a505ff",
+               ["_grid.scss"] = "ba7b4a2579c7f061a982830877a1c60d",
+               ["_input-groups.scss"] = "e595dc91de881fc8e145627e85ba41e8",
+               ["_jumbotron.scss"] = "2de0acd5f3f5ae5529e1f64d6fd8c94a",
+               ["_labels.scss"] = "d103671ba8c96f743916990bdf40d3b4",
+               ["_list-group.scss"] = "e514ae19883f5a3ad417d812a549dc3a",
+               ["_media.scss"] = "91aa028d54785b36583c19020bba9f00",
+               ["_mixins.scss"] = "df2dad555f64d993e27d45568b4cef39",
+               ["_modals.scss"] = "7a24ee151c07b51ba75fcf1c33b1118e",
+               ["_navbar.scss"] = "58acd058e729f304d7f69eed3448186c",
+               ["_navs.scss"] = "89b073405d01e045f89dba5cb3e49946",
+               ["_normalize.scss"] = "a81f00910a701c842ede4f497c191c80",
+               ["_pager.scss"] = "fb95dee91745bec12cdd44c4542530f5",
+               ["_pagination.scss"] = "179ed0f98ff9c131aaaadd73f51381a8",
+               ["_panels.scss"] = "e4650d16f8900eeede19116f076e9df0",
+               ["_popovers.scss"] = "6a03a7bd7f506bb33b2dc107c194428e",
+               ["_print.scss"] = "b6fef93d5689af1a0467c8fc8e9959d9",
+               ["_progress-bars.scss"] = "53de2fdfeb4c0fd4d6b4f323a507bc23",
+               ["_responsive-embed.scss"] = "2c7057d9a90998866bf84c1112caf631",
+               ["_responsive-utilities.scss"] = "67525c35b349ba0f509ba98e5500f83b",
+               ["_scaffolding.scss"] = "c5fe3cc31e1bfcf1fa79ac2b0888b731",
+               ["_tables.scss"] = "c91111e9d3f5d22ede57db4758f10b57",
+               ["_theme.scss"] = "71b5847e9a9ca349480f932cf61aa1ed",
+               ["_thumbnails.scss"] = "dd5e0a8f79dc6a539c38e05f14121c88",
+               ["_tooltip.scss"] = "1fa68e95761bca93773df135f5b7bc5f",
+               ["_type.scss"] = "1a80f6a3899de7cfb3d554cfdce18753",
+               ["_utilities.scss"] = "7e020f996c50afd24453a871098cbda1",
+               ["_variables.scss"] = "4a98667571c5899e601a01d1e7926d18",
+               ["_wells.scss"] = "3577874a42c6fe920129f07eabca106a",
+               mixins = {
+                  ["_alerts.scss"] = "058b36cec876e55731f05b7cf0e43a3e",
+                  ["_background-variant.scss"] = "a392e0874a78c4a86db7b19654f4c591",
+                  ["_border-radius.scss"] = "88e9a7b563aa11357d7bfc114708b139",
+                  ["_buttons.scss"] = "9308e147a58312a6d3e7d5ad7b47950d",
+                  ["_center-block.scss"] = "f284d54e569eba55aba017e4807b0820",
+                  ["_clearfix.scss"] = "6fc90025fc80e49fd10100ee8c689c1d",
+                  ["_forms.scss"] = "8e74e8e7145cb98df17a275f800ea089",
+                  ["_gradients.scss"] = "c256e096c556db2471dd3c6c1516074c",
+                  ["_grid-framework.scss"] = "c01cf53ad0c2700e4571691810e4674c",
+                  ["_grid.scss"] = "828243f1ad7096f947e726b748200cf1",
+                  ["_hide-text.scss"] = "418c58bf3ee53cf5f50f96c691d5f7c1",
+                  ["_image.scss"] = "1c7ab3b18895dad2de80f0dd11d13577",
+                  ["_labels.scss"] = "80f2187ccdda40c712cd2dbfb8d7a405",
+                  ["_list-group.scss"] = "55c07e91ca263fe6adf74c2dd0d96a39",
+                  ["_nav-divider.scss"] = "d9d1e810eff80b30acc3a03bf346820f",
+                  ["_nav-vertical-align.scss"] = "5cbd9ed72043e13491d9584c6bed5b1c",
+                  ["_opacity.scss"] = "39a203bc3a8cd9f7b13ac7608074a6af",
+                  ["_pagination.scss"] = "34784d1e98ba522b0f47c72fa69c4f62",
+                  ["_panels.scss"] = "b1038d1728d6b1af90add852cecc7d5d",
+                  ["_progress-bar.scss"] = "dd436b8aad1c620e630f6bbbbe373c88",
+                  ["_reset-filter.scss"] = "d2eb7cc1c9a267efed34fedabec65a9f",
+                  ["_reset-text.scss"] = "86e9bbc6877d6ff51ec6dbfc1a8e4034",
+                  ["_resize.scss"] = "a377ab0a14e899c6433cd29c2e14a978",
+                  ["_responsive-visibility.scss"] = "4af4d79bbc3b9ee602cb584c23019fc5",
+                  ["_size.scss"] = "6de6854a356f52a6fa7f939c87f137d0",
+                  ["_tab-focus.scss"] = "2dab79127e3b0e124855d44007df87da",
+                  ["_table-row.scss"] = "1ae5e672aaea920528aab0739d2ed229",
+                  ["_text-emphasis.scss"] = "854502c2432fb098fb556666c69350b0",
+                  ["_text-overflow.scss"] = "0bb73f191da9ea556ddab98d304cbaed",
+                  ["_vendor-prefixes.scss"] = "f2fb38a149f47dc26fc28904b8425d62"
+               }
+            },
+            ["font-awesome"] = {
+               ["_animated.scss"] = "39ff4f359a7b81d6585075715f41e5dc",
+               ["_bordered-pulled.scss"] = "4cad0df17bf40327feae33fa9a6c6ba2",
+               ["_core.scss"] = "ef059a98cf9de6ca5b77ee6850771cf0",
+               ["_fixed-width.scss"] = "9277ab6964a434d499873687b00be906",
+               ["_font-awesome.scss"] = "0647c61c2fc0af2d3110b3e021df2167",
+               ["_icons.scss"] = "bf191ec4814fc5a8f3039782acebf31c",
+               ["_larger.scss"] = "e95931566f6fc6ad5685c4fa9802e206",
+               ["_list.scss"] = "7107e80b053928271d5fcf422dc29490",
+               ["_mixins.scss"] = "2052155a929be2769df84be98617f310",
+               ["_path.scss"] = "ab5a9e8388563e097b5ce835601f01d2",
+               ["_rotated-flipped.scss"] = "9f5d4bc6fadea89328d2aac26574a9d8",
+               ["_stacked.scss"] = "5594237226aedfbca2fa1c7f4604c214",
+               ["_variables.scss"] = "667c28ce24bc245dd0b3b8578ea2d083"
+            },
+            ["syntax.css"] = "fa027245655d3bbb788bb3c9f4ca8f64",
+            ["xmlua.scss"] = "2abc565906ea0af5dd95fa01df7d7a90"
+         }
+      },
+      ["index.md"] = "db6eb2e77b34e914111d21b681bb6b45",
+      install = {
+         ["index.md"] = "8909f412e1f86d4b7552f441f91ef1b5"
+      },
+      ja = {
+         ["index.md"] = "973ef89e34c19e60755d4955ec93fdf4",
+         install = {
+            ["index.md"] = "81a7ab08f3e75028c94173baecfdcf6b"
+         },
+         news = {
+            ["index.md"] = "3b82ff16a43857b6de26b6f831cc2ddc"
+         },
+         reference = {
+            ["cdata-section.md"] = "f427e0765369805cd084b0204f300290",
+            ["comment.md"] = "becfc9367194fd9bc98bb6237fa65713",
+            ["document-fragment.md"] = "be2c00c36059190fe0e75b97233ce1f4",
+            ["document-type.md"] = "bdda85cce82078fddc56cdb264569570",
+            ["document.md"] = "30adc5c9c04d1d2a7616275958ab6eb7",
+            ["element.md"] = "c64f30fa23953815a841723f03210373",
+            ["error-code-list.md"] = "a9058e5645eb7c8d2d32f7f45b0be1ba",
+            ["error-domain-list.md"] = "71fbfad3aaf152e3af02b83138e2afa5",
+            ["error-level-list.md"] = "47a276bb8ea0af55922991f7692fcb0b",
+            ["html-sax-parser.md"] = "b3bd88f18a645caa470948ff5e6c537e",
+            ["html.md"] = "2bb0b703126893b9bf975bb61a27ccd8",
+            ["index.md"] = "46631a8acdfe14b29847ce03a8d608fe",
+            ["namespace.md"] = "dabf1137345d0c6f0b2cacbce8d2a8ea",
+            ["node-set.md"] = "d51f49e3308feff97aa7e09de76cc15a",
+            ["node.md"] = "fb1dad5cafd4cd143afa2e2c7d70d766",
+            ["processing-instruction.md"] = "d4d3fe7d71ad751b975a7da60ceb3ee0",
+            ["searchable.md"] = "8853a7beb6360c16a03eb726ee672d9d",
+            ["serializable.md"] = "4e90de4a0db785950fe6438a684b3163",
+            ["text.md"] = "89828c120b3fb4f51397f395d03aecc5",
+            ["xml-sax-parser.md"] = "733d2e412022fa5b7d994c944e2c3843",
+            ["xml-stream-sax-parser.md"] = "d05bac53f20ee23d19f07e8b06606a1e",
+            ["xml.md"] = "e33da6a2ff77e5ee6a3f63a6e7a50adb",
+            ["xmlua.md"] = "ff0c45086be15a84f735d37471a081b6"
+         },
+         tutorial = {
+            ["index.md"] = "1269beb9b14b2c4567e08d28222fe3f4"
+         }
+      },
+      news = {
+         ["index.md"] = "67a66c4d2bb45f119be17b441ba9a509"
+      },
+      reference = {
+         ["cdata-section.md"] = "348ffe511d092a7f6ece535afdc72fb4",
+         ["comment.md"] = "11d7e924670afe27a35d7bf3e14ec103",
+         ["document-fragment.md"] = "06c42e84bdb10c644e3e05e61aaa4446",
+         ["document-type.md"] = "5b2d6bf956858f05f30157a6fe0d9662",
+         ["document.md"] = "dade2a0263c851c3a8ce790f30cde4b7",
+         ["element.md"] = "3890b84912864cb80c498f736841ca8b",
+         ["error-code-list.md"] = "f7d066bceef7c1c140384a3409363c00",
+         ["error-domain-list.md"] = "97518f3fa24356f2d8189eafa63a0533",
+         ["error-level-list.md"] = "226337e07b0aac6f7b7ced3ffc7f0860",
+         ["html-sax-parser.md"] = "91f5f21d086679db86ac0cea295a63aa",
+         ["html.md"] = "3a3a9c4b1375ae77a1272848572c510f",
+         ["index.md"] = "6b1255370686ebb41d056d3cc7b9a92f",
+         ["namespace.md"] = "83bde30efef9a77b892933b00efffbd3",
+         ["node-set.md"] = "122889fa347f637f4366a8d4e44cd769",
+         ["node.md"] = "37397dbbae52ce6303a7d44cda929041",
+         ["processing-instruction.md"] = "f5410cf4de15072e9d04c15f41e2185a",
+         ["searchable.md"] = "3b80c3cc0a90c86860bf18bbd92e327e",
+         ["serializable.md"] = "807cd9b04a22c85f54d32189d74ed5c8",
+         ["text.md"] = "40bf11ec301ac58d94abcc49a7ad2946",
+         ["xml-sax-parser.md"] = "dbad6cbd9c3b9fb899267c87f216ffa9",
+         ["xml-stream-sax-parser.md"] = "e1e42dea46a41ac84db01a23831571f5",
+         ["xml.md"] = "06cce25b6fa86c0aea0d0ca48395f3b1",
+         ["xmlua.md"] = "0437f4c8eb814f6b8eacd9f4804643a9"
+      },
+      tutorial = {
+         ["index.md"] = "6dd4e885a4293b5c70300a88c9a33e0a"
+      }
+   },
+   lua = {
+      xmlua = {
+         ["attribute-declaration.lua"] = "5825f1cd02b7bcf62bf7e1cc2af962ac",
+         ["attribute.lua"] = "e2736547b917c54f111d7e9e5b653665",
+         ["cdata-section.lua"] = "daa4068f1b994add4ee9da88d190b263",
+         ["comment.lua"] = "6e5ec4f8919131a02be4a5515419a4e5",
+         ["converter.lua"] = "3002f2d9b739827c3970aac34f7d9ce2",
+         ["document-fragment.lua"] = "8a968f2e05c9e99e4afcf0bfaf42e1c5",
+         ["document-type.lua"] = "bb05fceb1e598b27fdaac02609e3eabd",
+         ["document.lua"] = "b0e21a8d39f0230eaf6ac73c1f6248e5",
+         ["element-declaration.lua"] = "61503d658578622dc371151cf3fe42ab",
+         ["element.lua"] = "e7b40573cbb694cca8a1537991387842",
+         ["entity-declaration.lua"] = "ff9818d3e0e55d79fd2695a6534e19c9",
+         ["entity-reference.lua"] = "20d86152ecbc5b6a12c6a541b57fa08e",
+         ["entity.lua"] = "ba180258cebe9ab8b13d4c1c14d6a104",
+         ["html-sax-parser.lua"] = "76c144bca1bc2485a16f8b70670ea248",
+         ["html.lua"] = "8091c10db61f49bacbf58bb3a81908b8",
+         libxml2 = {
+            ["dict.lua"] = "098dfe00e6e66ba91d1084e452d5e4a8",
+            ["encoding.lua"] = "eb3ce73d68d9e8e677d7f1f0bb371c1f",
+            ["entities.lua"] = "f15afd120b32de0446e0843e28c445ad",
+            ["global.lua"] = "883bfaf28ffed4b92a45abb6842d350f",
+            ["hash.lua"] = "f41d2a80f1ebece72e2f44b6277bc082",
+            ["html-parser.lua"] = "0160256147ce624dd308cdb339fd9ba7",
+            ["html-tree.lua"] = "4d47a6c805fe25fdc30e208453003c63",
+            ["memory.lua"] = "7909aa763a7a4ba8372d3976256f3317",
+            ["parser.lua"] = "993a739f1f007cb38261e1623f40b0e8",
+            ["tree.lua"] = "62fdaa9f1c42fffe8e948ce107821354",
+            ["valid.lua"] = "3ceafd41881ae527f7146ef4d2aaee13",
+            ["xmlerror.lua"] = "c6eed4a9fdcb0e966a68010c6f964b2b",
+            ["xmlsave.lua"] = "80272c3df42f7aad1dca565622aaf677",
+            ["xmlstring.lua"] = "fed0542877973b885856875a0b7d0bf2",
+            ["xpath.lua"] = "644db6d2dc9baa4ae437f4d3589addc0"
+         },
+         ["libxml2.lua"] = "5d3a53b80eecfef1a3761ab4a55c29b4",
+         ["namespace-declaration.lua"] = "8c927aa50e9792da9d09e8d5e69a0fab",
+         ["namespace.lua"] = "03712dfbef5184c6f4e09edf2bd8e71c",
+         ["node-set.lua"] = "3d41379e57b47ecface97f8adc289eef",
+         ["node.lua"] = "8851f5f6cd7104d10b462346f17bc0f8",
+         ["notation-declaration.lua"] = "9535ef37f7fb53e64ee0f21a099ca1cc",
+         ["processing-instruction.lua"] = "10448591b561e1087bb61f86f76cd8b0",
+         ["searchable.lua"] = "05ac72ac5557cd3d71f655b0af9e12f9",
+         ["serializable.lua"] = "fb068a6f83a3138bdc6e52bbcb5a7d1a",
+         ["text.lua"] = "31b1a083c28d45875eefcd0542e8f3aa",
+         ["xml-sax-parser.lua"] = "fe19c2c0e912356d2992a65448b1d352",
+         ["xml-stream-sax-parser.lua"] = "82276d68ecc920940f10bbc9e2e4b137",
+         ["xml.lua"] = "84fe8e2ed3b2a35c61accdb1a8c34492"
+      },
+      ["xmlua.lua"] = "c4e4dcac42786665a5c5474b49a32aa2"
+   },
+   ["xmlua-1.2.0-0.rockspec"] = "6c51e1ab125736f1d6b415c9f4c939ac"
+}

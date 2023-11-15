@@ -1,0 +1,13 @@
+rock_manifest = {
+   doc = {
+      ["README.md"] = "775af1ee416fe7e070ea889fb6c362d8"
+   },
+   lua = {
+      resty = {
+         openapi3 = {
+            ["deserializer.lua"] = "704cc41884c7afd7447be7039a2c1111"
+         }
+      }
+   },
+   ["lua-resty-openapi3-deserializer-2.0.0-1.rockspec"] = "a145808ae1130a97beea4273b25379e8"
+}

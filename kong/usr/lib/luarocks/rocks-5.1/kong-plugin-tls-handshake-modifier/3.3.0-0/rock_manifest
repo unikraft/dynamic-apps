@@ -1,0 +1,14 @@
+rock_manifest = {
+   ["kong-plugin-tls-handshake-modifier-3.3.0-0.rockspec"] = "04b46f331abd9fbb7d2232b334fc5eee",
+   lua = {
+      kong = {
+         plugins = {
+            ["tls-handshake-modifier"] = {
+               ["cache.lua"] = "734c8ac65a6afb3987a5c0a67b6e5886",
+               ["handler.lua"] = "a4a79e499258263604e495a0850e1cfd",
+               ["schema.lua"] = "af2dbe096a264096ebf44adbcbf8eca4"
+            }
+         }
+      }
+   }
+}

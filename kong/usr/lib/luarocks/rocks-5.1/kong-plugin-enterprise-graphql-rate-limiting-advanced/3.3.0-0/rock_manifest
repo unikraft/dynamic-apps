@@ -1,0 +1,23 @@
+rock_manifest = {
+   doc = {
+      ["CHANGELOG.md"] = "17725e7eb31ccb90e8d6cb0125fe4ab4"
+   },
+   ["kong-plugin-enterprise-graphql-rate-limiting-advanced-3.3.0-0.rockspec"] = "40203254dfb53e08252414663002568e",
+   lua = {
+      kong = {
+         plugins = {
+            ["graphql-rate-limiting-advanced"] = {
+               ["api.lua"] = "d34aedf81db1ca7e60b62699885c4390",
+               ["cost.lua"] = "25de1f6d4888ef41598e7761a051bb7e",
+               ["daos.lua"] = "c3b98b469186de4de8238be45a9b4322",
+               ["handler.lua"] = "861a289c826197a2f297fc6c51f2dd18",
+               migrations = {
+                  ["000_base_gql_rate_limiting.lua"] = "cdecdb654b748573e0cb0d1dcdc0a45d",
+                  ["init.lua"] = "8e200c627db54aff10ffa76b8e54f96f"
+               },
+               ["schema.lua"] = "18af560f747f5d26a4f83b8b5e4c51e8"
+            }
+         }
+      }
+   }
+}

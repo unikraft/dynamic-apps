@@ -1,0 +1,13 @@
+rock_manifest = {
+   ["kong-plugin-statsd-advanced-3.3.0-0.rockspec"] = "297293df2cc94ffca37a2e3db1e7d659",
+   lua = {
+      kong = {
+         plugins = {
+            ["statsd-advanced"] = {
+               ["handler.lua"] = "556b45c3c55c665547d79f3568d7acf8",
+               ["schema.lua"] = "33bd282c1e8225ebe45cc60384cd723d"
+            }
+         }
+      }
+   }
+}

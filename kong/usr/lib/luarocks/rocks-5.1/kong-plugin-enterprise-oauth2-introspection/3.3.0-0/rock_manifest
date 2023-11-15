@@ -1,0 +1,16 @@
+rock_manifest = {
+   doc = {
+      ["CHANGELOG.md"] = "38bf9b9dd9b7ae6d6440ae013f960ce4"
+   },
+   ["kong-plugin-enterprise-oauth2-introspection-3.3.0-0.rockspec"] = "6cff50c79b295fb8693098daef1b0b1f",
+   lua = {
+      kong = {
+         plugins = {
+            ["oauth2-introspection"] = {
+               ["handler.lua"] = "1094827b018f2f18f850d6875e56c157",
+               ["schema.lua"] = "2e21aadcd912e5bb7b0f00ce15f8bc28"
+            }
+         }
+      }
+   }
+}

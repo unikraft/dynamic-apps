@@ -1,0 +1,36 @@
+title: LuaCS
+markdown: kramdown
+highlighter: rouge
+version: 1.0.1
+release_date: 2018-04-15
+copyright_year: 2018
+exclude:
+  - "Rakefile"
+  - "Gemfile"
+  - "Gemfile.lock"
+description:
+  en: CSS Selectors parser library for Lua implemented in pure Lua
+  ja: Luaだけで実装したLua用のCSSセレクターパーサーライブラリー
+
+kramdown:
+  input: GFM
+  smart_quotes: ["apos", "apos", "quot", "quot"]
+
+sass:
+  sass_dir: assets/stylesheets
+
+defaults:
+  - scope:
+      path: "ja"
+    values:
+      path_prefix: /ja/
+      layout: "base"
+      language: ja
+      country: JP
+  - scope:
+      path: ""
+    values:
+      path_prefix: /
+      layout: "base"
+      language: en
+      country: US

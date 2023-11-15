@@ -1,0 +1,21 @@
+rock_manifest = {
+   doc = {
+      ["CHANGELOG.md"] = "c8952f3366e746491a98b6df4488becb"
+   },
+   ["kong-plugin-enterprise-ldap-auth-3.3.0-0.rockspec"] = "5c558f4fbdd230ae8365693011c68f37",
+   lua = {
+      kong = {
+         plugins = {
+            ["ldap-auth-advanced"] = {
+               ["access.lua"] = "d25f74eb068ff58e13441eaba8ba65c0",
+               ["asn1.lua"] = "452ab06fdd3b2875993b133e6b05d732",
+               ["cache.lua"] = "85ff92f72432a18300f0ca61ea71b990",
+               ["groups.lua"] = "0d8bb0bb24f35b7291dd678e03a08e64",
+               ["handler.lua"] = "85ddd5886bd137678e078e99d7ca33fa",
+               ["ldap.lua"] = "04cbcf960726896e30ff74a3f60fb458",
+               ["schema.lua"] = "fd118cf93b11772e42056561119fc79c"
+            }
+         }
+      }
+   }
+}

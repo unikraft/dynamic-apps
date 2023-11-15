@@ -1,0 +1,328 @@
+# Copyright (c) 1995-2019 Sullivan Beck. All rights reserved.
+# This program is free software; you can redistribute it and/or modify it
+# under the same terms as Perl itself.
+
+=pod
+
+=head1 NAME
+
+Date::Manip - Date manipulation routines
+
+=head1 DESCRIPTION
+
+Date::Manip is a series of modules designed to make any common
+date/time operation easy to do.  Operations such as comparing two
+times, determining a date a given amount of time from another, or
+parsing international times are all easily done.  It deals with time
+as it is used in the Gregorian calendar (the one currently in use)
+with full support for time changes due to daylight saving time.
+
+From the very beginning, the main focus of Date::Manip has been to be
+able to do ANY desired date/time operation easily.  Many other modules
+exist which may do a subset of these operations quicker or more
+efficiently, but no other module can do all of the operations
+available in Date::Manip.
+
+Date::Manip has functionality to work with several fundamental types
+of data.
+
+=over 4
+
+=item B<dates>
+
+The word date is used extensively here and is somewhat misleading. In
+Date::Manip, a date consists of three pieces of information: a
+calendar date (year, month, day), a time of day (hour, minute,
+second), and time zone information. Calendar dates and times are fully
+handled. Time zones are handled as well, but depending on how you use
+Date::Manip, there may be some limitations as discussed below.
+
+=item B<delta>
+
+A delta is an amount of time (i.e. the amount of time between two
+different dates).  Think of it as the duration of an event or the
+amount of time between two dates.
+
+A delta refers only to an amount of time. It includes no information
+about a starting or ending date/time.  Most people will think of a delta
+as an amount of time, but the term 'time' is already used so much in this
+module that I didn't want to use it here in order to avoid confusion.
+
+=item B<recurrence>
+
+A recurring event is something which occurs on a regular recurring
+basis.
+
+=item B<holidays> and B<events>
+
+Holidays and events are basically named dates or recurrences.
+
+=back
+
+Among other things, Date::Manip allow you to:
+
+=over 4
+
+=item B<*>
+
+Enter a date in practically any format you choose.
+
+=item B<*>
+
+Compare two dates, entered in widely different formats to determine
+which is earlier.
+
+=item B<*>
+
+Extract any information you want from a date using a format string
+similar to the Unix date command.
+
+=item B<*>
+
+Determine the amount of time between two dates, or add an amount of
+time (a delta) to a date to get a second date.
+
+=item B<*>
+
+Work with dates using international formats (foreign month
+names, 12/10/95 referring to October rather than December, etc.).
+
+=item B<*>
+
+Convert dates from one timezone to another.
+
+=item B<*>
+
+To find a list of dates where a recurring event happens.
+
+=back
+
+Each of these tasks is trivial (one or two lines at most) with this package.
+
+=head1 HOW TO USE DATE::MANIP
+
+There are three different ways to use Date::Manip .  There are three
+interfaces (version 5 functional interface, version 6 functional, and
+version 6 object-oriented).  A complete description of each is
+included in the L<Date::Manip::Interfaces> document.  The recommended
+(and the only one with access to the full functionality of the module)
+is using the Object-Oriented interface.
+
+=head1 SEE ALSO
+
+Because Date::Manip performs so many operations, the documentation is
+extensive.  It includes the following documents:
+
+=head2 Information about the different interfaces
+
+Read this for a detailed description of each of the interfaces,
+including information on how to choose and use the interface
+best suited to your situation.
+
+=over 4
+
+=item L<Date::Manip::Interfaces>
+
+A complete description of the functional interfaces available.  NOTE:
+it is recommended that you use the OO interface wherever possible
+as the functional interfaces have some imitations.
+
+=back
+
+=head2 A description of the functional interfaces:
+
+=over 4
+
+=item L<Date::Manip::DM5>
+
+The version 5 functional interface
+
+=item L<Date::Manip::DM6>
+
+The version 6 functional interface
+
+=back
+
+=head2 Objects and configuration
+
+An introduction to the Date::Manip classes used by the object-oriented
+interface and how to configure them:
+
+=over 4
+
+=item L<Date::Manip::Objects>
+
+An overview of the various Date::Manip modules, and how to use them.
+
+=item L<Date::Manip::Config>
+
+Information for configuring Date::Manip
+
+=back
+
+=head2 Date::Manip object-oriented modules
+
+These are the modules for using the object-oriented interface.
+
+=over 4
+
+=item L<Date::Manip::Obj>
+
+This is the base class.  All other classes listed here inherit the
+methods defined in this class.
+
+=item L<Date::Manip::Base>
+
+A module for doing low-level date operations.
+
+=item L<Date::Manip::TZ>
+
+A module for working with time zones.
+
+=item L<Date::Manip::Date>
+
+The module for working with dates.
+
+=item L<Date::Manip::Delta>
+
+The module for working with deltas (amount of time).
+
+=item L<Date::Manip::Recur>
+
+The module for working with recurrences (recurring dates).
+
+=back
+
+=head2 Timezone information
+
+=over 4
+
+=item L<Date::Manip::DM5abbrevs>
+
+Time zone abbreviations used in the version 5 interface.
+
+=item L<Date::Manip::Zones>
+
+Time zone data included in Date::Manip used in the version 6
+interfaces.
+
+=back
+
+=head2 Miscellaneous information:
+
+=over 4
+
+=item L<Date::Manip::Calc>
+
+Detailed information on how date calculations are done.
+
+=item L<Date::Manip::Holidays>
+
+Information on defining and using holidays and events.
+
+=item L<Date::Manip::ConfigFile>
+
+A sample config file.
+
+=item L<Date::Manip::Lang>
+
+Information about the languages supported by Date::Manip and how
+to add a new language.
+
+=item L<Date::Manip::Lang::english>
+
+=item L<Date::Manip::Lang::catalan>
+
+=item L<Date::Manip::Lang::danish>
+
+=item L<Date::Manip::Lang::dutch>
+
+=item L<Date::Manip::Lang::finnish>
+
+=item L<Date::Manip::Lang::french>
+
+=item L<Date::Manip::Lang::german>
+
+=item L<Date::Manip::Lang::italian>
+
+=item L<Date::Manip::Lang::norwegian>
+
+=item L<Date::Manip::Lang::polish>
+
+=item L<Date::Manip::Lang::portugue>
+
+=item L<Date::Manip::Lang::romanian>
+
+=item L<Date::Manip::Lang::russian>
+
+=item L<Date::Manip::Lang::spanish>
+
+=item L<Date::Manip::Lang::swedish>
+
+=item L<Date::Manip::Lang::turkish>
+
+A description of the parseable words in each language currently
+supported by Date::Manip.
+
+=back
+
+=head2 Information about the module and administrative things:
+
+=over 4
+
+=item L<Date::Manip::Migration5to6>
+
+Information on changes necessary to scripts when upgrading from
+5.xx to 6.xx.
+
+=item L<Date::Manip::Changes5>
+
+Change log for Date::Manip 5.xx
+
+=item L<Date::Manip::Changes5to6>
+
+Differences between version 5.xx and 6.00 (including information
+on upgrading); this contains more details than the Migration5to6
+document.
+
+=item L<Date::Manip::Changes6>
+
+Change log for Date::Manip 6.xx
+
+=item L<Date::Manip::Misc>
+
+Miscellaneous information about Date::Manip (who should use it;
+acknowledgments).
+
+Since many other date/time modules exist, some of which may do the
+specific operation(s) you need faster, be sure to read
+L<Date::Manip::Misc/"SHOULD I USE DATE::MANIP"> before
+deciding which of the Date and Time modules from CPAN is for you.
+However, if you want one module to do it all, Date::Manip is the
+one to use.
+
+=item L<Date::Manip::History>
+
+Musings on the history of Date::Manip written around it's
+20th birthday.
+
+=item L<Date::Manip::Problems>
+
+Common problems and instructions for reporting bugs.
+
+=item L<Date::Manip::Examples>
+
+Examples of how to use Date::Manip.
+
+=back
+
+=head1 LICENSE
+
+This script is free software; you can redistribute it and/or
+modify it under the same terms as Perl itself.
+
+=head1 AUTHOR
+
+Sullivan Beck (sbeck@cpan.org)
+
+=cut

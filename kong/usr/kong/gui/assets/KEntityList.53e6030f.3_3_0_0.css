@@ -1,0 +1,9 @@
+/*
+  This software is copyright Kong Inc. and its licensors.
+  Use of the software is subject to the agreement between your organization
+  and Kong Inc. If there is no such agreement, use is governed by and
+  subject to the terms of the Kong Master Software License Agreement found
+  at https://konghq.com/enterprisesoftwarelicense/.
+*/
+
+table td{vertical-align:inherit!important}.pagination-text{visibility:hidden}.pagination-button-container li:first-child{display:none}.pagination{margin-top:39px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-ms-flex-wrap:nowrap;flex-wrap:nowrap;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.pagination .summary{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;margin-right:auto}.pagination .pagination-buttons{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto}.pagination .pagination-buttons .btn-link{color:var(--grey-500);font-size:20px;font-weight:100}.pagination .page-size-select{-webkit-box-flex:0;-ms-flex:0 1 auto;flex:0 1 auto;margin-left:auto;font-size:14px}

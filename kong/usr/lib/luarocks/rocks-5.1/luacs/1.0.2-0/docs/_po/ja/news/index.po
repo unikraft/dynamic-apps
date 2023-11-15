@@ -1,0 +1,55 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+msgid ""
+"---\n"
+"title: News\n"
+"---"
+msgstr ""
+
+msgid "# News"
+msgstr ""
+
+msgid "## 1.0.2: 2019-05-21 {#version-1-0-2}"
+msgstr ""
+
+msgid "### Fixes"
+msgstr ""
+
+msgid ""
+"  * Fixed a bug that `local` is missing for local variable.\n"
+"    [GitHub#1][Patch by Allen Shaw]"
+msgstr ""
+
+msgid "### Thanks"
+msgstr ""
+
+msgid "  * Allen Shaw"
+msgstr ""
+
+msgid "## 1.0.1: 2018-04-15 {#version-1-0-1}"
+msgstr ""
+
+msgid "### Improvements"
+msgstr ""
+
+msgid "  * Added UTF-8 support."
+msgstr ""
+
+msgid "  * Added escape support."
+msgstr ""
+
+msgid "  * Added comment support."
+msgstr ""
+
+msgid "## 1.0.0: 2018-03-19 {#version-1-0-0}"
+msgstr ""
+
+msgid "The first release!!!"
+msgstr ""

@@ -1,0 +1,19 @@
+rock_manifest = {
+   doc = {
+      ["CHANGELOG.md"] = "663aaa50f898e64a21ed6a14771980fb",
+      ["LICENSE.txt"] = "0f4fb40e8221f826f5ee14b5297391ff",
+      ["README.md"] = "424c481ddc6042034a73b2f47d4fb3ed"
+   },
+   lua = {
+      resty = {
+         mail = {
+            ["headers.lua"] = "7fccbcff8b1fbeb91977b33bc8e11d42",
+            ["message.lua"] = "e102b0d169d6e558c5c26d034f6706fe",
+            ["rfc2822_date.lua"] = "755cf5e009c7ed68e9dd72f0a1b1d5c0",
+            ["smtp.lua"] = "0d8c63e0ea6cd782917836a6880ee5b1"
+         },
+         ["mail.lua"] = "295aca22d7c2f8532a1f0af04c338652"
+      }
+   },
+   ["lua-resty-mail-1.0.2-1.rockspec"] = "c3590d0e784684e50612648ee22ab74e"
+}

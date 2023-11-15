@@ -1,0 +1,9 @@
+/*
+  This software is copyright Kong Inc. and its licensors.
+  Use of the software is subject to the agreement between your organization
+  and Kong Inc. If there is no such agreement, use is governed by and
+  subject to the terms of the Kong Master Software License Agreement found
+  at https://konghq.com/enterprisesoftwarelicense/.
+*/
+
+.applications-portal-list .nav.nav-tabs .nav-link{margin:0 .25rem;position:relative}.applications-portal-list .nav.nav-tabs .nav-link:not(.active){border-color:#eceeef #eceeef #ddd}.applications-portal-list .k-modal{display:block}.applications-portal-list .k-modal textarea{border-radius:3px;border:1px solid #d7d7d7;line-height:36px;font-size:14px;width:100%;color:#4d4d4d;margin:0}.applications-portal-list .k-slideout .panel{max-width:680px!important}.no-developers[data-v-c21354c3]{display:-webkit-box;display:-ms-flexbox;display:flex;height:200px;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}.link-danger[data-v-c21354c3],.btn-link.link-danger[data-v-c21354c3]:hover{color:#cc4747}.notification[data-v-c21354c3]{height:8px;width:8px;border-radius:8px;background-color:#cc4747;display:block;position:absolute;top:-3px;right:-3px}.header-text p[data-v-c21354c3]{font-size:15px;padding:20px 0;line-height:35px;white-space:nowrap;color:#00000073}.view-btn[data-v-c21354c3]{display:-webkit-inline-box;display:-ms-inline-flexbox;display:inline-flex}

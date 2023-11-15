@@ -1,0 +1,7 @@
+{
+  "ordering": {
+    "title": "Ordering",
+    "dynamicDoc": "Dynamic plugin ordering - {docLink}",
+    "defaultDoc": "Default plugin execution order - {docLink}"
+  }
+}
